@@ -4,77 +4,85 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Banco de preguntas</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root{
+  :root {
     --paper:#F7F7F4; --ink:#191A19; --muted:#767A73; --line:#E1E2DC;
-    --accent:#3D5A4C; --accent-soft:#EAF0EC; --wrong:#A9463A; --wrong-soft:#F7EBE9;
-    --serif:'Newsreader', Georgia, serif;
-    --sans:'Inter', 'Segoe UI', system-ui, sans-serif;
+    --accent:#4CAF50; --accent-soft:#EAF0EC; --wrong:#A9463A; --wrong-soft:#F7EBE9;
+    --serif:'Franklin Gothic Book', system-ui, sans-serif;
+    --sans:'Franklin Gothic Book', system-ui, sans-serif;
   }
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.6;
+  * {box-sizing:border-box;margin:0;padding:0}
+  body {background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.6;
     font-size:16px;-webkit-font-smoothing:antialiased}
-  .wrap{max-width:680px;margin:0 auto;padding:0 24px 90px}
+  .wrap {max-width:680px;margin:0 auto;padding:0 24px 90px}
   @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 
-  .rail{position:sticky;top:0;height:3px;background:var(--line);z-index:10}
-  .rail i{display:block;height:100%;width:0%;background:var(--accent);transition:width .35s ease}
+  .rail {position:sticky;top:0;height:3px;background:var(--line);z-index:10}
+  .rail i {display:block;height:100%;width:0%;background:var(--accent);transition:width .35s ease}
 
-  header{padding:52px 0 32px}
-  .kicker{font-size:.86rem;color:var(--muted)}
-  h1{font-family:var(--serif);font-weight:500;font-size:2.1rem;letter-spacing:-.01em;margin-top:6px}
-  .lede{color:var(--muted);margin-top:10px;font-size:.98rem;max-width:52ch}
+  .green-box {
+    background-color: #ffffff;
+    border: 2px solid var(--accent);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 24px;
+  }
 
-  .stats{display:flex;gap:28px;margin-top:28px;padding-top:22px;border-top:1px solid var(--line);flex-wrap:wrap}
-  .stat b{font-family:var(--serif);font-size:1.5rem;font-weight:500;display:block}
-  .stat span{font-size:.8rem;color:var(--muted)}
+  header {padding: 32px 0 16px}
+  h1 {font-family:var(--serif);font-weight:600;font-size:2.1rem;letter-spacing:-.01em;margin-top:6px}
+  .lede {color:var(--muted);margin-top:10px;font-size:1rem;max-width:60ch; line-height: 1.5}
 
-  section{margin-top:44px}
-  h2{font-family:var(--serif);font-weight:500;font-size:1.3rem;margin-bottom:14px}
+  .stats {display:flex;gap:28px;margin-top:20px;flex-wrap:wrap}
+  .stat b {font-family:var(--serif);font-size:1.5rem;font-weight:600;display:block}
+  .stat span {font-size:.9rem;color:var(--muted)}
 
-  .topic{border-bottom:1px solid var(--line);padding:18px 0;display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer;background:none;border-left:none;border-right:none;border-top:none;width:100%;text-align:left;font-family:var(--sans)}
-  .topic:hover .t-name{color:var(--accent)}
-  .topic:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
-  .t-num{color:var(--muted);font-size:.8rem;font-variant-numeric:tabular-nums}
-  .t-name{font-weight:500;font-size:1.02rem;transition:color .12s}
-  .t-meta{font-size:.82rem;color:var(--muted);margin-top:3px}
-  .t-right{display:flex;align-items:center;gap:10px;flex-shrink:0}
-  .t-score{font-size:.82rem;color:var(--accent);font-weight:600}
-  .t-arrow{color:var(--muted);font-size:1.1rem}
+  section {margin-top:20px}
+  h2 {font-family:var(--serif);font-weight:600;font-size:1.3rem;margin-bottom:14px}
+  h3.subtitle {font-family:var(--sans); font-weight:500; font-size:1.1rem; margin-top: 20px; color: var(--ink);}
 
-  .empty{color:var(--muted);font-size:.94rem;font-style:italic}
+  .topic {border-bottom:1px solid var(--line);padding:18px 0;display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer;background:none;border-left:none;border-right:none;border-top:none;width:100%;text-align:left;font-family:var(--sans)}
+  .topic:hover .t-name {color:var(--accent)}
+  .topic:focus-visible {outline:2px solid var(--accent);outline-offset:4px}
+  .t-num {color:var(--muted);font-size:.8rem;font-variant-numeric:tabular-nums}
+  .t-name {font-weight:600;font-size:1.02rem;transition:color .12s}
+  .t-meta {font-size:.82rem;color:var(--muted);margin-top:3px}
+  .t-right {display:flex;align-items:center;gap:10px;flex-shrink:0}
+  .t-score {font-size:.9rem;color:var(--accent);font-weight:600}
+  
+  .t-action {display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;}
+  .t-arrow {color: lightgreen; font-size: 1.4rem; font-weight: bold;}
+  .t-dog {width: 24px; height: auto; border-radius: 4px;}
 
-  .area-row{margin-bottom:14px}
-  .area-top{display:flex;justify-content:space-between;font-size:.88rem;margin-bottom:6px}
-  .area-top .weak{color:var(--wrong)}
-  .bar{height:5px;background:var(--line);border-radius:3px;overflow:hidden}
-  .bar i{display:block;height:100%;background:var(--accent)}
-  .bar i.weak{background:var(--wrong)}
+  .empty {color:var(--muted);font-size:.94rem;font-style:italic}
 
-  .backlink{display:inline-block;margin-bottom:20px;font-size:.88rem;color:var(--muted);background:none;border:none;cursor:pointer;font-family:var(--sans)}
-  .backlink:hover{color:var(--ink)}
+  .area-row {margin-bottom:14px}
+  .area-top {display:flex;justify-content:space-between;font-size:.88rem;margin-bottom:6px}
+  .area-top .weak {color:var(--wrong)}
+  .bar {height:5px;background:var(--line);border-radius:3px;overflow:hidden}
+  .bar i {display:block;height:100%;background:var(--accent)}
+  .bar i.weak {background:var(--wrong)}
 
-  .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
-  .chip{font-size:.74rem;color:var(--muted);border:1px solid var(--line);border-radius:20px;padding:3px 11px}
-  .chip.n1{color:var(--accent)}
-  .chip.n3{color:var(--wrong)}
+  .backlink {display:inline-block;margin-bottom:20px;font-size:.88rem;color:var(--muted);background:none;border:none;cursor:pointer;font-family:var(--sans)}
+  .backlink:hover {color:var(--ink)}
 
-  .q-meta{display:flex;justify-content:space-between;align-items:baseline;font-size:.8rem;color:var(--muted);margin-bottom:14px}
-  .q-text{font-family:var(--serif);font-size:1.28rem;font-weight:500;line-height:1.42;margin-bottom:20px}
+  .chips {display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+  .chip {font-size:.74rem;color:var(--muted);border:1px solid var(--line);border-radius:20px;padding:3px 11px}
+  .chip.n1 {color:var(--accent)}
+  .chip.n3 {color:var(--wrong)}
 
-  .statements{margin:0 0 26px 0;padding-left:22px;font-size:.98rem}
-  .statements li{margin-bottom:8px}
+  .q-meta {display:flex;justify-content:space-between;align-items:baseline;font-size:.8rem;color:var(--muted);margin-bottom:14px}
+  .q-text {font-family:var(--serif);font-size:1.2rem;font-weight:500;line-height:1.42;margin-bottom:20px}
 
-  .ar-block{margin-bottom:26px}
-  .ar-block .lbl{font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
-  .ar-block .claim{font-family:var(--serif);font-size:1.14rem;font-weight:500;margin:4px 0 16px;line-height:1.4}
-  .ar-block .porque{font-size:.78rem;color:var(--muted);letter-spacing:.06em;margin-bottom:16px}
+  .statements {margin:0 0 26px 0;padding-left:22px;font-size:.98rem}
+  .statements li {margin-bottom:8px}
 
-  .opts{display:flex;flex-direction:column;gap:10px}
-  .opt{text-align:left;font-family:var(--sans);font-size:.96rem;line-height:1.5;color:var(--ink);
+  .ar-block {margin-bottom:26px}
+  .ar-block .lbl {font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+  .ar-block .claim {font-family:var(--serif);font-size:1.14rem;font-weight:500;margin:4px 0 16px;line-height:1.4}
+  .ar-block .porque {font-size:.78rem;color:var(--muted);letter-spacing:.06em;margin-bottom:16px}
+
+  .opts {display:flex;flex-direction:column;gap:10px}
+  .opt {text-align:left;font-family:var(--sans);font-size:.96rem;line-height:1.5;color:var(--ink);
     background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 16px;cursor:pointer;
     display:flex;gap:12px;transition:border-color .12s}
   .opt:hover:not(:disabled){border-color:var(--accent)}
@@ -87,41 +95,35 @@
   .opt.wrong .letter{color:var(--wrong)}
   .opt.dim{opacity:.5}
 
-  .feedback{margin-top:22px;padding:16px 18px;border-radius:8px;font-size:.92rem}
-  .feedback.good{background:var(--accent-soft)}
-  .feedback.bad{background:var(--wrong-soft)}
-  .feedback .verdict{font-weight:600;display:block;margin-bottom:6px}
-  .feedback.good .verdict{color:var(--accent)}
-  .feedback.bad .verdict{color:var(--wrong)}
-  .feedback .basis{display:block;margin-top:8px;color:var(--muted);font-size:.85rem}
+  .feedback {margin-top:22px;padding:16px 18px;border-radius:8px;font-size:.92rem}
+  .feedback.good {background:var(--accent-soft)}
+  .feedback.bad {background:var(--wrong-soft)}
+  .feedback .verdict {font-weight:600;display:block;margin-bottom:6px}
+  .feedback.good .verdict {color:var(--accent)}
+  .feedback.bad .verdict {color:var(--wrong)}
+  .feedback .basis {display:block;margin-top:8px;color:var(--muted);font-size:.85rem}
 
-  .nav-row{display:flex;justify-content:space-between;align-items:center;margin-top:26px}
-  .score-live{font-size:.85rem;color:var(--muted)}
+  .nav-row {display:flex;justify-content:space-between;align-items:center;margin-top:26px}
+  .score-live {font-size:.85rem;color:var(--muted)}
 
-  button.primary{font-family:var(--sans);font-weight:600;background:var(--ink);color:#fff;border:none;
+  button.primary {font-family:var(--sans);font-weight:600;background:var(--ink);color:#fff;border:none;
     border-radius:8px;padding:12px 22px;cursor:pointer;font-size:.92rem}
-  button.primary:hover{background:#000}
-  button.ghost{font-family:var(--sans);font-weight:600;background:none;color:var(--ink);border:1px solid var(--line);
+  button.primary:hover {background:#000}
+  button.ghost {font-family:var(--sans);font-weight:600;background:none;color:var(--ink);border:1px solid var(--line);
     border-radius:8px;padding:11px 20px;cursor:pointer;font-size:.92rem}
-  button.ghost:hover{border-color:var(--ink)}
-  button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  button.ghost:hover {border-color:var(--ink)}
+  button:focus-visible {outline:2px solid var(--accent);outline-offset:2px}
 
-  .result-seal{text-align:center;padding:36px 0 8px}
-  .result-seal .pct{font-family:var(--serif);font-size:3.2rem;font-weight:500;display:block}
-  .result-seal .of{color:var(--muted);font-size:.92rem;margin-top:4px}
-  .verdict-line{text-align:center;color:var(--muted);font-size:.94rem;margin:6px 0 34px}
+  .result-seal {text-align:center;padding:36px 0 8px}
+  .result-seal .pct {font-family:var(--serif);font-size:3.2rem;font-weight:500;display:block}
+  .result-seal .of {color:var(--muted);font-size:.92rem;margin-top:4px}
+  .verdict-line {text-align:center;color:var(--muted);font-size:.94rem;margin:6px 0 34px}
 
-  .review-item{border-top:1px solid var(--line);padding:16px 0}
-  .review-item .rq{font-weight:500;margin-bottom:6px}
-  .review-item .ra{color:var(--muted);font-size:.9rem}
+  .review-item {border-top:1px solid var(--line);padding:16px 0}
+  .review-item .rq {font-weight:600;margin-bottom:6px}
+  .review-item .ra {color:var(--muted);font-size:.9rem}
 
-  .center{display:flex;gap:10px;justify-content:center;margin-top:36px;flex-wrap:wrap}
-
-  .levels{display:flex;gap:8px;margin-bottom:18px;flex-wrap:wrap}
-  .lvl{font-family:var(--sans);font-size:.84rem;font-weight:500;background:#fff;border:1px solid var(--line);
-    border-radius:20px;padding:7px 15px;cursor:pointer;color:var(--ink)}
-  .lvl:hover{border-color:var(--accent)}
-  .lvl.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .center {display:flex;gap:10px;justify-content:center;margin-top:36px;flex-wrap:wrap}
 </style>
 </head>
 <body>
@@ -168,7 +170,13 @@ function renderDashboard(){
     const st=r?`<span class="t-score">${Math.round(r.score/r.total*100)}%</span>`:'';
     return `<button class="topic" onclick="startTopic('${esc(t.id)}')">
       <div><div class="t-name"><span class="t-num">${esc(t.numero)}</span> ${esc(t.titulo)}</div><div class="t-meta">${t.preguntas.length} preguntas</div></div>
-      <div class="t-right">${st}<span class="t-arrow">→</span></div>
+      <div class="t-right">
+        ${st}
+        <div class="t-action">
+          <span class="t-arrow">→</span>
+          <img src="image_2dc8e4.png" alt="Samoyedo" class="t-dog">
+        </div>
+      </div>
     </button>`;
   }).join('');
 
@@ -179,21 +187,37 @@ function renderDashboard(){
   }).join(''):'<p class="empty">Resuelve tu primera tanda para ver el diagnóstico por área.</p>';
 
   app.innerHTML=`
-    <header>
-      <div class="kicker">${esc(DIPLOMADO.subtitulo?'Banco de preguntas':'')}</div>
+    <header class="green-box">
       <h1>${esc(DIPLOMADO.titulo||'Mi banco de preguntas')}</h1>
-      ${DIPLOMADO.subtitulo?`<p class="lede">${esc(DIPLOMADO.subtitulo)}</p>`:''}
-      <div class="stats">
-        <div class="stat"><b>${list.length}</b><span>Temas</span></div>
-        <div class="stat"><b>${totalPreg}</b><span>Preguntas</span></div>
-        <div class="stat"><b>${pctGlobal==null?'—':pctGlobal+'%'}</b><span>Desempeño global</span></div>
-      </div>
     </header>
-    <section>
+
+    <section class="green-box">
+      <h2>Panel de avance</h2>
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; margin-top:10px;">
+        <div style="flex:1; min-width: 250px;">
+          <p style="margin-bottom:15px; color:var(--muted);">Un panel de avance es una herramienta visual que registra tu progreso, midiendo tus aciertos y el desarrollo de tu estudio a lo largo del tiempo.</p>
+          <div class="stats">
+            <div class="stat"><b>${list.length}</b><span>Total de temas</span></div>
+            <div class="stat"><b>${totalPreg}</b><span>Total de preguntas</span></div>
+            <div class="stat"><b>${pctGlobal==null?'0':pctGlobal}%</b><span>Desempeño global (Aciertos)</span></div>
+          </div>
+        </div>
+        <img src="image_2dc8e4.png" alt="Samoyedo" style="width: 140px; border-radius: 8px;">
+      </div>
+      <h3 class="subtitle">Esta página tiene como finalidad practicar para los diferentes concursos con preguntas Fáciles, Medias y Difíciles.</h3>
+    </section>
+
+    <section class="green-box">
+      <h2>Descripción</h2>
+      <p class="lede">${esc(DIPLOMADO.subtitulo)}</p>
+    </section>
+
+    <section class="green-box">
       <h2>Temas</h2>
       ${topics}
     </section>
-    <section>
+    
+    <section class="green-box">
       <h2>Por área</h2>
       ${areaRows}
     </section>`;
@@ -217,18 +241,20 @@ function renderQ(){
   const opts=optionSet(q);
   app.innerHTML=`
     <button class="backlink" onclick="renderDashboard()">← Volver a temas</button>
-    <div class="chips">
-      <span class="chip">${esc(q.c||'')}</span>
-      ${q.d?`<span class="chip n${q.d}">${nivelName[q.d]}</span>`:''}
-    </div>
-    ${bodyHtml}
-    <div class="opts">
-      ${opts.map((o,i)=>`<button class="opt" data-i="${i}" onclick="answer(${i})"><span class="letter">${letters[i]}</span><span>${esc(o)}</span></button>`).join('')}
-    </div>
-    <div id="fb"></div>
-    <div class="nav-row">
-      <span class="score-live">Aciertos: ${score} / ${idx} · Pregunta ${idx+1} de ${qs.length}</span>
-      <span id="nextholder"></span>
+    <div class="green-box">
+      <div class="chips">
+        <span class="chip">${esc(q.c||'')}</span>
+        ${q.d?`<span class="chip n${q.d}">${nivelName[q.d]}</span>`:''}
+      </div>
+      ${bodyHtml}
+      <div class="opts">
+        ${opts.map((o,i)=>`<button class="opt" data-i="${i}" onclick="answer(${i})"><span class="letter">${letters[i]}</span><span>${esc(o)}</span></button>`).join('')}
+      </div>
+      <div id="fb"></div>
+      <div class="nav-row">
+        <span class="score-live">Aciertos: ${score} / ${idx} · Pregunta ${idx+1} de ${qs.length}</span>
+        <span id="nextholder"></span>
+      </div>
     </div>`;
 }
 
@@ -279,12 +305,14 @@ function renderEnd(){
   `:'';
   app.innerHTML=`
     <button class="backlink" onclick="renderDashboard()">← Volver a temas</button>
-    <div class="result-seal"><span class="pct">${pct}%</span><span class="of">${score} de ${qs.length} correctas · ${esc(current.titulo)}</span></div>
-    <p class="verdict-line">${esc(verdict)}</p>
-    ${review}
-    <div class="center">
-      <button class="primary" onclick="renderDashboard()">Volver a temas</button>
-      <button class="ghost" onclick="startTopic('${esc(current.id)}')">Otra tanda</button>
+    <div class="green-box">
+      <div class="result-seal"><span class="pct">${pct}%</span><span class="of">${score} de ${qs.length} correctas · ${esc(current.titulo)}</span></div>
+      <p class="verdict-line">${esc(verdict)}</p>
+      ${review}
+      <div class="center">
+        <button class="primary" onclick="renderDashboard()">Volver a temas</button>
+        <button class="ghost" onclick="startTopic('${esc(current.id)}')">Otra tanda</button>
+      </div>
     </div>`;
   window.scrollTo({top:0,behavior:'smooth'});
 }
