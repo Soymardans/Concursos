@@ -1,11 +1,8 @@
 /* ═══════════════════════════════════════════════════════════════════
-   CONVOCATORIA No. 28 — Banco de preguntas de preparación
+   CONCURSOS DE MERITOS — Banco de preguntas de preparación
    ═══════════════════════════════════════════════════════════════════
    15 temas · 515 preguntas
-   Formulario de preparación para la Convocatoria 28 de la Rama Judicial
-   (cargo Juez Civil Municipal, Grupo 3). Práctica por tema y por nivel
-   de dificultad (Fácil / Medio / Difícil / Mixto), con diagnóstico por
-   área y por dificultad. Formato a: 0=A, 1=B, 2=C, 3=D.
+   Pruebas de preparación para diferentes concursos de méritos.
    Tipo I: {t:1,d,c,q,o:[4],a,e,b} · Tipo II: {t:2,d,c,q,s:[4],a,e,b}
    Tipo III: {t:3,d,c,af,rz,a,e,b}
    ═══════════════════════════════════════════════════════════════════ */
