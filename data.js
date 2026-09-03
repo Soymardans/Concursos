@@ -1,15 +1,14 @@
 /* ═══════════════════════════════════════════════════════════════════
-   CONCURSOS DE MERITOS — Banco de preguntas de preparación
+   Banco de preguntas de preparación
    ═══════════════════════════════════════════════════════════════════
-   15 temas · 515 preguntas
-   Pruebas de preparación para diferentes concursos de méritos.
-   Tipo I: {t:1,d,c,q,o:[4],a,e,b} · Tipo II: {t:2,d,c,q,s:[4],a,e,b}
-   Tipo III: {t:3,d,c,af,rz,a,e,b}
+   Nota: Se han eliminado los temas requeridos de familia, comercial,
+   penal y agrario. Los temas presentados reflejan exclusivamente
+   las áreas que no fueron suprimidas.
    ═══════════════════════════════════════════════════════════════════ */
 
 const DIPLOMADO = {
- "titulo": "CONCURSOS DE MERITOS — Banco de preguntas de preparación",
- "subtitulo": "Pruebas de preparación para diferentes concursos de méritos.",
+ "titulo": "Exámenes de preparación para Concursos",
+ "subtitulo": "La idea de este banco de preguntas es brindar cuestionarios prácticos y enfocados que ayuden a prepararse de manera integral para los concursos de méritos, permitiendo evaluar y mejorar los conocimientos requeridos.",
  "dias": [
   {
    "id": "procesal-civil",
