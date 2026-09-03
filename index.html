@@ -18,7 +18,6 @@
   body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.6;
     font-size:16px;-webkit-font-smoothing:antialiased}
   .wrap{max-width:680px;margin:0 auto;padding:0 24px 90px}
-  a{color:var(--accent)}
   @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 
   .rail{position:sticky;top:0;height:3px;background:var(--line);z-index:10}
@@ -39,6 +38,7 @@
   .topic{border-bottom:1px solid var(--line);padding:18px 0;display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer;background:none;border-left:none;border-right:none;border-top:none;width:100%;text-align:left;font-family:var(--sans)}
   .topic:hover .t-name{color:var(--accent)}
   .topic:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+  .t-num{color:var(--muted);font-size:.8rem;font-variant-numeric:tabular-nums}
   .t-name{font-weight:500;font-size:1.02rem;transition:color .12s}
   .t-meta{font-size:.82rem;color:var(--muted);margin-top:3px}
   .t-right{display:flex;align-items:center;gap:10px;flex-shrink:0}
@@ -57,12 +57,24 @@
   .backlink{display:inline-block;margin-bottom:20px;font-size:.88rem;color:var(--muted);background:none;border:none;cursor:pointer;font-family:var(--sans)}
   .backlink:hover{color:var(--ink)}
 
-  .q-meta{display:flex;justify-content:space-between;align-items:baseline;font-size:.8rem;color:var(--muted);margin-bottom:18px}
-  .q-area{color:var(--accent);font-weight:600}
-  .q-text{font-family:var(--serif);font-size:1.32rem;font-weight:500;line-height:1.42;margin-bottom:28px}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+  .chip{font-size:.74rem;color:var(--muted);border:1px solid var(--line);border-radius:20px;padding:3px 11px}
+  .chip.n1{color:var(--accent)}
+  .chip.n3{color:var(--wrong)}
+
+  .q-meta{display:flex;justify-content:space-between;align-items:baseline;font-size:.8rem;color:var(--muted);margin-bottom:14px}
+  .q-text{font-family:var(--serif);font-size:1.28rem;font-weight:500;line-height:1.42;margin-bottom:20px}
+
+  .statements{margin:0 0 26px 0;padding-left:22px;font-size:.98rem}
+  .statements li{margin-bottom:8px}
+
+  .ar-block{margin-bottom:26px}
+  .ar-block .lbl{font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+  .ar-block .claim{font-family:var(--serif);font-size:1.14rem;font-weight:500;margin:4px 0 16px;line-height:1.4}
+  .ar-block .porque{font-size:.78rem;color:var(--muted);letter-spacing:.06em;margin-bottom:16px}
 
   .opts{display:flex;flex-direction:column;gap:10px}
-  .opt{text-align:left;font-family:var(--sans);font-size:.98rem;line-height:1.5;color:var(--ink);
+  .opt{text-align:left;font-family:var(--sans);font-size:.96rem;line-height:1.5;color:var(--ink);
     background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 16px;cursor:pointer;
     display:flex;gap:12px;transition:border-color .12s}
   .opt:hover:not(:disabled){border-color:var(--accent)}
@@ -104,6 +116,12 @@
   .review-item .ra{color:var(--muted);font-size:.9rem}
 
   .center{display:flex;gap:10px;justify-content:center;margin-top:36px;flex-wrap:wrap}
+
+  .levels{display:flex;gap:8px;margin-bottom:18px;flex-wrap:wrap}
+  .lvl{font-family:var(--sans);font-size:.84rem;font-weight:500;background:#fff;border:1px solid var(--line);
+    border-radius:20px;padding:7px 15px;cursor:pointer;color:var(--ink)}
+  .lvl:hover{border-color:var(--accent)}
+  .lvl.active{background:var(--ink);color:#fff;border-color:var(--ink)}
 </style>
 </head>
 <body>
@@ -112,19 +130,26 @@
 
 <script src="data.js"></script>
 <script>
-const app=document.getElementById('app'), bar=document.getElementById('bar');
 const letters=['A','B','C','D'];
-let current=null, idx=0, score=0, results=[], areaTally={}, answered=false;
+const OPTS_II=["Si las opciones 1, 2 y 3 son correctas","Si las opciones 1 y 3 son correctas","Si las opciones 2 y 4 son correctas","Si solamente la opción 4 es correcta"];
+const OPTS_III=["La afirmación y la razón son VERDADERAS y la razón es una explicación CORRECTA de la afirmación","La afirmación y la razón son VERDADERAS, pero la razón NO es una explicación correcta de la afirmación","La afirmación es VERDADERA, pero la razón es FALSA","La afirmación es FALSA, pero la razón es VERDADERA"];
+const nivelName={1:'Fácil',2:'Medio',3:'Difícil'};
+
+const app=document.getElementById('app'), bar=document.getElementById('bar');
+let current=null, idx=0, score=0, results=[], areaTally={}, answered=false, levelFilter='all';
 
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a}
+function dias(){return (typeof DIPLOMADO!=='undefined'&&Array.isArray(DIPLOMADO.dias))?DIPLOMADO.dias:[]}
+function optionSet(q){return q.t===2?OPTS_II:q.t===3?OPTS_III:q.o}
 
 function getProgress(){try{return JSON.parse(localStorage.getItem('bp_progress')||'{}')}catch{return {}}}
 function saveResult(id,r){const p=getProgress();p[id]=r;localStorage.setItem('bp_progress',JSON.stringify(p))}
 
 function renderDashboard(){
-  if(typeof BANCO==='undefined'){
-    app.innerHTML='<div style="padding:60px 0"><p>Falta el archivo <b>data.js</b> junto a este index.html.</p></div>';
+  const list=dias();
+  if(!list.length){
+    app.innerHTML='<div style="padding:60px 0"><p>Falta el archivo <b>data.js</b> junto a este index.html, o está vacío.</p></div>';
     return;
   }
   bar.style.width='0%';
@@ -136,13 +161,13 @@ function renderDashboard(){
     Object.entries(r.byArea||{}).forEach(([a,v])=>{areas[a]=areas[a]||{ok:0,tot:0};areas[a].ok+=v.ok;areas[a].tot+=v.tot});
   });
   const pctGlobal=sumTot?Math.round(sumOk/sumTot*100):null;
-  const totalPreg=BANCO.temas.reduce((a,t)=>a+t.preguntas.length,0);
+  const totalPreg=list.reduce((a,t)=>a+t.preguntas.length,0);
 
-  const topics=BANCO.temas.map(t=>{
+  const topics=list.map(t=>{
     const r=p[t.id];
     const st=r?`<span class="t-score">${Math.round(r.score/r.total*100)}%</span>`:'';
     return `<button class="topic" onclick="startTopic('${esc(t.id)}')">
-      <div><div class="t-name">${esc(t.titulo)}</div><div class="t-meta">${t.preguntas.length} preguntas</div></div>
+      <div><div class="t-name"><span class="t-num">${esc(t.numero)}</span> ${esc(t.titulo)}</div><div class="t-meta">${t.preguntas.length} preguntas</div></div>
       <div class="t-right">${st}<span class="t-arrow">→</span></div>
     </button>`;
   }).join('');
@@ -155,18 +180,18 @@ function renderDashboard(){
 
   app.innerHTML=`
     <header>
-      <div class="kicker">${esc(BANCO.kicker||'Banco de preguntas')}</div>
-      <h1>${esc(BANCO.titulo)}</h1>
-      ${BANCO.subtitulo?`<p class="lede">${esc(BANCO.subtitulo)}</p>`:''}
+      <div class="kicker">${esc(DIPLOMADO.subtitulo?'Banco de preguntas':'')}</div>
+      <h1>${esc(DIPLOMADO.titulo||'Mi banco de preguntas')}</h1>
+      ${DIPLOMADO.subtitulo?`<p class="lede">${esc(DIPLOMADO.subtitulo)}</p>`:''}
       <div class="stats">
-        <div class="stat"><b>${BANCO.temas.length}</b><span>Temas</span></div>
+        <div class="stat"><b>${list.length}</b><span>Temas</span></div>
         <div class="stat"><b>${totalPreg}</b><span>Preguntas</span></div>
         <div class="stat"><b>${pctGlobal==null?'—':pctGlobal+'%'}</b><span>Desempeño global</span></div>
       </div>
     </header>
     <section>
       <h2>Temas</h2>
-      ${topics||'<p class="empty">Agrega temas en data.js para empezar.</p>'}
+      ${topics}
     </section>
     <section>
       <h2>Por área</h2>
@@ -175,8 +200,8 @@ function renderDashboard(){
 }
 
 function startTopic(id){
-  const t=BANCO.temas.find(x=>x.id===id); if(!t)return;
-  current={id:t.id,titulo:t.titulo,preguntas:shuffle(t.preguntas.slice()).slice(0,20)};
+  const t=dias().find(x=>x.id===id); if(!t)return;
+  current={id:t.id,titulo:t.titulo,numero:t.numero,preguntas:shuffle(t.preguntas.slice()).slice(0,20)};
   idx=0;score=0;results=[];areaTally={};answered=false;
   renderQ(); window.scrollTo({top:0});
 }
@@ -185,17 +210,24 @@ function renderQ(){
   answered=false;
   const qs=current.preguntas, q=qs[idx];
   bar.style.width=(idx/qs.length*100)+'%';
-  const opts=q.o;
+  let bodyHtml='';
+  if(q.t===2){bodyHtml=`<p class="q-text">${esc(q.q)}</p><ol class="statements">${q.s.map(s=>`<li>${esc(s)}</li>`).join('')}</ol>`}
+  else if(q.t===3){bodyHtml=`<div class="ar-block"><span class="lbl">Afirmación</span><p class="claim">${esc(q.af)}</p><p class="porque">PORQUE</p><span class="lbl">Razón</span><p class="claim">${esc(q.rz)}</p></div>`}
+  else{bodyHtml=`<p class="q-text">${esc(q.q)}</p>`}
+  const opts=optionSet(q);
   app.innerHTML=`
     <button class="backlink" onclick="renderDashboard()">← Volver a temas</button>
-    <div class="q-meta"><span class="q-area">${esc(q.c)}</span><span>Pregunta ${idx+1} de ${qs.length}</span></div>
-    <p class="q-text">${esc(q.q)}</p>
+    <div class="chips">
+      <span class="chip">${esc(q.c||'')}</span>
+      ${q.d?`<span class="chip n${q.d}">${nivelName[q.d]}</span>`:''}
+    </div>
+    ${bodyHtml}
     <div class="opts">
       ${opts.map((o,i)=>`<button class="opt" data-i="${i}" onclick="answer(${i})"><span class="letter">${letters[i]}</span><span>${esc(o)}</span></button>`).join('')}
     </div>
     <div id="fb"></div>
     <div class="nav-row">
-      <span class="score-live">Aciertos: ${score} / ${idx}</span>
+      <span class="score-live">Aciertos: ${score} / ${idx} · Pregunta ${idx+1} de ${qs.length}</span>
       <span id="nextholder"></span>
     </div>`;
 }
@@ -205,8 +237,9 @@ function answer(i){
   const qs=current.preguntas, q=qs[idx], ok=i===q.a;
   if(ok)score++;
   results.push({i:idx,ok});
-  areaTally[q.c]=areaTally[q.c]||{ok:0,tot:0};
-  areaTally[q.c].tot++; if(ok)areaTally[q.c].ok++;
+  const area=q.c||'General';
+  areaTally[area]=areaTally[area]||{ok:0,tot:0};
+  areaTally[area].tot++; if(ok)areaTally[area].ok++;
   document.querySelectorAll('.opt').forEach(btn=>{
     const bi=+btn.dataset.i; btn.disabled=true;
     if(bi===q.a)btn.classList.add('correct');
@@ -221,7 +254,7 @@ function answer(i){
     </div>`;
   document.getElementById('nextholder').innerHTML=
     `<button class="primary" onclick="next()">${idx===qs.length-1?'Ver resultado':'Siguiente'}</button>`;
-  document.querySelector('.score-live').textContent=`Aciertos: ${score} / ${idx+1}`;
+  document.querySelector('.score-live').textContent=`Aciertos: ${score} / ${idx+1} · Pregunta ${idx+1} de ${qs.length}`;
 }
 
 function next(){
@@ -242,7 +275,7 @@ function renderEnd(){
   const wrong=results.filter(r=>!r.ok);
   const review=wrong.length?`
     <h2 style="margin-top:40px">Para repasar</h2>
-    ${wrong.map(r=>{const q=qs[r.i];return `<div class="review-item"><div class="rq">${esc(q.q)}</div><div class="ra">Respuesta correcta: ${letters[q.a]}) ${esc(q.o[q.a])}</div></div>`}).join('')}
+    ${wrong.map(r=>{const q=qs[r.i];const opts=optionSet(q);const label=q.t===1?q.q:(q.t===2?q.q:q.af);return `<div class="review-item"><div class="rq">${esc(label)}</div><div class="ra">Respuesta correcta: ${letters[q.a]}) ${esc(opts[q.a])}</div></div>`}).join('')}
   `:'';
   app.innerHTML=`
     <button class="backlink" onclick="renderDashboard()">← Volver a temas</button>

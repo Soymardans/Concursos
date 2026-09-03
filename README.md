@@ -1,13 +1,14 @@
 # Mi banco de preguntas
 
-Sitio estático para GitHub Pages. Banco de preguntas de opción múltiple con seguimiento de progreso por tema y por área.
+Sitio estático para GitHub Pages. Banco de preguntas con seguimiento de progreso por tema y por área.
+Este `index.html` lee el formato `DIPLOMADO` (variable `dias`, tipos de pregunta 1/2/3), así que es compatible con bancos de preguntas ya generados en ese formato.
 
 ## Archivos
 
 | Archivo | Función |
 |---|---|
 | `index.html` | Toda la aplicación (diseño y lógica). No lo edites. |
-| `data.js` | Banco de preguntas. Es el único archivo que editas. |
+| `data.js` | Banco de preguntas. Es el único archivo que editas. Debe definir `const DIPLOMADO = { titulo, subtitulo, dias: [...] }`. |
 
 ## Publicar en GitHub Pages (una sola vez)
 
