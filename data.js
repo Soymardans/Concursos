@@ -8,8 +8,8 @@
    ═══════════════════════════════════════════════════════════════════ */
 
 const DIPLOMADO = {
- "titulo": "Convocatoria No. 28 · Banco por temas",
- "subtitulo": "Preparación para la Convocatoria 28 de la Rama Judicial · Todas las especialidades",
+ "titulo": "CONCURSOS DE MERITOS — Banco de preguntas de preparación",
+ "subtitulo": "Pruebas de preparación para diferentes concursos de méritos.",
  "dias": [
   {
    "id": "procesal-civil",
