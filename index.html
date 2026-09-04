@@ -3,127 +3,120 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Banco de preguntas</title>
+<title>Exámenes de preparación para Concursos</title>
 <style>
-  :root {
+  :root{
     --paper:#F7F7F4; --ink:#191A19; --muted:#767A73; --line:#E1E2DC;
-    --accent:#4CAF50; --accent-soft:#EAF0EC; --wrong:#A9463A; --wrong-soft:#F7EBE9;
-    --serif:'Franklin Gothic Book', system-ui, sans-serif;
-    --sans:'Franklin Gothic Book', system-ui, sans-serif;
+    --accent:#2F6B4F; --accent-light:#5FA382; --accent-soft:#EAF3EE;
+    --wrong:#A9463A; --wrong-soft:#F7EBE9;
+    --font:'Franklin Gothic Book','Franklin Gothic','ITC Franklin Gothic','Segoe UI',Arial,sans-serif;
   }
-  * {box-sizing:border-box;margin:0;padding:0}
-  body {background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.6;
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--ink);font-family:var(--font);line-height:1.6;
     font-size:16px;-webkit-font-smoothing:antialiased}
-  .wrap {max-width:680px;margin:0 auto;padding:0 24px 90px}
+  .wrap{max-width:720px;margin:0 auto;padding:0 24px 90px}
   @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 
-  .rail {position:sticky;top:0;height:3px;background:var(--line);z-index:10}
-  .rail i {display:block;height:100%;width:0%;background:var(--accent);transition:width .35s ease}
+  .rail{position:sticky;top:0;height:3px;background:var(--line);z-index:10}
+  .rail i{display:block;height:100%;width:0%;background:var(--accent);transition:width .35s ease}
 
-  .green-box {
-    background-color: #ffffff;
-    border: 2px solid var(--accent);
-    border-radius: 8px;
-    padding: 24px;
-    margin-bottom: 24px;
-  }
+  header{padding:48px 0 28px}
+  h1{font-family:var(--font);font-weight:700;font-size:2rem;letter-spacing:-.01em}
 
-  header {padding: 32px 0 16px}
-  h1 {font-family:var(--serif);font-weight:600;font-size:2.1rem;letter-spacing:-.01em;margin-top:6px}
-  .lede {color:var(--muted);margin-top:10px;font-size:1rem;max-width:60ch; line-height: 1.5}
+  .box{background:#fff;border:2px solid var(--accent);border-radius:12px;padding:24px 26px;margin-top:22px}
+  .box h2{font-family:var(--font);font-weight:700;font-size:1.15rem;margin-bottom:8px}
+  .box .box-desc{color:var(--muted);font-size:.92rem;max-width:60ch}
 
-  .stats {display:flex;gap:28px;margin-top:20px;flex-wrap:wrap}
-  .stat b {font-family:var(--serif);font-size:1.5rem;font-weight:600;display:block}
-  .stat span {font-size:.9rem;color:var(--muted)}
+  .panel-body{display:flex;align-items:center;gap:22px;margin-top:18px;flex-wrap:wrap}
+  .panel-stats{display:flex;gap:26px;flex:1;min-width:220px;flex-wrap:wrap}
+  .stat b{font-family:var(--font);font-size:1.5rem;font-weight:700;display:block}
+  .stat span{font-size:.78rem;color:var(--muted)}
 
-  section {margin-top:20px}
-  h2 {font-family:var(--serif);font-weight:600;font-size:1.3rem;margin-bottom:14px}
-  h3.subtitle {font-family:var(--sans); font-weight:500; font-size:1.1rem; margin-top: 20px; color: var(--ink);}
+  section{margin-top:36px}
+  h2.section-title{font-family:var(--font);font-weight:700;font-size:1.2rem;margin-bottom:6px}
 
-  .topic {border-bottom:1px solid var(--line);padding:18px 0;display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer;background:none;border-left:none;border-right:none;border-top:none;width:100%;text-align:left;font-family:var(--sans)}
-  .topic:hover .t-name {color:var(--accent)}
-  .topic:focus-visible {outline:2px solid var(--accent);outline-offset:4px}
-  .t-num {color:var(--muted);font-size:.8rem;font-variant-numeric:tabular-nums}
-  .t-name {font-weight:600;font-size:1.02rem;transition:color .12s}
-  .t-meta {font-size:.82rem;color:var(--muted);margin-top:3px}
-  .t-right {display:flex;align-items:center;gap:10px;flex-shrink:0}
-  .t-score {font-size:.9rem;color:var(--accent);font-weight:600}
-  
-  .t-action {display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;}
-  .t-arrow {color: lightgreen; font-size: 1.4rem; font-weight: bold;}
-  .t-dog {width: 24px; height: auto; border-radius: 4px;}
+  .topics-box{padding:8px 26px}
+  .topic{border-bottom:1px solid var(--line);padding:16px 0;display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer;background:none;border-left:none;border-right:none;border-top:none;width:100%;text-align:left;font-family:var(--font)}
+  .topic:last-child{border-bottom:none}
+  .topic:hover .t-name{color:var(--accent)}
+  .topic:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+  .t-name{font-weight:700;font-size:1.02rem;transition:color .12s}
+  .t-meta{font-size:.82rem;color:var(--muted);margin-top:3px}
+  .t-right{display:flex;align-items:center;gap:12px;flex-shrink:0}
+  .t-score{font-size:.82rem;color:var(--accent);font-weight:700}
+  .t-arrow{color:var(--accent-light);font-size:1.2rem;font-weight:700}
 
-  .empty {color:var(--muted);font-size:.94rem;font-style:italic}
+  .empty{color:var(--muted);font-size:.94rem;font-style:italic}
 
-  .area-row {margin-bottom:14px}
-  .area-top {display:flex;justify-content:space-between;font-size:.88rem;margin-bottom:6px}
-  .area-top .weak {color:var(--wrong)}
-  .bar {height:5px;background:var(--line);border-radius:3px;overflow:hidden}
-  .bar i {display:block;height:100%;background:var(--accent)}
-  .bar i.weak {background:var(--wrong)}
+  .area-row{margin-bottom:14px}
+  .area-top{display:flex;justify-content:space-between;font-size:.88rem;margin-bottom:6px}
+  .area-top .weak{color:var(--wrong)}
+  .bar{height:5px;background:var(--line);border-radius:3px;overflow:hidden}
+  .bar i{display:block;height:100%;background:var(--accent)}
+  .bar i.weak{background:var(--wrong)}
 
-  .backlink {display:inline-block;margin-bottom:20px;font-size:.88rem;color:var(--muted);background:none;border:none;cursor:pointer;font-family:var(--sans)}
-  .backlink:hover {color:var(--ink)}
+  .backlink{display:inline-block;margin-bottom:20px;font-size:.88rem;color:var(--muted);background:none;border:none;cursor:pointer;font-family:var(--font)}
+  .backlink:hover{color:var(--ink)}
 
-  .chips {display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
-  .chip {font-size:.74rem;color:var(--muted);border:1px solid var(--line);border-radius:20px;padding:3px 11px}
-  .chip.n1 {color:var(--accent)}
-  .chip.n3 {color:var(--wrong)}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+  .chip{font-size:.74rem;color:var(--muted);border:1px solid var(--line);border-radius:20px;padding:3px 11px}
+  .chip.n1{color:var(--accent)}
+  .chip.n3{color:var(--wrong)}
 
-  .q-meta {display:flex;justify-content:space-between;align-items:baseline;font-size:.8rem;color:var(--muted);margin-bottom:14px}
-  .q-text {font-family:var(--serif);font-size:1.2rem;font-weight:500;line-height:1.42;margin-bottom:20px}
+  .q-meta{display:flex;justify-content:space-between;align-items:baseline;font-size:.8rem;color:var(--muted);margin-bottom:14px}
+  .q-text{font-family:var(--font);font-size:1.2rem;font-weight:700;line-height:1.42;margin-bottom:20px}
 
-  .statements {margin:0 0 26px 0;padding-left:22px;font-size:.98rem}
-  .statements li {margin-bottom:8px}
+  .statements{margin:0 0 26px 0;padding-left:22px;font-size:.98rem}
+  .statements li{margin-bottom:8px}
 
-  .ar-block {margin-bottom:26px}
-  .ar-block .lbl {font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
-  .ar-block .claim {font-family:var(--serif);font-size:1.14rem;font-weight:500;margin:4px 0 16px;line-height:1.4}
-  .ar-block .porque {font-size:.78rem;color:var(--muted);letter-spacing:.06em;margin-bottom:16px}
+  .ar-block{margin-bottom:26px}
+  .ar-block .lbl{font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+  .ar-block .claim{font-family:var(--font);font-size:1.08rem;font-weight:700;margin:4px 0 16px;line-height:1.4}
+  .ar-block .porque{font-size:.78rem;color:var(--muted);letter-spacing:.06em;margin-bottom:16px}
 
-  .opts {display:flex;flex-direction:column;gap:10px}
-  .opt {text-align:left;font-family:var(--sans);font-size:.96rem;line-height:1.5;color:var(--ink);
+  .opts{display:flex;flex-direction:column;gap:10px}
+  .opt{text-align:left;font-family:var(--font);font-size:.96rem;line-height:1.5;color:var(--ink);
     background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 16px;cursor:pointer;
     display:flex;gap:12px;transition:border-color .12s}
   .opt:hover:not(:disabled){border-color:var(--accent)}
   .opt:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
   .opt:disabled{cursor:default}
-  .opt .letter{color:var(--muted);font-weight:600;flex-shrink:0}
+  .opt .letter{color:var(--muted);font-weight:700;flex-shrink:0}
   .opt.correct{border-color:var(--accent);background:var(--accent-soft)}
   .opt.correct .letter{color:var(--accent)}
   .opt.wrong{border-color:var(--wrong);background:var(--wrong-soft)}
   .opt.wrong .letter{color:var(--wrong)}
   .opt.dim{opacity:.5}
 
-  .feedback {margin-top:22px;padding:16px 18px;border-radius:8px;font-size:.92rem}
-  .feedback.good {background:var(--accent-soft)}
-  .feedback.bad {background:var(--wrong-soft)}
-  .feedback .verdict {font-weight:600;display:block;margin-bottom:6px}
-  .feedback.good .verdict {color:var(--accent)}
-  .feedback.bad .verdict {color:var(--wrong)}
-  .feedback .basis {display:block;margin-top:8px;color:var(--muted);font-size:.85rem}
+  .feedback{margin-top:22px;padding:16px 18px;border-radius:8px;font-size:.92rem}
+  .feedback.good{background:var(--accent-soft)}
+  .feedback.bad{background:var(--wrong-soft)}
+  .feedback .verdict{font-weight:700;display:block;margin-bottom:6px}
+  .feedback.good .verdict{color:var(--accent)}
+  .feedback.bad .verdict{color:var(--wrong)}
+  .feedback .basis{display:block;margin-top:8px;color:var(--muted);font-size:.85rem}
 
-  .nav-row {display:flex;justify-content:space-between;align-items:center;margin-top:26px}
-  .score-live {font-size:.85rem;color:var(--muted)}
+  .nav-row{display:flex;justify-content:space-between;align-items:center;margin-top:26px}
+  .score-live{font-size:.85rem;color:var(--muted)}
 
-  button.primary {font-family:var(--sans);font-weight:600;background:var(--ink);color:#fff;border:none;
+  button.primary{font-family:var(--font);font-weight:700;background:var(--accent);color:#fff;border:none;
     border-radius:8px;padding:12px 22px;cursor:pointer;font-size:.92rem}
-  button.primary:hover {background:#000}
-  button.ghost {font-family:var(--sans);font-weight:600;background:none;color:var(--ink);border:1px solid var(--line);
+  button.primary:hover{background:var(--ink)}
+  button.ghost{font-family:var(--font);font-weight:700;background:none;color:var(--ink);border:1px solid var(--line);
     border-radius:8px;padding:11px 20px;cursor:pointer;font-size:.92rem}
-  button.ghost:hover {border-color:var(--ink)}
-  button:focus-visible {outline:2px solid var(--accent);outline-offset:2px}
+  button.ghost:hover{border-color:var(--ink)}
+  button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
-  .result-seal {text-align:center;padding:36px 0 8px}
-  .result-seal .pct {font-family:var(--serif);font-size:3.2rem;font-weight:500;display:block}
-  .result-seal .of {color:var(--muted);font-size:.92rem;margin-top:4px}
-  .verdict-line {text-align:center;color:var(--muted);font-size:.94rem;margin:6px 0 34px}
+  .result-seal{text-align:center;padding:36px 0 8px}
+  .result-seal .pct{font-family:var(--font);font-size:3rem;font-weight:700;display:block}
+  .result-seal .of{color:var(--muted);font-size:.92rem;margin-top:4px}
+  .verdict-line{text-align:center;color:var(--muted);font-size:.94rem;margin:6px 0 34px}
 
-  .review-item {border-top:1px solid var(--line);padding:16px 0}
-  .review-item .rq {font-weight:600;margin-bottom:6px}
-  .review-item .ra {color:var(--muted);font-size:.9rem}
+  .review-item{border-top:1px solid var(--line);padding:16px 0}
+  .review-item .rq{font-weight:700;margin-bottom:6px}
+  .review-item .ra{color:var(--muted);font-size:.9rem}
 
-  .center {display:flex;gap:10px;justify-content:center;margin-top:36px;flex-wrap:wrap}
+  .center{display:flex;gap:10px;justify-content:center;margin-top:36px;flex-wrap:wrap}
 </style>
 </head>
 <body>
@@ -138,7 +131,7 @@ const OPTS_III=["La afirmación y la razón son VERDADERAS y la razón es una ex
 const nivelName={1:'Fácil',2:'Medio',3:'Difícil'};
 
 const app=document.getElementById('app'), bar=document.getElementById('bar');
-let current=null, idx=0, score=0, results=[], areaTally={}, answered=false, levelFilter='all';
+let current=null, idx=0, score=0, results=[], areaTally={}, answered=false;
 
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a}
@@ -169,14 +162,8 @@ function renderDashboard(){
     const r=p[t.id];
     const st=r?`<span class="t-score">${Math.round(r.score/r.total*100)}%</span>`:'';
     return `<button class="topic" onclick="startTopic('${esc(t.id)}')">
-      <div><div class="t-name"><span class="t-num">${esc(t.numero)}</span> ${esc(t.titulo)}</div><div class="t-meta">${t.preguntas.length} preguntas</div></div>
-      <div class="t-right">
-        ${st}
-        <div class="t-action">
-          <span class="t-arrow">→</span>
-          <img src="image_2dc8e4.png" alt="Samoyedo" class="t-dog">
-        </div>
-      </div>
+      <div><div class="t-name">${esc(t.titulo)}</div><div class="t-meta">${t.preguntas.length} preguntas</div></div>
+      <div class="t-right">${st}<span class="t-arrow">→</span></div>
     </button>`;
   }).join('');
 
@@ -187,45 +174,42 @@ function renderDashboard(){
   }).join(''):'<p class="empty">Resuelve tu primera tanda para ver el diagnóstico por área.</p>';
 
   app.innerHTML=`
-    <header class="green-box">
-      <h1>${esc(DIPLOMADO.titulo||'Mi banco de preguntas')}</h1>
+    <header>
+      <h1>${esc(DIPLOMADO.titulo||'Exámenes de preparación para Concursos')}</h1>
     </header>
 
-    <section class="green-box">
+    <div class="box">
       <h2>Panel de avance</h2>
-      <div style="display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; margin-top:10px;">
-        <div style="flex:1; min-width: 250px;">
-          <p style="margin-bottom:15px; color:var(--muted);">Un panel de avance es una herramienta visual que registra tu progreso, midiendo tus aciertos y el desarrollo de tu estudio a lo largo del tiempo.</p>
-          <div class="stats">
-            <div class="stat"><b>${list.length}</b><span>Total de temas</span></div>
-            <div class="stat"><b>${totalPreg}</b><span>Total de preguntas</span></div>
-            <div class="stat"><b>${pctGlobal==null?'0':pctGlobal}%</b><span>Desempeño global (Aciertos)</span></div>
-          </div>
+      <p class="box-desc">Este panel de avance resume cuánto material tienes disponible para practicar y cómo te ha ido hasta ahora en las tandas que ya resolviste.</p>
+      <div class="panel-body">
+        <div class="panel-stats">
+          <div class="stat"><b>${list.length}</b><span>Temas</span></div>
+          <div class="stat"><b>${totalPreg}</b><span>Preguntas</span></div>
+          <div class="stat"><b>${pctGlobal==null?'—':pctGlobal+'%'}</b><span>Desempeño global</span></div>
         </div>
-        <img src="image_2dc8e4.png" alt="Samoyedo" style="width: 140px; border-radius: 8px;">
       </div>
-      <h3 class="subtitle">Esta página tiene como finalidad practicar para los diferentes concursos con preguntas Fáciles, Medias y Difíciles.</h3>
+    </div>
+
+    <div class="box">
+      <p class="box-desc" style="max-width:none;color:var(--ink)">Este banco reúne preguntas de opción múltiple para practicar de cara a concursos de méritos. Cada tema mezcla preguntas Fáciles, Medias y Difíciles, con su explicación al responder, para que identifiques con claridad qué dominas y qué te conviene repasar.</p>
+    </div>
+
+    <section>
+      <h2 class="section-title">Temas</h2>
+      <div class="box topics-box">
+        ${topics}
+      </div>
     </section>
 
-    <section class="green-box">
-      <h2>Descripción</h2>
-      <p class="lede">${esc(DIPLOMADO.subtitulo)}</p>
-    </section>
-
-    <section class="green-box">
-      <h2>Temas</h2>
-      ${topics}
-    </section>
-    
-    <section class="green-box">
-      <h2>Por área</h2>
+    <section>
+      <h2 class="section-title">Por área</h2>
       ${areaRows}
     </section>`;
 }
 
 function startTopic(id){
   const t=dias().find(x=>x.id===id); if(!t)return;
-  current={id:t.id,titulo:t.titulo,numero:t.numero,preguntas:shuffle(t.preguntas.slice()).slice(0,20)};
+  current={id:t.id,titulo:t.titulo,preguntas:shuffle(t.preguntas.slice()).slice(0,20)};
   idx=0;score=0;results=[];areaTally={};answered=false;
   renderQ(); window.scrollTo({top:0});
 }
@@ -241,20 +225,18 @@ function renderQ(){
   const opts=optionSet(q);
   app.innerHTML=`
     <button class="backlink" onclick="renderDashboard()">← Volver a temas</button>
-    <div class="green-box">
-      <div class="chips">
-        <span class="chip">${esc(q.c||'')}</span>
-        ${q.d?`<span class="chip n${q.d}">${nivelName[q.d]}</span>`:''}
-      </div>
-      ${bodyHtml}
-      <div class="opts">
-        ${opts.map((o,i)=>`<button class="opt" data-i="${i}" onclick="answer(${i})"><span class="letter">${letters[i]}</span><span>${esc(o)}</span></button>`).join('')}
-      </div>
-      <div id="fb"></div>
-      <div class="nav-row">
-        <span class="score-live">Aciertos: ${score} / ${idx} · Pregunta ${idx+1} de ${qs.length}</span>
-        <span id="nextholder"></span>
-      </div>
+    <div class="chips">
+      <span class="chip">${esc(q.c||'')}</span>
+      ${q.d?`<span class="chip n${q.d}">${nivelName[q.d]}</span>`:''}
+    </div>
+    ${bodyHtml}
+    <div class="opts">
+      ${opts.map((o,i)=>`<button class="opt" data-i="${i}" onclick="answer(${i})"><span class="letter">${letters[i]}</span><span>${esc(o)}</span></button>`).join('')}
+    </div>
+    <div id="fb"></div>
+    <div class="nav-row">
+      <span class="score-live">Aciertos: ${score} / ${idx} · Pregunta ${idx+1} de ${qs.length}</span>
+      <span id="nextholder"></span>
     </div>`;
 }
 
@@ -300,19 +282,17 @@ function renderEnd(){
   else verdict='Vale la pena reforzar este tema.';
   const wrong=results.filter(r=>!r.ok);
   const review=wrong.length?`
-    <h2 style="margin-top:40px">Para repasar</h2>
-    ${wrong.map(r=>{const q=qs[r.i];const opts=optionSet(q);const label=q.t===1?q.q:(q.t===2?q.q:q.af);return `<div class="review-item"><div class="rq">${esc(label)}</div><div class="ra">Respuesta correcta: ${letters[q.a]}) ${esc(opts[q.a])}</div></div>`}).join('')}
+    <h2 class="section-title" style="margin-top:40px">Para repasar</h2>
+    ${wrong.map(r=>{const q=qs[r.i];const opts=optionSet(q);const label=q.t===3?q.af:q.q;return `<div class="review-item"><div class="rq">${esc(label)}</div><div class="ra">Respuesta correcta: ${letters[q.a]}) ${esc(opts[q.a])}</div></div>`}).join('')}
   `:'';
   app.innerHTML=`
     <button class="backlink" onclick="renderDashboard()">← Volver a temas</button>
-    <div class="green-box">
-      <div class="result-seal"><span class="pct">${pct}%</span><span class="of">${score} de ${qs.length} correctas · ${esc(current.titulo)}</span></div>
-      <p class="verdict-line">${esc(verdict)}</p>
-      ${review}
-      <div class="center">
-        <button class="primary" onclick="renderDashboard()">Volver a temas</button>
-        <button class="ghost" onclick="startTopic('${esc(current.id)}')">Otra tanda</button>
-      </div>
+    <div class="result-seal"><span class="pct">${pct}%</span><span class="of">${score} de ${qs.length} correctas · ${esc(current.titulo)}</span></div>
+    <p class="verdict-line">${esc(verdict)}</p>
+    ${review}
+    <div class="center">
+      <button class="primary" onclick="renderDashboard()">Volver a temas</button>
+      <button class="ghost" onclick="startTopic('${esc(current.id)}')">Otra tanda</button>
     </div>`;
   window.scrollTo({top:0,behavior:'smooth'});
 }

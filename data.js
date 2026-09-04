@@ -1,15 +1,179 @@
 /* ═══════════════════════════════════════════════════════════════════
-   Banco de preguntas de preparación
+   CONVOCATORIA No. 28 — Banco de preguntas de preparación
    ═══════════════════════════════════════════════════════════════════
-   Nota: Se han eliminado los temas requeridos de familia, comercial,
-   penal y agrario. Los temas presentados reflejan exclusivamente
-   las áreas que no fueron suprimidas.
+   15 temas · 515 preguntas
+   Formulario de preparación para la Convocatoria 28 de la Rama Judicial
+   (cargo Juez Civil Municipal, Grupo 3). Práctica por tema y por nivel
+   de dificultad (Fácil / Medio / Difícil / Mixto), con diagnóstico por
+   área y por dificultad. Formato a: 0=A, 1=B, 2=C, 3=D.
+   Tipo I: {t:1,d,c,q,o:[4],a,e,b} · Tipo II: {t:2,d,c,q,s:[4],a,e,b}
+   Tipo III: {t:3,d,c,af,rz,a,e,b}
    ═══════════════════════════════════════════════════════════════════ */
 
 const DIPLOMADO = {
  "titulo": "Exámenes de preparación para Concursos",
- "subtitulo": "La idea de este banco de preguntas es brindar cuestionarios prácticos y enfocados que ayuden a prepararse de manera integral para los concursos de méritos, permitiendo evaluar y mejorar los conocimientos requeridos.",
+ "subtitulo": "Práctica por temas para concursos de méritos, con preguntas Fáciles, Medias y Difíciles.",
  "dias": [
+  {
+   "id": "dian",
+   "numero": "T12",
+   "fecha": "Tema",
+   "titulo": "DIAN — Régimen Sancionatorio Tributario",
+   "docente": "Material propio",
+   "resumen": "Determinación y control tributario: reserva de ley, cuantificación, reducción y agravación de sanciones tributarias.",
+   "preguntas": [
+    {
+     "t": 1,
+     "c": "Reserva de ley sancionatoria",
+     "d": 3,
+     "q": "La DIAN pretende sancionar por no declarar (art. 643 del ET) a un contribuyente del impuesto unificado bajo el régimen simple de tributación (SIMPLE) que omitió presentar su declaración. El funcionario sustenta la sanción en que el artículo 916 del ET remite el régimen sancionatorio del SIMPLE al previsto en el Estatuto Tributario. ¿Es procedente la sanción?",
+     "o": [
+      "No es procedente, porque el artículo 643 no incluye expresamente al SIMPLE entre sus numerales y la remisión en blanco del artículo 916 no satisface la reserva de ley al no tipificar con precisión la conducta para ese tributo",
+      "Sí es procedente, porque el artículo 916 remite de forma general al régimen sancionatorio del Estatuto Tributario, lo que habilita aplicar por extensión cualquier sanción allí prevista, incluida la del artículo 643",
+      "Sí es procedente, pero solo si el Consejo de Estado autoriza previamente la aplicación analógica de la sanción, dado que se trata de un tributo de creación reciente",
+      "No es procedente, porque las sanciones del régimen simple solo pueden imponerse mediante resolución de la Junta Central de Contadores, al ser esta la autoridad competente para tributos unificados"
+     ],
+     "a": 0,
+     "e": "El principio de reserva de ley exige que la ley tipifique con precisión el sujeto, la conducta y la sanción. El artículo 643 enumera taxativamente los tributos a los que aplica y el SIMPLE no aparece en esos numerales; una remisión en blanco como la del artículo 916 no es suficientemente específica para suplir esa tipificación, por lo que no puede aplicarse por analogía.",
+     "b": "Art. 643 y 916 del ET; principio de legalidad (art. 29 C.P., Sentencia C-412/15)."
+    },
+    {
+     "t": 1,
+     "c": "Sanción mínima",
+     "d": 2,
+     "q": "Un contribuyente debe liquidar intereses de mora por $180.000 sobre un saldo pagado tardíamente. Al calcular el monto, advierte que es inferior a 10 UVT. ¿Debe ajustar el valor a la sanción mínima de 10 UVT prevista en el artículo 639 del ET?",
+     "o": [
+      "No, porque los intereses de mora están expresamente excluidos de la aplicación de la sanción mínima del artículo 639",
+      "Sí, porque el artículo 639 establece que ninguna suma a cargo del contribuyente por concepto sancionatorio o moratorio puede ser inferior a 10 UVT",
+      "No, porque la sanción mínima solo aplica a sanciones determinadas por la DIAN, nunca a las autoliquidadas por el propio contribuyente",
+      "Sí, pero únicamente si el contribuyente pertenece al régimen de entidades autorizadas para recaudar, caso en el cual rige un umbral distinto"
+     ],
+     "a": 0,
+     "e": "El artículo 639 del ET fija la sanción mínima en 10 UVT para la generalidad de las sanciones tributarias, pero establece expresamente como excepción a los intereses de mora (y a las sanciones de los numerales 1 y 3 del artículo 658-3). Por tanto, los intereses de mora se liquidan por su valor real, sin ajustarse al mínimo.",
+     "b": "Art. 639 del ET."
+    },
+    {
+     "t": 1,
+     "c": "Reincidencia",
+     "d": 3,
+     "q": "Una sociedad fue sancionada mediante resolución que quedó en firme el 10 de marzo de 2022 por expedir facturas sin los requisitos legales (art. 652 del ET). El 5 de enero de 2024 vuelve a incurrir en la misma conducta. La DIAN pretende aumentar la nueva sanción en un 100% por reincidencia, invocando el parágrafo 2 del artículo 640. ¿Es correcta esa actuación?",
+     "o": [
+      "No, porque el propio parágrafo 2 del artículo 640 excluye expresamente de la reincidencia a la sanción del artículo 652, además de que la segunda conducta ocurrió cuando ya habían transcurrido los dos años que exige la norma",
+      "Sí, porque toda repetición de una conducta sancionable dentro de los cuatro años siguientes a la firmeza del primer acto constituye reincidencia, sin excepciones por tipo de sanción",
+      "No, porque la reincidencia tributaria solo opera para sanciones impuestas mediante liquidación oficial de revisión, no mediante resolución independiente",
+      "Sí, porque aunque la sanción del artículo 652 esté excluida en general, la exclusión no aplica cuando el sujeto es una persona jurídica"
+     ],
+     "a": 0,
+     "e": "El parágrafo 2 del artículo 640 exige que la nueva infracción del mismo tipo se cometa dentro de los dos años siguientes a la firmeza del acto que impuso la primera sanción, y excluye expresamente la sanción del artículo 652 (facturación sin requisitos) del régimen de reincidencia. En este caso concurren dos razones para descartar el aumento: la exclusión normativa expresa y que, de todas formas, ya pasaron casi dos años.",
+     "b": "Art. 640, parágrafo 2, del ET."
+    },
+    {
+     "t": 1,
+     "c": "Reducción por gradualidad",
+     "d": 3,
+     "q": "Un agente retenedor autoliquida una sanción por corrección de su declaración. Al revisar su historial, comprueba que dentro del año anterior a la conducta no ha incurrido en la misma falta, y que la DIAN aún no ha proferido pliego de cargos, requerimiento especial ni emplazamiento por no declarar. ¿A qué porcentaje del monto legal tiene derecho a reducir la sanción?",
+     "o": [
+      "Al setenta y cinco por ciento (75%), por tratarse de una sanción autoliquidada sin incurrir en la misma conducta durante el año anterior y sin actuación previa de la DIAN",
+      "Al cincuenta por ciento (50%), por tratarse de una sanción autoliquidada sin incurrir en la misma conducta durante los dos años anteriores",
+      "Al setenta y cinco por ciento (75%), reducción que solo aplica cuando la sanción es propuesta o determinada por la DIAN, no cuando es autoliquidada por el contribuyente",
+      "Al cien por ciento (100%), dado que el cumplimiento del requisito temporal exime totalmente de la sanción si no ha habido actuación previa de la Administración"
+     ],
+     "a": 0,
+     "e": "El artículo 640 distingue dos escalas de reducción por gradualidad. Para sanciones que debe autoliquidar el propio contribuyente: 50% si no cometió la misma conducta en los 2 años anteriores, o 75% si el periodo sin incurrir en ella es de solo 1 año (siempre que la DIAN no haya proferido pliego de cargos, requerimiento especial o emplazamiento). Como en el caso el periodo limpio es de un año, la reducción aplicable es del 75%, no del 50%.",
+     "b": "Art. 640, numerales 1 y 2, del ET."
+    },
+    {
+     "t": 1,
+     "c": "Reducción por procedimiento",
+     "d": 3,
+     "q": "La DIAN notifica a un contribuyente una liquidación provisional que incluye una sanción por inexactitud no autodeterminable. El contribuyente la acepta y paga dos meses después de notificada. ¿Tiene derecho a la reducción del 40% prevista en el artículo 764-3 del ET?",
+     "o": [
+      "No, porque el beneficio del 40% exige aceptar y pagar dentro del mes siguiente a la notificación de la liquidación provisional, plazo que ya venció",
+      "Sí, porque el artículo 764-3 no establece un plazo específico para el pago, siempre que la aceptación se produzca antes de la firmeza del acto",
+      "No, porque las sanciones derivadas de liquidación provisional nunca son objeto de reducción, solo las determinadas por procedimiento ordinario lo son",
+      "Sí, porque al tratarse de una sanción no autodeterminable, el plazo de un mes previsto en la norma no resulta aplicable a este tipo de conductas"
+     ],
+     "a": 0,
+     "e": "El artículo 764-3 condiciona la reducción del 40% a que el contribuyente acepte y pague la liquidación provisional dentro del mes siguiente a su notificación. Al haber transcurrido dos meses, el contribuyente perdió la oportunidad de acceder a ese beneficio específico.",
+     "b": "Art. 764-3 del ET."
+    },
+    {
+     "t": 1,
+     "c": "Sanción por no informar",
+     "d": 2,
+     "q": "Un obligado a reportar información exógena no la presentó dentro del plazo. Antes de que la DIAN profiera pliego de cargos, decide subsanar voluntariamente presentando la información completa. ¿A qué porcentaje de la sanción plena del numeral 1 del artículo 651 tiene derecho?",
+     "o": [
+      "Al veinte por ciento (20%) de la sanción, por subsanar la omisión antes de que se profiera el pliego de cargos",
+      "Al cincuenta por ciento (50%), reducción prevista para quien subsana antes de la notificación de la sanción",
+      "Al setenta por ciento (70%), reducción reservada a quien subsana dentro de los dos meses siguientes a la notificación de la sanción",
+      "No tiene derecho a reducción alguna, porque el beneficio solo opera para errores en la información, no para la omisión total de esta"
+     ],
+     "a": 0,
+     "e": "El parágrafo del artículo 651 permite al obligado subsanar voluntariamente antes de que la Administración profiera pliego de cargos, caso en el cual la sanción se reduce al 20%. Las reducciones al 50% y al 70% corresponden a etapas posteriores (después de notificado el pliego, o después de notificada la sanción, respectivamente), que no aplican a este supuesto.",
+     "b": "Art. 651, parágrafo e inciso 3, del ET."
+    },
+    {
+     "t": 1,
+     "c": "Favorabilidad tributaria",
+     "d": 2,
+     "q": "Un proceso por sanción de inexactitud del año gravable 2015, tasada inicialmente al 160% conforme a la norma vigente en ese momento, se encuentra aún en discusión ante el Consejo de Estado después de la entrada en vigencia de la Ley 1819 de 2016, que redujo esa sanción al 100%. ¿Qué porcentaje debe aplicar la autoridad judicial?",
+     "o": [
+      "El cien por ciento (100%), en aplicación del principio de favorabilidad, que rige en materia sancionatoria tributaria aun cuando la ley favorable sea posterior a los hechos",
+      "El ciento sesenta por ciento (160%), porque la sanción se rige por la ley vigente al momento de la comisión de la conducta y no admite modificaciones posteriores",
+      "El cien por ciento (100%), pero solo si el contribuyente lo solicita expresamente, ya que el principio de favorabilidad no puede aplicarse de oficio",
+      "Ninguno de los dos, porque al haber cambiado la norma sancionatoria durante el proceso, la sanción de inexactitud queda sin efecto por falta de tipificación vigente"
+     ],
+     "a": 0,
+     "e": "El artículo 640, parágrafo 5, del ET consagra el principio de favorabilidad en materia sancionatoria tributaria, aplicable aun cuando la ley permisiva o favorable sea posterior a los hechos. La jurisprudencia del Consejo de Estado (entre otras, la Sentencia 23403 de 2018) confirma que este principio se aplica de oficio, no solo a solicitud de parte, razón por la cual corresponde reliquidar la sanción al 100%.",
+     "b": "Art. 640, parágrafo 5, del ET; Consejo de Estado, Sentencia 23403 del 12 de diciembre de 2018."
+    },
+    {
+     "t": 1,
+     "c": "Extemporaneidad e inexactitud",
+     "d": 3,
+     "q": "Dos contribuyentes del impuesto sobre la renta incumplen sus obligaciones formales: el primero presenta su declaración de forma extemporánea por su propia voluntad, sin que la DIAN haya actuado; el segundo solo presenta la declaración después de haber sido emplazado para declarar. ¿Cuál es la diferencia central en el régimen sancionatorio aplicable a cada caso?",
+     "o": [
+      "Al primero le aplica el artículo 641, con un límite superior del 100% del impuesto o retención; al segundo le aplica el artículo 642, con un límite superior del 200%, al haber mediado un emplazamiento previo",
+      "A ambos les aplica el artículo 641, ya que el emplazamiento para declarar no tiene incidencia en el límite superior de la sanción por extemporaneidad",
+      "Al primero le aplica el artículo 642 por ser más favorable al declarante voluntario; al segundo el artículo 641, al haber sido requerido formalmente por la Administración",
+      "La diferencia no es normativa sino de competencia: el primer caso lo resuelve la División de Gestión de Fiscalización y el segundo, la División Jurídica"
+     ],
+     "a": 0,
+     "e": "El artículo 641 regula la extemporaneidad presentada por voluntad propia del contribuyente, con un tope del 100% del impuesto o retención (u otros límites alternativos sobre ingresos o patrimonio). El artículo 642 regula la extemporaneidad posterior a un emplazamiento para declarar, con sanciones más gravosas y un tope del 200%. La distinción depende de si medió o no una actuación previa de la DIAN, no de la voluntad del contribuyente considerada aisladamente ni de la dependencia que tramite el caso.",
+     "b": "Art. 641 y 642 del ET."
+    },
+    {
+     "t": 1,
+     "c": "Clausura del establecimiento",
+     "d": 3,
+     "q": "Un comerciante, que ya había incurrido antes en no expedir factura, vuelve a omitir su expedición estando obligado a hacerlo. Por otra parte, en la misma visita la DIAN constata que sus facturas actuales solo presentan una falla en el literal f) del artículo 617 del ET (falta la firma o sistema de generación mecánica del documento). ¿En cuál de las dos situaciones procede la sanción de clausura del establecimiento del artículo 657?",
+     "o": [
+      "En ambas: la reincidencia en no expedir factura y la falla del literal f) están comprendidas dentro de los supuestos del artículo 657 que dan lugar a la clausura",
+      "Solo en la reincidencia por no expedir factura; la falla del literal f) del artículo 617 no está comprendida entre los literales cuya sola presencia (sin reincidencia) genera clausura",
+      "Solo en la falla del literal f), porque no expedir factura por primera vez ya constituye, por sí sola, una causal autónoma de clausura sin necesidad de reincidencia",
+      "En ninguna de las dos, porque la clausura del establecimiento solo procede por violación del régimen aduanero en mercancías en consignación o depósito"
+     ],
+     "a": 0,
+     "e": "El artículo 657 sanciona con clausura tanto no expedir factura estando obligado (sin exigir reincidencia para ese supuesto específico) como expedirla sin los requisitos de los literales b), c), d), e), f) o g) del artículo 617 — el literal f) está expresamente incluido en ese listado —, además de la reincidencia en los literales a), h) o i) del mismo artículo. Ambos hechos descritos en el caso encajan, por tanto, en supuestos autónomos del artículo 657.",
+     "b": "Art. 657 y 617 del ET."
+    },
+    {
+     "t": 1,
+     "c": "Improcedencia de devoluciones",
+     "d": 3,
+     "q": "Un contribuyente obtuvo la devolución de un saldo a favor de $50.000.000. Posteriormente, la DIAN, dentro de un proceso de determinación, rechaza mediante liquidación oficial la totalidad del saldo devuelto. El contribuyente no había corregido voluntariamente su declaración. ¿Qué porcentaje de sanción corresponde, conforme al artículo 670 del ET, sin que se acredite fraude?",
+     "o": [
+      "El veinte por ciento (20%) del valor devuelto en exceso, por tratarse de un rechazo determinado por la Administración Tributaria mediante liquidación oficial",
+      "El diez por ciento (10%) del valor devuelto en exceso, porcentaje aplicable siempre que exista un proceso de determinación tributaria, sin importar quién corrija el saldo",
+      "El cien por ciento (100%) del valor devuelto, porque toda devolución posteriormente rechazada se presume obtenida de forma irregular salvo prueba en contrario",
+      "El diez por ciento (10%), porque ese es el único porcentaje que contempla el artículo 670 para la improcedencia de devoluciones y compensaciones"
+     ],
+     "a": 0,
+     "e": "El artículo 670 distingue dos porcentajes según quién origine la disminución del saldo a favor: 10% cuando es el propio contribuyente quien corrige voluntariamente la declaración, y 20% cuando es la Administración Tributaria la que rechaza o modifica el saldo mediante liquidación oficial. El 100% solo aplica cuando se acredita que la devolución se obtuvo mediante documentos falsos o fraude, supuesto que el enunciado descarta expresamente.",
+     "b": "Art. 670 del ET."
+    }
+   ]
+  },
   {
    "id": "procesal-civil",
    "numero": "T1",
@@ -1728,1605 +1892,6 @@ const DIPLOMADO = {
    ],
    "rel": "transversal",
    "ambito": "Transversal · Teoría General de la Prueba (conocimientos generales de todos los cargos), con aplicación civil y comercial"
-  },
-  {
-   "id": "civil",
-   "numero": "T3",
-   "fecha": "Tema",
-   "titulo": "Derecho Civil y de Familia",
-   "docente": "Banco consolidado · módulos EJRLB y metodología PGN",
-   "resumen": "Obligaciones, contratos, responsabilidad, bienes, sucesiones y las instituciones de familia relevantes para el juez civil municipal. Incluye la sesión de Bienes y Tierras del Dr. Jaime Correa . Incluye las sesiones de Obligaciones y Contratos (Dr. Daniel Sarmiento) y Responsabilidad Civil (Dr. Maximiliano Aramburo). Incluye Infancia y Adolescencia (Dra. Natalia Rueda): interés superior, PARD y derecho a ser escuchado.",
-   "preguntas": [
-    {
-     "t": 1,
-     "c": "Derecho Civil",
-     "q": "NO es fuente de las obligaciones según el art. 1494 del Código Civil:",
-     "o": [
-      "El contrato",
-      "El cuasicontrato",
-      "La costumbre mercantil",
-      "El delito"
-     ],
-     "a": 2,
-     "e": "El art. 1494 CC enuncia el concurso real de voluntades (contrato), el hecho voluntario lícito (cuasicontrato), el hecho ilícito (delito y culpa) y la ley. La costumbre no figura como fuente autónoma en esa disposición.",
-     "b": "Art. 1494 C.C.",
-     "d": 2
-    },
-    {
-     "t": 1,
-     "c": "Derecho Civil",
-     "q": "Son requisitos para que una persona se obligue válidamente (art. 1502 C.C.):",
-     "o": [
-      "Capacidad, consentimiento libre de vicios, objeto lícito y causa lícita",
-      "Capacidad, solemnidad, registro y buena fe",
-      "Consentimiento, precio, cosa y tradición",
-      "Capacidad, objeto lícito, lesión enorme y causa"
-     ],
-     "a": 0,
-     "e": "El art. 1502 CC exige capacidad legal, consentimiento exento de vicio, objeto lícito y causa lícita.",
-     "b": "Art. 1502 C.C.",
-     "d": 1
-    },
-    {
-     "t": 1,
-     "c": "Derecho Civil",
-     "q": "La nulidad absoluta de un acto o contrato:",
-     "o": [
-      "Solo puede alegarla la parte afectada",
-      "Puede y debe ser declarada de oficio por el juez cuando aparezca de manifiesto en el acto o contrato",
-      "Se sanea siempre por ratificación de las partes",
-      "Solo la puede pedir el Ministerio Público"
-     ],
-     "a": 1,
-     "e": "El art. 1742 CC (mod. Ley 50 de 1936) permite su declaración oficiosa cuando es manifiesta, su alegación por todo interesado y por el Ministerio Público; se sanea por prescripción extraordinaria, y por ratificación solo si no proviene de objeto o causa ilícita.",
-     "b": "Arts. 1741 y 1742 C.C.",
-     "d": 1
-    },
-    {
-     "t": 1,
-     "c": "Derecho Civil",
-     "q": "El dolo vicia el consentimiento cuando:",
-     "o": [
-      "Proviene de un tercero, en todos los casos",
-      "Es obra de una de las partes y aparece claramente que sin él no se habría contratado",
-      "Recae sobre motivos irrelevantes del negocio",
-      "Se presume por la sola desproporción de las prestaciones"
-     ],
-     "a": 1,
-     "e": "Conforme al art. 1515 CC, el dolo vicia el consentimiento cuando es obra de una de las partes y es determinante; en los demás casos solo da lugar a indemnización de perjuicios.",
-     "b": "Arts. 1508 y 1515 C.C.",
-     "d": 1
-    },
-    {
-     "t": 1,
-     "c": "Derecho Civil",
-     "q": "El deudor está en mora, entre otros casos, cuando:",
-     "o": [
-      "No ha cumplido la obligación dentro del término estipulado, salvo que la ley exija requerimiento",
-      "El acreedor le remite la deuda",
-      "Se compensa la obligación",
-      "Opera la novación"
-     ],
-     "a": 0,
-     "e": "El art. 1608 CC señala los casos de mora: vencimiento del plazo estipulado, imposibilidad de cumplir dentro del tiempo útil (plazo tácito) y, en los demás casos, la reconvención judicial al deudor.",
-     "b": "Art. 1608 C.C.",
-     "d": 1
-    },
-    {
-     "t": 1,
-     "c": "Derecho Civil",
-     "q": "Con la Ley 791 de 2002, los términos de prescripción quedaron así:",
-     "o": [
-      "Acción ejecutiva 10 años y ordinaria 20",
-      "Acción ejecutiva 5 años y ordinaria 10; adquisitiva extraordinaria 10 años",
-      "Todas las acciones prescriben en 3 años",
-      "Acción ejecutiva 3 años y ordinaria 5"
-     ],
-     "a": 1,
-     "e": "La Ley 791/02 redujo a la mitad los términos: ejecutiva 5 y ordinaria 10 (art. 2536 CC); usucapión ordinaria de inmuebles 5 años (muebles 3) y extraordinaria 10 años.",
-     "b": "Ley 791 de 2002 · Arts. 2529 y 2536 C.C.",
-     "d": 1
-    },
-    {
-     "t": 1,
-     "c": "Derecho Civil",
-     "q": "La posesión se define como:",
-     "o": [
-      "La mera tenencia material de una cosa",
-      "La tenencia de una cosa determinada con ánimo de señor o dueño",
-      "La inscripción del título en el registro",
-      "El uso tolerado por el propietario"
-     ],
-     "a": 1,
-     "e": "Art. 762 CC: posesión es la tenencia con ánimo de señor y dueño (corpus + animus); el poseedor es reputado dueño mientras otra persona no justifique serlo.",
-     "b": "Art. 762 C.C.",
-     "d": 1
-    },
-    {
-     "t": 1,
-     "c": "Derecho Civil",
-     "q": "En materia de responsabilidad por actividades peligrosas (art. 2356 C.C.), la jurisprudencia civil ha entendido que:",
-     "o": [
-      "La víctima debe probar la culpa del demandado",
-      "Opera una presunción de culpa contra quien ejerce la actividad, quien solo se exonera acreditando causa extraña",
-      "Se trata de responsabilidad contractual",
-      "El daño se presume"
-     ],
-     "a": 1,
-     "e": "La Sala de Casación Civil ha sostenido que en actividades peligrosas la culpa se presume y el demandado se libera demostrando fuerza mayor o caso fortuito, hecho exclusivo de la víctima o de un tercero.",
-     "b": "Art. 2356 C.C. · Jurisprudencia CSJ Sala Civil",
-     "d": 1
-    },
-    {
-     "t": 1,
-     "c": "Derecho Civil",
-     "q": "La compraventa de bienes inmuebles se perfecciona:",
-     "o": [
-      "Con el simple acuerdo verbal sobre cosa y precio",
-      "Con la entrega material del bien",
-      "Mediante el otorgamiento de escritura pública",
-      "Con el pago del precio"
-     ],
-     "a": 2,
-     "e": "Aunque la venta es en principio consensual, el art. 1857 inc. 2º CC exige escritura pública para la venta de bienes raíces, servidumbres y sucesiones hereditarias; la tradición se cumple con el registro.",
-     "b": "Art. 1857 C.C.",
-     "d": 1
-    },
-    {
-     "t": 1,
-     "c": "Derecho Civil",
-     "q": "Según la Ley 820 de 2003, el canon de arrendamiento de vivienda urbana puede incrementarse anualmente:",
-     "o": [
-      "Libremente según acuerden las partes",
-      "Hasta en una proporción que no exceda el IPC del año calendario inmediatamente anterior",
-      "Hasta el doble del IPC",
-      "Según el incremento del salario mínimo"
-     ],
-     "a": 1,
-     "e": "El art. 20 de la Ley 820/03 limita el reajuste anual al índice de precios al consumidor del año calendario anterior, siempre que el canon no exceda los topes legales.",
-     "b": "Art. 20 Ley 820 de 2003",
-     "d": 1
-    },
-    {
-     "t": 1,
-     "c": "Derecho Civil",
-     "q": "Con la Ley 791 de 2002, la prescripción de la acción ejecutiva y de la acción ordinaria quedó, respectivamente, en",
-     "o": [
-      "10 y 20 años",
-      "5 y 10 años",
-      "3 y 5 años",
-      "2 y 4 años"
-     ],
-     "a": 1,
-     "e": "La Ley 791 de 2002 redujo los términos del art. 2536 C.C.: la acción ejecutiva prescribe en cinco (5) años y la ordinaria en diez (10).",
-     "b": "Ley 791 de 2002 · Art. 2536 C.C.",
-     "d": 1
-    },
-    {
-     "t": 2,
-     "c": "Derecho Civil",
-     "q": "Para que una persona se obligue a otra por un acto o declaración de voluntad se requiere (art. 1502 C.C.):",
-     "s": [
-      "Que sea legalmente capaz",
-      "Que consienta en el acto y su consentimiento no adolezca de vicio",
-      "Que el acto recaiga sobre un objeto lícito",
-      "Que el acto conste siempre en instrumento público registrado"
-     ],
-     "a": 0,
-     "e": "Las opciones 1, 2 y 3 reproducen los requisitos del art. 1502 (junto con la causa lícita). La solemnidad del instrumento público solo se exige para ciertos actos, no como regla general.",
-     "b": "Art. 1502 C.C.",
-     "d": 2
-    },
-    {
-     "t": 2,
-     "c": "Derecho Civil",
-     "q": "Sobre los vicios del consentimiento puede afirmarse que:",
-     "s": [
-      "El error de hecho puede viciar el consentimiento",
-      "La lesión enorme es un vicio del consentimiento",
-      "La fuerza vicia el consentimiento cuando es capaz de producir una impresión fuerte en una persona de sano juicio",
-      "El dolo proveniente de un tercero vicia siempre el consentimiento"
-     ],
-     "a": 1,
-     "e": "Son correctas 1 y 3 (arts. 1510 y 1513 C.C.). La lesión enorme es una figura objetiva, no un vicio del consentimiento (2 falsa), y el dolo de tercero solo da lugar a indemnización, pues vicia el consentimiento cuando es obra de una de las partes y determinante (4 falsa, art. 1515).",
-     "b": "Arts. 1508 a 1515 C.C.",
-     "d": 2
-    },
-    {
-     "t": 2,
-     "c": "Derecho Civil",
-     "q": "En relación con la mora del deudor (art. 1608 C.C.) es cierto que:",
-     "s": [
-      "Requiere en todos los casos reconvención judicial",
-      "El deudor está en mora cuando no cumple la obligación dentro del término estipulado, salvo que la ley exija requerimiento",
-      "La mora del acreedor agrava la responsabilidad del deudor",
-      "En los demás casos, el deudor está en mora cuando ha sido judicialmente reconvenido"
-     ],
-     "a": 2,
-     "e": "Son correctas 2 y 4, que reproducen los numerales 1º y 3º del art. 1608. La reconvención no se exige cuando hay plazo estipulado o tácito (1 falsa) y la mora del acreedor más bien atenúa la situación del deudor (3 falsa).",
-     "b": "Art. 1608 C.C.",
-     "d": 2
-    },
-    {
-     "t": 3,
-     "c": "Derecho Civil",
-     "af": "Quien ejerce una actividad peligrosa solo se exonera de responsabilidad acreditando una causa extraña (fuerza mayor o caso fortuito, hecho exclusivo de la víctima o de un tercero).",
-     "rz": "En el régimen del artículo 2356 del Código Civil la jurisprudencia ha entendido que la culpa se presume en contra de quien ejerce la actividad peligrosa.",
-     "a": 0,
-     "e": "Ambas son verdaderas y la razón explica la afirmación: como la culpa se presume, no basta probar diligencia; solo la causa extraña rompe el nexo y exonera.",
-     "b": "Art. 2356 C.C. · Jurisprudencia CSJ Sala de Casación Civil",
-     "d": 3
-    },
-    {
-     "t": 3,
-     "c": "Derecho Civil",
-     "af": "La nulidad absoluta puede y debe ser declarada de oficio por el juez cuando aparezca de manifiesto en el acto o contrato.",
-     "rz": "La nulidad absoluta solo puede ser alegada por la parte en cuyo beneficio la ha establecido la ley.",
-     "a": 2,
-     "e": "La afirmación es verdadera (art. 1742 C.C.). La razón es falsa: esa restricción de legitimación corresponde a la nulidad relativa (art. 1743); la absoluta puede alegarla todo el que tenga interés y el Ministerio Público.",
-     "b": "Arts. 1742 y 1743 C.C.",
-     "d": 3
-    },
-    {
-     "t": 3,
-     "c": "Derecho Civil",
-     "af": "La venta de bienes raíces se perfecciona con la entrega material del inmueble al comprador.",
-     "rz": "El artículo 1857 del Código Civil exige el otorgamiento de escritura pública para la venta de bienes raíces.",
-     "a": 3,
-     "e": "La afirmación es falsa y la razón verdadera: el perfeccionamiento de la venta de inmuebles requiere la solemnidad de la escritura pública; la entrega corresponde a la fase de cumplimiento y la tradición se efectúa con el registro.",
-     "b": "Arts. 1857 C.C. y 756 C.C.",
-     "d": 3
-    },
-    {
-     "t": 3,
-     "c": "Derecho Civil",
-     "af": "El poseedor es reputado dueño mientras otra persona no justifique serlo.",
-     "rz": "La posesión es la tenencia de una cosa determinada con ánimo de señor o dueño, y de ella deriva una presunción en favor del poseedor.",
-     "a": 0,
-     "e": "Ambas son verdaderas y la razón explica la afirmación: el art. 762 C.C. define la posesión (corpus y animus) y de esa apariencia de dominio surge la presunción de propiedad en favor del poseedor.",
-     "b": "Art. 762 C.C.",
-     "d": 2
-    },
-    {
-     "t": 2,
-     "c": "Derecho Civil",
-     "q": "Sobre la teoría de la imprevisión consagrada en el artículo 868 del Código de Comercio es cierto que:",
-     "s": [
-      "Exige circunstancias extraordinarias, imprevistas o imprevisibles, posteriores a la celebración del contrato",
-      "Aplica a los contratos de ejecución instantánea ya cumplidos",
-      "Requiere que la prestación de futuro cumplimiento resulte excesivamente onerosa para una de las partes",
-      "Su consecuencia inmediata es la declaratoria de nulidad absoluta del contrato"
-     ],
-     "a": 1,
-     "e": "Son correctas 1 y 3. La figura opera en contratos de ejecución sucesiva, periódica o diferida con prestaciones pendientes, no en los ya ejecutados (2 falsa). El juez ordena el reajuste equitativo y, solo si no es posible, decreta la terminación —no la nulidad— del contrato (4 falsa).",
-     "b": "Art. 868 C.Co. · Jurisprudencia CSJ Sala de Casación Civil",
-     "d": 2
-    },
-    {
-     "t": 3,
-     "c": "Derecho Civil",
-     "af": "La acción de enriquecimiento sin causa (actio in rem verso) tiene carácter subsidiario.",
-     "rz": "La actio in rem verso solo procede cuando el empobrecido carece de cualquier otra acción o vía de derecho para obtener la reparación del desequilibrio patrimonial.",
-     "a": 0,
-     "e": "Ambas proposiciones son verdaderas y la razón explica la afirmación: la subsidiariedad significa precisamente que el mecanismo es residual, además de exigir enriquecimiento, empobrecimiento correlativo y ausencia de causa jurídica.",
-     "b": "Jurisprudencia CSJ Sala de Casación Civil · Art. 831 C.Co.",
-     "d": 2
-    },
-    {
-     "t": 2,
-     "c": "Derecho de Familia",
-     "q": "En relación con la unión marital de hecho regulada por la Ley 54 de 1990 es cierto que:",
-     "s": [
-      "Exige una comunidad de vida permanente y singular entre dos personas",
-      "La sociedad patrimonial se presume cuando la unión ha durado un tiempo no inferior a dos años",
-      "Su existencia puede declararse por escritura pública, acta de conciliación o sentencia judicial",
-      "Requiere una convivencia mínima de cinco años para producir cualquier efecto"
-     ],
-     "a": 0,
-     "e": "Son correctas 1, 2 y 3, conforme a la Ley 54 de 1990 (modificada por la Ley 979 de 2005). El plazo relevante para la presunción de sociedad patrimonial es de dos años, no de cinco.",
-     "b": "Ley 54 de 1990 · Ley 979 de 2005",
-     "d": 2
-    },
-    {
-     "t": 3,
-     "c": "Derecho Civil",
-     "af": "La simulación absoluta conduce a declarar que entre las partes no existe negocio jurídico alguno, por ausencia total de voluntad negocial real.",
-     "rz": "En la simulación relativa las partes celebran un negocio aparente que encubre otro realmente querido, el cual prevalece entre ellas si reúne los requisitos de existencia y validez.",
-     "a": 1,
-     "e": "Ambas proposiciones son verdaderas, pero la razón describe la simulación relativa y por tanto no explica la consecuencia de la absoluta: son dos modalidades distintas del mismo fenómeno.",
-     "b": "Art. 1766 C.C. · Jurisprudencia CSJ Sala de Casación Civil",
-     "d": 3
-    },
-    {
-     "t": 1,
-     "c": "Derecho Civil",
-     "q": "La ineficacia de pleno derecho prevista en el artículo 897 del Código de Comercio se caracteriza porque el acto",
-     "o": [
-      "produce efectos hasta que el juez declare su nulidad",
-      "no produce efecto alguno sin necesidad de declaración judicial",
-      "es válido pero inoponible a terceros",
-      "puede sanearse por ratificación en cualquier tiempo"
-     ],
-     "a": 1,
-     "e": "Cuando el Código de Comercio expresa que un negocio «no produce efectos», se entiende que es ineficaz de pleno derecho, sin requerir declaración judicial, a diferencia de la nulidad, la anulabilidad y la inoponibilidad.",
-     "b": "Art. 897 C.Co.",
-     "d": 2
-    },
-    {
-     "t": 3,
-     "c": "Derecho de Familia",
-     "af": "El derecho de alimentos de los menores es irrenunciable, no puede compensarse con lo que el alimentario deba al alimentante y su cobro goza de especial protección.",
-     "rz": "El derecho a pedir alimentos futuros puede transmitirse por causa de muerte, venderse y cederse libremente.",
-     "a": 2,
-     "e": "La afirmación es verdadera. La razón es falsa: el art. 424 del C.C. dispone que el derecho a pedir alimentos no puede transmitirse por causa de muerte, ni venderse o cederse de modo alguno, ni renunciarse.",
-     "b": "Arts. 423 y 424 C.C.",
-     "d": 3
-    },
-    {
-     "t": 2,
-     "c": "Derecho Civil",
-     "q": "Sobre las obligaciones solidarias puede afirmarse que:",
-     "s": [
-      "En materia civil, la solidaridad entre codeudores se presume",
-      "La interrupción de la prescripción que obra en perjuicio de uno de los codeudores solidarios perjudica a los otros",
-      "La remisión total de la deuda hecha a uno de los codeudores solidarios deja íntegra la obligación para los demás",
-      "En materia mercantil, la solidaridad de los codeudores se presume"
-     ],
-     "a": 2,
-     "e": "Son correctas 2 y 4 (arts. 2540 C.C. y 825 C.Co.). En lo civil la solidaridad debe pactarse, disponerse en testamento o en la ley: no se presume (1 falsa); y la remisión total extingue la obligación respecto de todos (3 falsa).",
-     "b": "Arts. 1568, 1573 y 2540 C.C. · Art. 825 C.Co.",
-     "d": 2
-    },
-    {
-     "t": 3,
-     "c": "Derecho Civil",
-     "af": "La lesión enorme en la compraventa de inmuebles opera con un criterio estrictamente objetivo, sin que sea necesario acreditar un vicio del consentimiento.",
-     "rz": "El vendedor sufre lesión enorme cuando el precio que recibe es inferior a la mitad del justo precio de la cosa, y el comprador cuando el justo precio es inferior a la mitad de lo que paga por ella.",
-     "a": 0,
-     "e": "Ambas son verdaderas y la razón explica la afirmación: el art. 1947 del C.C. define la lesión mediante umbrales matemáticos referidos al justo precio, lo que evidencia su naturaleza objetiva, ajena al error, la fuerza o el dolo.",
-     "b": "Arts. 1946 y 1947 C.C.",
-     "d": 3
-    },
-    {
-     "t": 1,
-     "c": "Derecho de Familia",
-     "q": "Tras la Ley 1060 de 2006, la presunción de paternidad («pater is est»)",
-     "o": [
-      "se aplica únicamente a los hijos nacidos dentro del matrimonio",
-      "cobija a los hijos nacidos durante el matrimonio y durante la unión marital de hecho, respecto del cónyuge o compañero permanente",
-      "desapareció del ordenamiento colombiano",
-      "solo opera si media reconocimiento notarial expreso"
-     ],
-     "a": 1,
-     "e": "La Ley 1060 de 2006 reformó el art. 213 del C.C.: el hijo concebido durante el matrimonio o durante la unión marital de hecho tiene por padres a los cónyuges o compañeros permanentes, presunción desvirtuable mediante impugnación.",
-     "b": "Art. 213 C.C. (Ley 1060 de 2006)",
-     "d": 1
-    },
-    {
-     "t": 1,
-     "c": "Derecho Civil",
-     "q": "En relación con la interversión del título, el Código Civil establece que",
-     "o": [
-      "la mera tenencia se transforma en posesión por el transcurso de diez años",
-      "el simple lapso de tiempo no muda la mera tenencia en posesión",
-      "el tenedor puede usucapir desde que recibe la cosa",
-      "la tenencia y la posesión producen idénticos efectos adquisitivos"
-     ],
-     "a": 1,
-     "e": "El art. 777 del C.C. dispone que el simple lapso de tiempo no muda la mera tenencia en posesión: el tenedor debe demostrar actos inequívocos de contradicción del derecho del dueño (interversión) para comenzar a poseer.",
-     "b": "Arts. 775 a 777 C.C.",
-     "d": 1
-    },
-    {
-     "t": 3,
-     "c": "Derecho Civil",
-     "af": "Quien paga una obligación natural puede repetir lo pagado alegando que el acreedor carecía de acción para exigirla.",
-     "rz": "Las obligaciones naturales no confieren acción para exigir su cumplimiento, pero, cumplidas, autorizan al acreedor para retener lo que se ha dado o pagado en razón de ellas.",
-     "a": 3,
-     "e": "La afirmación es falsa precisamente por lo que dice la razón, que es verdadera: conforme al art. 1527 del C.C., el pago voluntario de una obligación natural, hecho por quien tiene la libre administración de sus bienes, constituye solutio retentio y no admite repetición.",
-     "b": "Art. 1527 C.C.",
-     "d": 3
-    },
-    {
-     "t": 2,
-     "c": "Derecho de Familia",
-     "q": "Respecto del haber de la sociedad conyugal es cierto que:",
-     "s": [
-      "Ingresan al haber absoluto los salarios y emolumentos de todo género devengados durante el matrimonio",
-      "Los bienes adquiridos a título oneroso durante el matrimonio ingresan a la sociedad conyugal",
-      "Los bienes raíces adquiridos por donación, herencia o legado durante el matrimonio no ingresan al haber absoluto de la sociedad",
-      "La valorización de los bienes propios de cada cónyuge constituye, en todos los casos, un bien social"
-     ],
-     "a": 0,
-     "e": "Son correctas 1, 2 y 3 (art. 1781 y ss. C.C.): lo adquirido a título gratuito no engrosa el haber absoluto (los inmuebles permanecen propios y los muebles ingresan al haber relativo con cargo de recompensa). La valorización de bienes propios pertenece, en principio, al cónyuge propietario.",
-     "b": "Arts. 1781 a 1783 C.C.",
-     "d": 3
-    },
-    {
-     "t": 2,
-     "c": "Derecho Civil",
-     "q": "En materia de simulación de los negocios jurídicos es cierto que:",
-     "s": [
-      "Entre las partes, la prueba del acuerdo simulatorio exige siempre contraescritura o prueba documental",
-      "Los terceros pueden acreditar la simulación valiéndose de indicios",
-      "La simulación declarada produce, como consecuencia técnica, la nulidad absoluta del negocio aparente",
-      "La simulación declarada no es oponible a los terceros de buena fe que adquirieron derechos con fundamento en el acto aparente"
-     ],
-     "a": 2,
-     "e": "Son correctas 2 y 4. Bajo el CGP rige la libertad probatoria también entre las partes, con especial fuerza del indicio (1 falsa); y la simulación no es un problema de nulidad sino de prevalencia de la voluntad real sobre la declarada (3 falsa).",
-     "b": "Art. 1766 C.C. · Jurisprudencia CSJ Sala de Casación Civil",
-     "d": 2
-    },
-    {
-     "t": 1,
-     "c": "Derecho Civil",
-     "q": "En la doctrina de la pérdida de oportunidad (perte d'une chance), lo que se indemniza es",
-     "o": [
-      "el beneficio final que la víctima esperaba obtener, en su totalidad",
-      "la oportunidad misma, cuando era cierta y seria, cuantificada en proporción a la probabilidad frustrada",
-      "un perjuicio puramente moral sin contenido patrimonial",
-      "una sanción punitiva contra el causante del daño"
-     ],
-     "a": 1,
-     "e": "La pérdida de oportunidad es un daño autónomo: no se indemniza el resultado esperado (incierto) sino la chance real y seria de obtenerlo, valorada según su grado de probabilidad; típico en responsabilidad médica y de abogados.",
-     "b": "Jurisprudencia CSJ Sala de Casación Civil y Consejo de Estado",
-     "d": 1
-    },
-    {
-     "t": 3,
-     "c": "Derecho de Familia",
-     "af": "La sociedad patrimonial entre compañeros permanentes se presume y hay lugar a declararla judicialmente cuando la unión marital de hecho ha durado un lapso no inferior a dos años.",
-     "rz": "La jurisprudencia constitucional extendió el régimen de la Ley 54 de 1990 a las parejas del mismo sexo.",
-     "a": 1,
-     "e": "Ambas proposiciones son verdaderas (Ley 54 de 1990 y sentencia C-075 de 2007), pero la extensión a parejas del mismo sexo no es la explicación del término bienal de la presunción: son reglas distintas del mismo régimen.",
-     "b": "Ley 54 de 1990 · Sentencia C-075 de 2007",
-     "d": 3
-    },
-    {
-     "t": 3,
-     "c": "Derecho Civil",
-     "af": "La cesión de un crédito no produce efectos contra el deudor ni contra terceros mientras no haya sido notificada al deudor o aceptada por este.",
-     "rz": "Entre el cedente y el cesionario, la cesión de un crédito nominativo se perfecciona con la entrega del título.",
-     "a": 1,
-     "e": "Ambas proposiciones son verdaderas (arts. 1959 a 1961 C.C.), pero la razón regula la relación interna cedente-cesionario y no explica la regla de oponibilidad frente al deudor y terceros, que depende de la notificación o aceptación.",
-     "b": "Arts. 1959 a 1961 C.C.",
-     "d": 3
-    },
-    {
-     "t": 2,
-     "c": "Derecho Civil",
-     "q": "En materia de pago con subrogación y de cesión de créditos es cierto que:",
-     "s": [
-      "La subrogación legal opera por ministerio de la ley, entre otros casos, en favor del que paga una deuda a que se halla obligado solidaria o subsidiariamente",
-      "La subrogación requiere, en todos los casos, la voluntad expresa del acreedor",
-      "Se subroga quien paga una deuda ajena consintiéndolo expresa o tácitamente el deudor",
-      "La cesión de créditos exige, para su validez, el consentimiento del deudor cedido"
-     ],
-     "a": 1,
-     "e": "Son correctas 1 y 3 (art. 1668 nums. 3º y 5º C.C.). La subrogación legal opera sin —y aun contra— la voluntad del acreedor (2 falsa); y el deudor cedido no consiente la cesión: solo debe ser notificado para su oponibilidad (4 falsa).",
-     "b": "Arts. 1666 a 1668 y 1959 y ss. C.C.",
-     "d": 3
-    },
-    {
-     "t": 1,
-     "c": "Derecho de Familia",
-     "q": "En materia de divorcio, la causal de separación de cuerpos, judicial o de hecho, que haya perdurado por más de dos años,",
-     "o": [
-      "solo puede invocarla el cónyuge inocente",
-      "puede ser invocada por cualquiera de los cónyuges, por tratarse de una causal objetiva",
-      "caduca al año de ocurridos los hechos",
-      "requiere siempre sentencia previa de separación judicial"
-     ],
-     "a": 1,
-     "e": "A diferencia de las causales subjetivas —reservadas al cónyuge inocente y sujetas a caducidad—, la causal 8ª del art. 154 del C.C. (Ley 25 de 1992) es objetiva o de remedio: basta el hecho de la separación por más de dos años y puede alegarla cualquiera de los cónyuges.",
-     "b": "Art. 154 num. 8 C.C. · Ley 25 de 1992",
-     "d": 1
-    },
-    {
-     "t": 1,
-     "c": "Bienes y Tierras",
-     "q": "Un particular pide la declaración de pertenencia sobre un parque público que ha ocupado por 30 años. La pretensión está llamada al fracaso porque los bienes de USO PÚBLICO son, por mandato del artículo 63 constitucional:",
-     "o": [
-      "Enajenables previa autorización del concejo municipal",
-      "Imprescriptibles, inalienables e inembargables",
-      "Prescriptibles solo por posesión superior a 20 años",
-      "Embargables únicamente por obligaciones fiscales"
-     ],
-     "a": 1,
-     "e": "El art. 63 C.P. blinda los bienes de uso público (y los demás que determine la ley) con la triple condición de inalienables, imprescriptibles e inembargables: ninguna posesión, por prolongada que sea, permite ganarlos por usucapión, y el juez debe rechazar la pertenencia (art. 375 num. 4 CGP).",
-     "b": "C.P. art. 63 · CGP art. 375",
-     "d": 1
-    },
-    {
-     "t": 3,
-     "c": "Bienes y Tierras",
-     "af": "El derecho de propiedad no es, en sí mismo, un derecho fundamental, pero puede adquirir esa connotación por conexidad",
-     "rz": "para las comunidades campesinas y étnicas la relación con la tierra compromete su subsistencia y su cosmovisión, de modo que proteger la propiedad es condición de sus demás derechos",
-     "a": 0,
-     "e": "Ambas verdaderas y la razón explica la afirmación: es la doctrina constitucional expuesta en clase — la propiedad ordinariamente es derecho patrimonial, pero se «fundamentaliza» cuando su desconocimiento compromete mínimos vitales o la pervivencia de comunidades campesinas y étnicas (lectura constitucional y convencional).",
-     "b": "C.P. arts. 58 y 64 · Jurisprudencia C. Const.",
-     "d": 2
-    },
-    {
-     "t": 1,
-     "c": "Bienes y Tierras",
-     "q": "Sobre la extinción de dominio, la clase distinguió DOS especies en el ordenamiento colombiano:",
-     "o": [
-      "La penal (Código Penal) y la civil (Código Civil)",
-      "La judicial por origen ilícito de los bienes (Ley 1708 de 2014) y la agraria por incumplimiento de la función social o ecológica de la propiedad (art. 52, Ley 160 de 1994)",
-      "La administrativa de la SAE y la notarial",
-      "La urbana (Ley 388 de 1997) y la minera (Código de Minas)"
-     ],
-     "a": 1,
-     "e": "Coexisten la extinción de dominio judicial del Código de Extinción (Ley 1708/2014), para bienes de origen o destinación ilícita, y la extinción agraria de la Ley 160/1994 art. 52, cuando el predio rural viola la función social o ecológica — por ejemplo, por inexplotación.",
-     "b": "Ley 1708/2014 · Ley 160/1994 art. 52",
-     "d": 1
-    },
-    {
-     "t": 2,
-     "c": "Bienes y Tierras",
-     "q": "Son atributos o rasgos del derecho de dominio explicados en la sesión:",
-     "s": [
-      "El uso, el goce y la disposición, con los límites de la función social y ecológica",
-      "Su carácter exclusivo, que impone a los terceros no perturbar el ejercicio quieto y pacífico del derecho",
-      "Su autonomía, pues no depende de la existencia de otro derecho",
-      "Su carácter absoluto e ilimitado frente a cualquier interés general"
-     ],
-     "a": 0,
-     "e": "Correctas 1, 2 y 3. La 4 contradice el núcleo de la clase: desde el art. 58 C.P. la propiedad es función social que implica obligaciones, cede ante el interés general (expropiación) y soporta cargas ambientales — jamás es absoluta.",
-     "b": "C.C. art. 669 · C.P. art. 58",
-     "d": 2
-    },
-    {
-     "t": 1,
-     "c": "Bienes y Tierras",
-     "q": "Frente a los DERECHOS ADQUIRIDOS en materia civil, la regla expuesta fue:",
-     "o": [
-      "Las leyes civiles nuevas se aplican retroactivamente si son más favorables",
-      "Las leyes producen efecto general inmediato hacia el futuro y no pueden desconocer derechos adquiridos, aunque sí imponer al propietario cargas que limiten el ejercicio de sus atributos",
-      "Los derechos adquiridos impiden cualquier limitación posterior al dominio",
-      "La retroactividad procede siempre por motivos de utilidad pública"
-     ],
-     "a": 1,
-     "e": "La ley civil rige hacia el futuro (efecto general inmediato) y respeta el derecho adquirido; pero respetar el derecho no impide que normas posteriores impongan cargas urbanísticas, ambientales o de función social que modulen su ejercicio — distinción precisa hecha por el docente.",
-     "b": "C.P. art. 58 · Ley 153/1887",
-     "d": 1
-    },
-    {
-     "t": 2,
-     "c": "Bienes y Tierras",
-     "q": "Las vías de FORMALIZACIÓN de la propiedad rural mencionadas en la clase incluyen:",
-     "s": [
-      "La vía administrativa ante la Agencia Nacional de Tierras",
-      "El proceso judicial de declaración de pertenencia, como declarativo especial",
-      "El procedimiento de saneamiento de la pequeña propiedad rural de la Ley 1561 de 2012",
-      "La legalización automática por pago del impuesto predial durante cinco años"
-     ],
-     "a": 0,
-     "e": "Correctas 1, 2 y 3: formalización administrativa (ANT), pertenencia judicial (art. 375 CGP) y proceso verbal especial de la Ley 1561/2012 para sanear la falsa tradición y titular la pequeña propiedad. El pago del predial (4) no transfiere ni sanea el dominio.",
-     "b": "Ley 1561/2012 · CGP art. 375",
-     "d": 2
-    },
-    {
-     "t": 3,
-     "c": "Bienes y Tierras",
-     "af": "La expropiación es constitucionalmente legítima, mediante sentencia judicial e indemnización previa — o por vía administrativa en los casos que señale el legislador",
-     "rz": "cuando el interés particular entra en tensión con motivos de utilidad pública o interés social definidos por el legislador, el interés privado debe ceder",
-     "a": 0,
-     "e": "Ambas verdaderas y la razón explica la afirmación: el art. 58 C.P. estructura la expropiación exactamente sobre esa cesión del interés particular ante la utilidad pública, con garantía judicial e indemnización (que consulte los intereses de la comunidad y del afectado).",
-     "b": "C.P. art. 58",
-     "d": 3
-    },
-    {
-     "t": 1,
-     "c": "Bienes y Tierras",
-     "q": "En un proceso de pertenencia el juez advierte que el predio pretendido figura como BALDÍO. Debe:",
-     "o": [
-      "Continuar el trámite, pues la posesión decenal sanea cualquier origen",
-      "Negar la pretensión, porque los baldíos son imprescriptibles y su adjudicación compete a la Agencia Nacional de Tierras por vía administrativa",
-      "Ordenar la venta forzada del predio en pública subasta",
-      "Declarar la pertenencia limitada a la mitad del área"
-     ],
-     "a": 1,
-     "e": "Los baldíos son bienes públicos de la Nación: imprescriptibles (art. 63 C.P., Ley 160/1994) y solo adjudicables administrativamente por la ANT a sujetos de reforma agraria. La pertenencia sobre baldíos es improcedente y así debe declararlo el juez, incluso de oficio (art. 375 CGP).",
-     "b": "C.P. art. 63 · Ley 160/1994 · CGP art. 375",
-     "d": 3
-    },
-    {
-     "t": 1,
-     "c": "Bienes y Tierras",
-     "q": "La FUNCIÓN ECOLÓGICA de la propiedad, incorporada al art. 58 de la Constitución, implica que:",
-     "o": [
-      "Todo predio rural debe destinarse a conservación estricta",
-      "El propietario soporta deberes de conservación y uso sostenible, cuyo incumplimiento en predios rurales puede conducir incluso a la extinción agraria del dominio",
-      "Solo aplica a los resguardos indígenas",
-      "Es una recomendación programática sin efectos jurídicos"
-     ],
-     "a": 1,
-     "e": "La propiedad «es una función social que implica obligaciones» y, como tal, «le es inherente una función ecológica»: deberes ambientales exigibles cuyo desconocimiento activa consecuencias reales — cargas, sanciones y, en el extremo rural, la extinción del art. 52 de la Ley 160/1994.",
-     "b": "C.P. art. 58 · Ley 160/1994 art. 52",
-     "d": 2
-    },
-    {
-     "t": 2,
-     "c": "Bienes y Tierras",
-     "q": "Respecto de la protección del propietario y del poseedor son ciertas:",
-     "s": [
-      "La exclusividad del dominio genera en los terceros el deber de no perturbar su ejercicio",
-      "Frente a las perturbaciones proceden instrumentos civiles, policivos y jurisdiccionales",
-      "El poseedor cuenta con acciones posesorias para conservar o recuperar la posesión sobre inmuebles",
-      "El mero tenedor puede ejercer la acción reivindicatoria en nombre propio"
-     ],
-     "a": 0,
-     "e": "Correctas 1, 2 y 3 — la clase recordó la triple vía (civil, administrativa/policiva y jurisdiccional). La 4 es falsa: la reivindicatoria corresponde al propietario (o al poseedor regular vía publiciana); el tenedor reconoce dominio ajeno y carece de ella.",
-     "b": "C.C. arts. 946 ss. y 972 ss.",
-     "d": 2
-    },
-    {
-     "t": 3,
-     "c": "Bienes y Tierras",
-     "af": "La pequeña propiedad rural puede sanearse mediante el proceso especial de la Ley 1561 de 2012, que permite titular al poseedor material y sanear la falsa tradición",
-     "rz": "ese procedimiento sustituyó y derogó el proceso de declaración de pertenencia del Código General del Proceso",
-     "a": 2,
-     "e": "La afirmación es verdadera: la Ley 1561/2012 creó un proceso verbal especial para titular la posesión sobre pequeña propiedad rural (y urbana) y sanear la falsa tradición. La razón es FALSA: coexiste con la pertenencia del art. 375 CGP; son vías paralelas, no excluyentes.",
-     "b": "Ley 1561/2012 · CGP art. 375",
-     "d": 3
-    },
-    {
-     "t": 1,
-     "c": "Bienes y Tierras",
-     "q": "Sobre la relación entre propiedad e interés general, la conclusión central de la sesión fue:",
-     "o": [
-      "El derecho de dominio es pleno pero no absoluto: confiere uso, goce y disposición, siempre modulados por la función social y ecológica y por el interés general prevalente",
-      "La propiedad es un derecho natural anterior al Estado e inmune a toda restricción",
-      "El interés general solo limita la propiedad pública, no la privada",
-      "Las limitaciones al dominio requieren siempre consentimiento del propietario"
-     ],
-     "a": 0,
-     "e": "Síntesis de la clase: plenitud de atributos (uso, goce, disposición) sin carácter absoluto — el diseño constitucional colombiano articula propiedad privada, función social/ecológica, expropiación y extinción de dominio como piezas de un mismo sistema.",
-     "b": "C.C. art. 669 · C.P. art. 58",
-     "d": 1
-    },
-    {
-     "t": 1,
-     "c": "Obligaciones y Contratos",
-     "q": "El «check list» de validez del contrato repasado en clase exige verificar, en su orden:",
-     "o": [
-      "Solemnidad, registro, tradición y entrega",
-      "Capacidad, consentimiento exento de vicios, objeto lícito y causa lícita",
-      "Firma, huella, testigos y autenticación notarial",
-      "Cuantía, competencia, jurisdicción y caducidad"
-     ],
-     "a": 1,
-     "e": "Son los requisitos de validez del art. 1502 del Código Civil: capacidad (incluida la verificación de apoyos de la Ley 1996 de 2019), consentimiento libre de error, fuerza y dolo, objeto lícito y causa lícita — el propósito o motivo que induce al acto.",
-     "b": "C.C. art. 1502",
-     "d": 1
-    },
-    {
-     "t": 1,
-     "c": "Obligaciones y Contratos",
-     "q": "En el caso litigado que narró el docente, el cliente aceptó una obligación inducido a ERROR sobre el objeto. La consecuencia jurídica de ese vicio es:",
-     "o": [
-      "La inexistencia del contrato",
-      "La nulidad relativa del acto, por no haber sido plena la manifestación de voluntad",
-      "La nulidad absoluta por objeto ilícito",
-      "La ineficacia de pleno derecho sin necesidad de declaración"
-     ],
-     "a": 1,
-     "e": "Los vicios del consentimiento (error, fuerza, dolo) generan nulidad RELATIVA (rescisión), alegable por la víctima del vicio. La nulidad absoluta se reserva para objeto/causa ilícita e incapacidad absoluta; la inexistencia, para la falta de elementos esenciales.",
-     "b": "C.C. arts. 1508-1516, 1740-1741",
-     "d": 1
-    },
-    {
-     "t": 3,
-     "c": "Obligaciones y Contratos",
-     "af": "Para librar mandamiento de pago el juez debe verificar que la obligación sea expresa, clara y actualmente exigible",
-     "rz": "la exigibilidad actual supone, entre otras cosas, que la acción no haya caducado ni el derecho prescrito",
-     "a": 0,
-     "e": "Ambas verdaderas y la razón explica la afirmación: el título ejecutivo exige obligación expresa, clara y exigible (art. 422 CGP); una obligación cuya acción caducó o cuyo derecho prescribió no es «actualmente exigible» — con la precisión de clase: caduca la acción, prescribe el derecho.",
-     "b": "CGP art. 422",
-     "d": 2
-    },
-    {
-     "t": 1,
-     "c": "Obligaciones y Contratos",
-     "q": "La distinción entre obligaciones CIVILES y NATURALES es que:",
-     "o": [
-      "Las civiles dan acción para exigir su cumplimiento; las naturales no dan acción, pero sí excepción para retener lo pagado voluntariamente",
-      "Las naturales dan acción ejecutiva y las civiles solo declarativa",
-      "Las naturales son siempre nulas y lo pagado se repite",
-      "Las civiles nacen del contrato y las naturales solo de la ley penal"
-     ],
-     "a": 0,
-     "e": "Art. 1527 C.C.: la obligación civil da derecho a exigir el cumplimiento; la natural no confiere acción, pero cumplida voluntariamente autoriza retener lo pagado (soluti retentio). Ejemplos: obligaciones prescritas, deudas de juego permitido.",
-     "b": "C.C. art. 1527",
-     "d": 1
-    },
-    {
-     "t": 2,
-     "c": "Obligaciones y Contratos",
-     "q": "Sobre la CAPACIDAD como requisito de validez, tras la Ley 1996 de 2019 son ciertas:",
-     "s": [
-      "Todas las personas mayores de edad se presumen capaces, incluidas las personas con discapacidad",
-      "La persona con discapacidad puede celebrar actos jurídicos utilizando apoyos formales para la manifestación de su voluntad",
-      "La verificación de acuerdos de apoyo hace parte de la debida diligencia contractual",
-      "La interdicción judicial sigue siendo el mecanismo general para contratar con personas con discapacidad"
-     ],
-     "a": 0,
-     "e": "Correctas 1, 2 y 3: la Ley 1996/2019 eliminó la interdicción, consagró la presunción de capacidad y el sistema de apoyos y salvaguardias — por eso el docente incluyó «ley de apoyos» en el check de capacidad. La 4 describe el régimen derogado.",
-     "b": "Ley 1996/2019",
-     "d": 3
-    },
-    {
-     "t": 1,
-     "c": "Obligaciones y Contratos",
-     "q": "Inducir a error al juez mediante una obligación viciada para obtener sentencia favorable en un ejecutivo puede configurar, además de la impugnación civil del acto:",
-     "o": [
-      "Solo consecuencias éticas sin relevancia penal",
-      "El delito de fraude procesal y responsabilidad disciplinaria del abogado",
-      "Únicamente la nulidad procesal del mandamiento",
-      "Una simple temeridad sancionable con costas"
-     ],
-     "a": 1,
-     "e": "Fue la advertencia de clase: usar el proceso a sabiendas del vicio puede constituir fraude procesal (art. 453 C.P.) y compromete disciplinariamente al abogado ante la Comisión Nacional de Disciplina Judicial — la abogacía es «profesión de riesgo» y el desconocimiento de lo que se debía saber se agrava.",
-     "b": "C. Penal art. 453 · Ley 1123/2007",
-     "d": 1
-    },
-    {
-     "t": 3,
-     "c": "Obligaciones y Contratos",
-     "af": "En materia de obligaciones dinerarias de cierta entidad, la falta de prueba escrita puede dejar al acreedor en grave dificultad probatoria",
-     "rz": "los códigos Civil y de Comercio establecen restricciones y preferencias por la prueba documental de ciertas obligaciones, sin perjuicio de la libertad probatoria general del CGP",
-     "a": 0,
-     "e": "Ambas verdaderas y la razón explica la afirmación: aunque el CGP consagra libertad de medios (art. 165), subsisten reglas sustanciales que privilegian el escrito en obligaciones dinerarias, de modo que la estrategia probatoria — y la debida diligencia al contratar — exige documentar.",
-     "b": "CGP art. 165 · C.C. y C. de Co.",
-     "d": 3
-    },
-    {
-     "t": 1,
-     "c": "Obligaciones y Contratos",
-     "q": "El ERROR como vicio del consentimiento que recae sobre la identidad de la persona con quien se contrata:",
-     "o": [
-      "Siempre anula el contrato, cualquiera sea su naturaleza",
-      "Solo vicia el consentimiento cuando la consideración de la persona haya sido el motivo determinante del contrato (intuitu personae)",
-      "Es irrelevante en todos los casos",
-      "Genera inexistencia del acto"
-     ],
-     "a": 1,
-     "e": "Art. 1512 C.C.: el error sobre la persona no vicia el consentimiento, salvo que la consideración de esa persona sea la causa principal del contrato (mandato, sociedad de personas, donación). En el caso de clase el error no era en las partes sino en el objeto.",
-     "b": "C.C. art. 1512",
-     "d": 1
-    },
-    {
-     "t": 2,
-     "c": "Obligaciones y Contratos",
-     "q": "Frente a la FUERZA como vicio del consentimiento son ciertas:",
-     "s": [
-      "Puede ser física o moral (psicológica)",
-      "Debe ser capaz de producir una impresión fuerte en una persona de sano juicio, atendiendo a su edad, sexo y condición",
-      "Vicia el consentimiento aunque la ejerza un tercero distinto del beneficiado con el contrato",
-      "El temor reverencial, por sí solo, basta para anular el acto"
-     ],
-     "a": 0,
-     "e": "Correctas 1, 2 y 3 (arts. 1513-1514 C.C.). El solo temor reverencial — el de desagradar a quien se debe sumisión y respeto — NO vicia el consentimiento, clásico distractor de examen.",
-     "b": "C.C. arts. 1513-1514",
-     "d": 2
-    },
-    {
-     "t": 1,
-     "c": "Obligaciones y Contratos",
-     "q": "La CAUSA del contrato, en el régimen del Código Civil colombiano, es:",
-     "o": [
-      "El objeto material sobre el que recae la obligación",
-      "El motivo que induce al acto o contrato, que debe ser lícito y no contrario a la ley, las buenas costumbres o el orden público",
-      "La contraprestación económica pactada",
-      "Un requisito eliminado por la jurisprudencia moderna"
-     ],
-     "a": 1,
-     "e": "Art. 1524 C.C.: no puede haber obligación sin causa real y lícita; la causa es el motivo que induce al acto. La causa ilícita — prohibida por ley, contraria a las buenas costumbres o al orden público — genera nulidad absoluta.",
-     "b": "C.C. art. 1524",
-     "d": 1
-    },
-    {
-     "t": 3,
-     "c": "Obligaciones y Contratos",
-     "af": "El dolo vicia el consentimiento cuando es obra de una de las partes y aparece claramente que sin él la otra no hubiera contratado",
-     "rz": "en los demás casos el dolo solo da lugar a la acción de perjuicios contra quien lo fraguó o se aprovechó de él",
-     "a": 1,
-     "e": "Ambas son verdaderas (art. 1515 C.C.), pero la razón NO explica la afirmación: describe la hipótesis complementaria (dolo incidental o de tercero), no el fundamento del dolo determinante. Clave B — típico ítem PGN para verificar lectura fina de la relación lógica.",
-     "b": "C.C. art. 1515",
-     "d": 3
-    },
-    {
-     "t": 1,
-     "c": "Obligaciones y Contratos",
-     "q": "Si la obligación que sirve de recaudo ejecutivo fue aceptada por error y el ejecutado lo demuestra, la vía procesal idónea dentro del ejecutivo es:",
-     "o": [
-      "El incidente de nulidad procesal",
-      "Las excepciones de mérito, pues los vicios del consentimiento atacan la validez del acto que contiene la obligación",
-      "El recurso de reposición contra el mandamiento",
-      "La objeción por error grave"
-     ],
-     "a": 1,
-     "e": "Los vicios del negocio jurídico se hacen valer como excepciones de fondo (art. 442 CGP): el juez civil municipal debe examinar la validez del acto fuente de la obligación. La nulidad procesal ataca el trámite, no el negocio; la objeción por error grave es propia del dictamen pericial.",
-     "b": "CGP arts. 442 y 430",
-     "d": 1
-    },
-    {
-     "t": 1,
-     "c": "Responsabilidad Civil",
-     "q": "Un pasajero muere en accidente durante la ejecución del contrato de transporte. Sus herederos reclaman: (i) el daño que el pasajero alcanzó a sufrir antes de morir y (ii) su propio dolor por la muerte. Según la clase, esas acciones son:",
-     "o": [
-      "Ambas contractuales, por derivar del mismo contrato de transporte",
-      "La hereditaria (iure hereditatis) contractual, y la personal (iure proprio) extracontractual, y pueden acumularse por tratarse de daños distintos",
-      "Ambas extracontractuales, porque la muerte extinguió el contrato",
-      "Excluyentes: deben escoger una sola"
-     ],
-     "a": 1,
-     "e": "La acción hereditaria sigue la naturaleza del vínculo de la víctima directa (contractual, era pasajero); la acción personal de los herederos por SU propio daño es siempre extracontractual, pues ellos no eran parte del contrato. Se acumulan válidamente: son daños diferentes en titulares diferentes.",
-     "b": "C.C. arts. 1006 (analógico), 2341 ss.",
-     "d": 3
-    },
-    {
-     "t": 3,
-     "c": "Responsabilidad Civil",
-     "af": "Según la doctrina mayoritaria, quien fallece de manera instantánea en el hecho dañoso no transmite a sus herederos indemnización alguna por daño propio",
-     "rz": "al coincidir el instante del daño con el fin de la existencia de la persona, no alcanza a radicarse en su patrimonio un perjuicio transmisible mortis causa",
-     "a": 0,
-     "e": "Ambas verdaderas y la razón explica la afirmación: sin supervivencia — así sea breve — no llega a consolidarse en cabeza de la víctima un daño (emergente, lucro cesante o extrapatrimonial) que pase a la sucesión. El docente planteó su inquietud filosófica sobre si la pérdida de la vida misma debería ser indemnizable, pero reconociendo que la posición dominante es la negativa.",
-     "b": "Doctrina y jurisprudencia CSJ",
-     "d": 3
-    },
-    {
-     "t": 1,
-     "c": "Responsabilidad Civil",
-     "q": "Sobre el daño moral de los llamados «grandes lesionados» — personas que quedan con conciencia limitada (daño cerebral profundo perinatal o traumático) —, la jurisprudencia civil reciente comentada en clase (sentencia de agosto de 2021) sostiene que:",
-     "o": [
-      "No hay daño moral indemnizable porque no puede probarse el sufrimiento",
-      "El daño moral se configura por el mero hecho del evento traumático y es indemnizable, sin que la limitación de conciencia lo excluya",
-      "Solo procede daño a la vida de relación, nunca daño moral",
-      "La indemnización se difiere hasta que la víctima recupere la conciencia"
-     ],
-     "a": 1,
-     "e": "La Corte concluyó que en las personas con conciencia limitada el daño moral se produce por el mero evento traumático y es indemnizable — superando la objeción de que sin percepción del sufrimiento no habría perjuicio. Referente clave de la clase para el daño extrapatrimonial contemporáneo.",
-     "b": "CSJ Sala Civil, sentencia de agosto de 2021",
-     "d": 1
-    },
-    {
-     "t": 2,
-     "c": "Responsabilidad Civil",
-     "q": "Sobre la prohibición de acumular responsabilidad contractual y extracontractual son ciertas:",
-     "s": [
-      "Opera entre las mismas partes y respecto del mismo daño",
-      "No impide que los herederos acumulen la acción hereditaria y la acción por su daño personal",
-      "La acción personal de los herederos por su propio perjuicio es de naturaleza extracontractual",
-      "Impide que un mismo hecho genere a la vez responsabilidades de distinta naturaleza frente a personas distintas"
-     ],
-     "a": 0,
-     "e": "Correctas 1, 2 y 3 — la no acumulación (opción de responsabilidades) juega entre las mismas partes y por el mismo daño; nada obsta a que un mismo hecho produzca daños distintos, de régimen distinto, en titulares distintos, como precisó el docente. La 4 contradice justamente esa conclusión.",
-     "b": "Jurisprudencia CSJ",
-     "d": 2
-    },
-    {
-     "t": 1,
-     "c": "Responsabilidad Civil",
-     "q": "Si la víctima sobrevive un tiempo al hecho y fallece luego SIN haber reclamado, transmite a sus herederos:",
-     "o": [
-      "Nada, porque la acción indemnizatoria es personalísima",
-      "La posibilidad de reclamar los daños patrimoniales y extrapatrimoniales que alcanzó a padecer, con independencia de que la muerte se deba o no al hecho ilícito",
-      "Solo el daño emergente, nunca el daño moral",
-      "Solo los perjuicios causados después de la muerte"
-     ],
-     "a": 1,
-     "e": "El crédito indemnizatorio ya radicado en el patrimonio del causante se transmite mortis causa: comprende daño emergente, lucro cesante y perjuicios extrapatrimoniales sufridos entre el hecho y la muerte. Es independiente del daño propio de cada heredero.",
-     "b": "C.C. arts. 1008 ss.",
-     "d": 3
-    },
-    {
-     "t": 1,
-     "c": "Responsabilidad Civil",
-     "q": "La naturaleza de la acción HEREDITARIA (iure hereditatis) de los sucesores de la víctima depende de:",
-     "o": [
-      "La cuantía del perjuicio reclamado",
-      "La relación — contractual o no — que la víctima directa tenía con el causante del daño",
-      "El parentesco de los herederos con la víctima",
-      "La jurisdicción ante la cual se demande"
-     ],
-     "a": 1,
-     "e": "Los herederos ocupan el lugar del causante: si este era acreedor contractual (pasajero, paciente), la acción transmitida es contractual; si era un tercero, extracontractual. En cambio, la acción por el daño propio de los deudos es siempre extracontractual.",
-     "b": "Responsabilidad Civil",
-     "d": 1
-    },
-    {
-     "t": 3,
-     "c": "Responsabilidad Civil",
-     "af": "Los perjuicios extrapatrimoniales de los parientes cercanos de la víctima fatal se indemnizan como daño propio",
-     "rz": "el dolor por la muerte de un ser querido es un perjuicio distinto y autónomo del daño que el causante alcanzó a padecer y transmitir",
-     "a": 0,
-     "e": "Ambas verdaderas y la razón explica la afirmación: la distinción entre el daño transmitido (del causante) y el daño experimentado por los deudos (propio, iure proprio) es la base de la acumulación admitida — cada uno tiene su título y su titular.",
-     "b": "Jurisprudencia CSJ",
-     "d": 2
-    },
-    {
-     "t": 1,
-     "c": "Responsabilidad Civil",
-     "q": "En el contrato de transporte de personas, la obligación del transportador de conducir sano y salvo al pasajero es, conforme a la dogmática recordada en clase:",
-     "o": [
-      "Una obligación de medio, que exige probar culpa del transportador",
-      "Una obligación de resultado, cuyo incumplimiento se presume con el solo daño en ejecución del contrato, salvo causa extraña",
-      "Una obligación natural sin acción",
-      "Una obligación facultativa"
-     ],
-     "a": 1,
-     "e": "El transporte impone obligación de resultado (llevar incólume al pasajero, art. 982 y 1003 C. de Co.): acreditado el daño durante la ejecución, el transportador solo se libera probando causa extraña — fundamento de la responsabilidad contractual del caso analizado.",
-     "b": "C. de Co. arts. 982, 1003",
-     "d": 2
-    },
-    {
-     "t": 2,
-     "c": "Responsabilidad Civil",
-     "q": "Integran el daño indemnizable en la responsabilidad civil colombiana:",
-     "s": [
-      "El daño emergente",
-      "El lucro cesante",
-      "Los perjuicios extrapatrimoniales (daño moral, daño a la vida de relación)",
-      "La pérdida de la vida en sí misma, como daño autónomo transmisible, según jurisprudencia unánime"
-     ],
-     "a": 0,
-     "e": "Correctas 1, 2 y 3 — tipología consolidada. La 4 es falsa: precisamente la clase mostró que la tesis dominante NIEGA la transmisión del daño por la pérdida de la vida en sí (muerte instantánea), sin perjuicio del debate teórico que el docente planteó.",
-     "b": "C.C. arts. 1613-1614",
-     "d": 2
-    },
-    {
-     "t": 1,
-     "c": "Responsabilidad Civil",
-     "q": "El fundamento por el cual la acción de los herederos por SU propio daño es siempre extracontractual radica en que:",
-     "o": [
-      "El contrato se extingue con la muerte y desaparece retroactivamente",
-      "Ellos no fueron parte del contrato entre la víctima y el responsable, de modo que frente a ellos el daño proviene de la violación del deber general de no dañar",
-      "La ley prohíbe a los herederos invocar contratos ajenos",
-      "El daño moral solo existe en sede extracontractual"
-     ],
-     "a": 1,
-     "e": "Principio de relatividad de los contratos (res inter alios acta): el vínculo obligacional solo ata a las partes; los terceros damnificados — así sean herederos — sufren el daño por fuera del contrato y su acción se rige por los arts. 2341 ss. C.C.",
-     "b": "C.C. arts. 1602, 2341",
-     "d": 3
-    },
-    {
-     "t": 3,
-     "c": "Responsabilidad Civil",
-     "af": "Un mismo accidente puede generar simultáneamente responsabilidad contractual frente al pasajero y extracontractual frente a un peatón atropellado",
-     "rz": "la naturaleza de la responsabilidad se define por la existencia o no de vínculo previo entre víctima y responsable, no por la unidad del hecho dañoso",
-     "a": 0,
-     "e": "Ambas verdaderas y la razón explica la afirmación: el hecho es uno, pero los regímenes se determinan víctima por víctima según haya o no contrato — esquema con el que el docente ordenó todo el análisis de acumulaciones.",
-     "b": "Responsabilidad Civil",
-     "d": 2
-    },
-    {
-     "t": 1,
-     "c": "Responsabilidad Civil",
-     "q": "Para el juez civil municipal, la correcta calificación (contractual o extracontractual) de la pretensión indemnizatoria importa principalmente porque define:",
-     "o": [
-      "Únicamente la cuantía y nada más",
-      "Regímenes distintos en materia de culpa y su graduación, prescripción, y presupuestos de la obligación indemnizatoria",
-      "El color del expediente",
-      "Si procede o no el juramento estimatorio"
-     ],
-     "a": 1,
-     "e": "La calificación condiciona el régimen aplicable: graduación de culpas y presunciones (contractual, arts. 1604 ss. C.C.) frente a la cláusula general del 2341; términos de prescripción diferentes; y la estructura misma del juicio de responsabilidad. Errar la calificación compromete la congruencia del fallo.",
-     "b": "C.C. arts. 1604, 2341, 2536",
-     "d": 1
-    },
-    {
-     "t": 1,
-     "c": "Infancia y Adolescencia",
-     "q": "El principio del INTERÉS SUPERIOR del niño, niña y adolescente (art. 8 del Código de la Infancia y la Adolescencia) implica que:",
-     "o": [
-      "Los derechos de los adultos prevalecen por regla general",
-      "Es el imperativo de satisfacer de manera integral y simultánea todos sus derechos, que son prevalentes y de aplicación preferente frente a los de los demás",
-      "Solo se aplica en procesos penales de adolescentes",
-      "Es una directriz sin fuerza vinculante"
-     ],
-     "a": 1,
-     "e": "Art. 44 C.P. y arts. 8-9 de la Ley 1098/2006: los derechos de la niñez prevalecen sobre los de los demás; el interés superior obliga a resolver toda decisión que les concierna maximizando la garantía integral de sus derechos. Es criterio hermenéutico y regla de decisión.",
-     "b": "C.P. art. 44 · Ley 1098/2006 arts. 8-9",
-     "d": 2
-    },
-    {
-     "t": 1,
-     "c": "Infancia y Adolescencia",
-     "q": "El PROCESO ADMINISTRATIVO DE RESTABLECIMIENTO DE DERECHOS (PARD) tiene por objeto:",
-     "o": [
-      "Sancionar penalmente a los agresores del menor",
-      "Restaurar la dignidad e integridad del niño como sujeto de derechos y su capacidad de disfrutar efectivamente los derechos vulnerados o amenazados",
-      "Otorgar indemnizaciones civiles",
-      "Definir la custodia entre los padres"
-     ],
-     "a": 1,
-     "e": "El PARD (arts. 50 ss. Ley 1098/2006), a cargo de las autoridades administrativas (Defensor de Familia, Comisario de Familia, Inspector), busca el restablecimiento: verificación de garantía de derechos y adopción de medidas para restaurarlos. No es sancionatorio ni indemnizatorio.",
-     "b": "Ley 1098/2006 arts. 50-53",
-     "d": 1
-    },
-    {
-     "t": 3,
-     "c": "Infancia y Adolescencia",
-     "af": "El derecho del niño A SER ESCUCHADO exige que sus opiniones sean tenidas en cuenta en todo asunto que le afecte, según su edad y madurez",
-     "rz": "este estándar convencional, derivado del artículo 12 de la Convención sobre los Derechos del Niño, no se satisface con la mera presencia del menor, sino con la valoración real de su voz",
-     "a": 0,
-     "e": "Ambas verdaderas y la razón explica la afirmación: el art. 12 de la Convención y el art. 26 de la Ley 1098 consagran el derecho a ser oído y a que su opinión se pondere conforme a su autonomía progresiva. La docente advirtió el incumplimiento del estándar cuando a niños de primera infancia o con discapacidad no se les habilita voz.",
-     "b": "CDN art. 12 · Ley 1098/2006 art. 26",
-     "d": 3
-    },
-    {
-     "t": 2,
-     "c": "Infancia y Adolescencia",
-     "q": "Son principios rectores de la Ley 1098 de 2006:",
-     "s": [
-      "La protección integral",
-      "El interés superior del niño",
-      "La prevalencia de sus derechos y la corresponsabilidad de familia, sociedad y Estado",
-      "La plena capacidad negocial del menor adulto en todos los actos"
-     ],
-     "a": 0,
-     "e": "Correctas 1, 2 y 3: protección integral, interés superior, prevalencia y corresponsabilidad (arts. 7-10 Ley 1098). La 4 es falsa: el menor tiene capacidad progresiva y regímenes de representación/asistencia; no plena capacidad negocial general.",
-     "b": "Ley 1098/2006 arts. 7-10",
-     "d": 2
-    },
-    {
-     "t": 1,
-     "c": "Infancia y Adolescencia",
-     "q": "La AUTONOMÍA PROGRESIVA reconoce que:",
-     "o": [
-      "El niño ejerce todos sus derechos como un adulto desde el nacimiento",
-      "El ejercicio de los derechos por el propio niño se amplía conforme evolucionan sus facultades, edad y madurez, orientando el papel de la familia y el Estado",
-      "Los padres deciden todo sin límite hasta la mayoría de edad",
-      "La autonomía solo surge a los 18 años"
-     ],
-     "a": 1,
-     "e": "La autonomía progresiva (art. 5 CDN) modula el ejercicio de derechos según el desarrollo del niño: a mayor madurez, mayor participación directa; correlativamente, la orientación parental y estatal se ajusta. Sustenta el derecho a ser escuchado y otras garantías.",
-     "b": "CDN art. 5 · Ley 1098/2006",
-     "d": 1
-    },
-    {
-     "t": 3,
-     "c": "Infancia y Adolescencia",
-     "af": "En contextos de conflicto armado, los niños, niñas y adolescentes gozan de protección reforzada frente a su vinculación y a los efectos de las hostilidades",
-     "rz": "el Derecho Internacional Humanitario parte de la inevitabilidad del conflicto y encarga al derecho, entre otras tareas, proteger a la población no involucrada",
-     "a": 0,
-     "e": "Ambas verdaderas y la razón explica la afirmación: la docente expuso la premisa (chocante) del DIH — asume el conflicto y busca limitar su impacto en no combatientes, con protección reforzada de la niñez (Convenios de Ginebra, Estatuto de Roma, art. 44 C.P.).",
-     "b": "DIH · CDN",
-     "d": 3
-    },
-    {
-     "t": 1,
-     "c": "Infancia y Adolescencia",
-     "q": "Cuando en un proceso de familia o civil el juez advierte una posible vulneración de derechos de un menor, conforme al interés superior debe:",
-     "o": [
-      "Abstenerse de actuar hasta que un tercero denuncie",
-      "Adoptar o promover, en el marco de su competencia, las medidas necesarias para la protección del menor, incluso de oficio, y remitir a la autoridad de restablecimiento cuando corresponda",
-      "Esperar a que el menor cumpla la mayoría de edad",
-      "Trasladar todo el asunto a la jurisdicción penal"
-     ],
-     "a": 1,
-     "e": "El interés superior y la protección integral imponen un deber activo: el juez no es espectador; dentro de su competencia debe tomar medidas de protección (oficiosidad) y articularse con el Defensor/Comisario de Familia para el PARD. La inacción vulnera el estándar convencional.",
-     "b": "Ley 1098/2006 arts. 8-11",
-     "d": 3
-    },
-    {
-     "t": 2,
-     "c": "Infancia y Adolescencia",
-     "q": "Sobre las autoridades competentes para el restablecimiento de derechos son ciertas:",
-     "s": [
-      "El Defensor de Familia del ICBF",
-      "El Comisario de Familia, especialmente en casos de violencia intrafamiliar",
-      "El Inspector de Policía donde no haya Defensor ni Comisario",
-      "El Personero Municipal como autoridad principal del PARD"
-     ],
-     "a": 0,
-     "e": "Correctas 1, 2 y 3 (art. 96-98 Ley 1098): Defensor de Familia, Comisario de Familia e Inspector de Policía (a falta de los anteriores) adelantan el PARD. El Personero interviene como agente del Ministerio Público en garantía de derechos, pero no dirige el PARD (4).",
-     "b": "Ley 1098/2006 arts. 96-98",
-     "d": 2
-    },
-    {
-     "t": 1,
-     "d": 3,
-     "c": "Derecho Civil · Obligaciones",
-     "q": "Un deudor se obligó a entregar un cuerpo cierto (un vehículo determinado). Antes de la entrega, el vehículo se destruye totalmente por un terremoto, sin culpa del deudor. El acreedor exige el pago del valor. Conforme al Código Civil:",
-     "o": [
-      "La obligación se extingue por pérdida de la cosa debida cuando el cuerpo cierto perece sin culpa del deudor y sin estar en mora (art. 1729 C.C.)",
-      "El deudor debe pagar el valor del vehículo, pues asumió el riesgo al obligarse",
-      "El deudor debe entregar otro vehículo equivalente",
-      "El acreedor puede exigir indemnización plena de perjuicios en todo caso"
-     ],
-     "a": 0,
-     "e": "La pérdida fortuita del cuerpo cierto sin culpa ni mora del deudor extingue la obligación (C.C. art. 1729): el riesgo de la cosa que perece sin culpa no se traduce en pago del valor. · Afirmar que 'asumió el riesgo' desconoce la regla del caso fortuito. · Exigir otro vehículo 'equivalente' confunde la obligación de cuerpo cierto con una de género, que no perece. · La indemnización plena 'en todo caso' ignora que sin culpa ni mora no hay responsabilidad.",
-     "b": "C.C. arts. 1729-1731 · pérdida de la cosa que se debe"
-    },
-    {
-     "t": 1,
-     "d": 3,
-     "c": "Derecho Civil · Contratos",
-     "q": "En una compraventa de inmueble, el comprador descubre, después de la entrega, un vicio oculto grave que hace la cosa impropia para su uso y que existía al momento de la venta. Pretende accionar. Conforme al Código Civil, dispone de:",
-     "o": [
-      "La acción resolutoria por incumplimiento, pues todo vicio equivale a incumplimiento",
-      "Únicamente la acción de lesión enorme",
-      "Las acciones edilicias: la redhibitoria (para resolver la venta) o la estimatoria o quanti minoris (para rebajar el precio), por vicios ocultos",
-      "La acción de nulidad absoluta por objeto ilícito"
-     ],
-     "a": 2,
-     "e": "Los vicios ocultos (redhibitorios) dan lugar a las acciones edilicias: redhibitoria para deshacer la venta o estimatoria para rebajar el precio (C.C. arts. 1914 y ss.). · La resolutoria por incumplimiento no equivale a la garantía por vicios ocultos, que tiene régimen propio. · La nulidad por objeto ilícito nada tiene que ver con un defecto material oculto. · La lesión enorme atañe a la desproporción del precio, no al vicio de la cosa.",
-     "b": "C.C. arts. 1914-1927 · vicios ocultos y acciones edilicias"
-    },
-    {
-     "t": 1,
-     "d": 3,
-     "c": "Derecho Civil · Bienes",
-     "q": "Dos personas discuten sobre un bien mueble: una lo posee materialmente con ánimo de señor y dueño; la otra exhibe una factura de compra pero nunca tuvo la tenencia. Sobre la presunción de dominio:",
-     "o": [
-      "El poseedor se reputa dueño mientras otra persona no justifique serlo (art. 762 C.C.), de modo que la carga de desvirtuar la posesión recae en quien alega mejor derecho",
-      "El simple ánimo, sin tenencia, basta para configurar posesión",
-      "Prevalece siempre quien exhiba un documento de compra, por su valor probatorio",
-      "La factura otorga posesión inscrita oponible a todos"
-     ],
-     "a": 0,
-     "e": "El poseedor se reputa dueño mientras otro no justifique serlo (C.C. art. 762): la posesión conjuga corpus (tenencia) y animus, y traslada al tercero la carga de acreditar mejor derecho. · Dar prevalencia automática al documento desconoce la presunción posesoria. · Hablar de 'posesión inscrita' de un mueble por una factura confunde el régimen de muebles con el registral de inmuebles. · El solo ánimo sin tenencia no configura posesión: falta el corpus.",
-     "b": "C.C. arts. 762, 775 · posesión y presunción de dominio"
-    },
-    {
-     "t": 1,
-     "d": 3,
-     "c": "Derecho Civil · Responsabilidad",
-     "q": "Un menor de edad causa un daño mientras estaba bajo el cuidado de su padre. La víctima demanda al padre. Conforme al régimen de responsabilidad por el hecho ajeno del Código Civil:",
-     "o": [
-      "El padre no responde: solo responde quien materialmente causa el daño",
-      "El padre responde por el hecho del hijo menor que habita con él, con posibilidad de exonerarse probando que no pudo impedir el hecho pese a la diligencia debida",
-      "La víctima debe demandar exclusivamente al menor",
-      "La responsabilidad es objetiva y no admite exoneración alguna"
-     ],
-     "a": 1,
-     "e": "Los padres responden por los daños causados por los hijos menores que habitan con ellos, en una responsabilidad por el hecho ajeno que admite exoneración probando la debida diligencia y la imposibilidad de impedir el hecho (C.C. arts. 2347-2349). · Negar toda responsabilidad del padre desconoce el régimen del hecho ajeno. · Calificarla de objetiva sin exoneración ignora la causal liberatoria de diligencia. · Obligar a demandar solo al menor contradice la responsabilidad que la ley radica en los guardianes.",
-     "b": "C.C. arts. 2347-2349 · responsabilidad por el hecho ajeno"
-    },
-    {
-     "t": 1,
-     "d": 2,
-     "c": "Derecho Civil · Familia",
-     "q": "En un proceso de alimentos a favor de un menor, el obligado alega que no tiene empleo formal para reducir la cuota. Conforme al marco de alimentos y al interés superior del menor, el juez debe fijar la cuota atendiendo a:",
-     "o": [
-      "Solo los ingresos formales certificados del alimentante",
-      "Un porcentaje fijo e invariable del salario mínimo, sin analizar el caso",
-      "La sola voluntad del alimentante sobre cuánto puede aportar",
-      "La capacidad económica del alimentante (incluida su capacidad de trabajo y bienes) y las necesidades del alimentario, bajo el interés superior del menor"
-     ],
-     "a": 3,
-     "e": "La cuota alimentaria se fija ponderando la capacidad del alimentante —que incluye su capacidad laboral y patrimonio, no solo el ingreso formal— y las necesidades del menor, con prevalencia de su interés superior (C.C.; Ley 1098/2006). · Limitarlo a los ingresos formales permitiría eludir el deber ocultando actividad informal. · Un porcentaje fijo e invariable desconoce la valoración concreta. · Dejarlo a la voluntad del alimentante subvierte el carácter imperativo del deber alimentario.",
-     "b": "C.C. arts. 411 y ss. · Ley 1098 de 2006 · interés superior del menor"
-    },
-    {
-     "t": 1,
-     "d": 3,
-     "c": "Derecho Civil · Obligaciones",
-     "q": "En una obligación solidaria entre tres codeudores, el acreedor cobra la totalidad a uno solo de ellos, que paga. Este pretende recuperar de los demás. Conforme al Código Civil:",
-     "o": [
-      "Debe volver a demandar al acreedor para que redistribuya",
-      "Puede repetir contra los demás codeudores por la parte que a cada uno corresponde en la deuda, subrogándose en el crédito",
-      "No puede recuperar nada: quien paga una obligación solidaria lo hace de manera definitiva",
-      "La solidaridad impide todo reembolso entre codeudores"
-     ],
-     "a": 1,
-     "e": "El codeudor solidario que paga se subroga en el crédito y puede repetir contra los demás por su cuota parte en la deuda (C.C. arts. 1568, 1579). · Afirmar que el pago es 'definitivo' sin reembolso desconoce la acción de regreso. · Demandar al acreedor para 'redistribuir' confunde la relación externa (con el acreedor) con la interna (entre codeudores). · Sostener que la solidaridad impide todo reembolso contradice el régimen de la contribución a la deuda.",
-     "b": "C.C. arts. 1568, 1579 · solidaridad y acción de regreso"
-    }
-   ],
-   "rel": "civil",
-   "ambito": "Específico Civil · aspectos sustanciales del derecho civil y de familia"
-  },
-  {
-   "id": "comercial",
-   "numero": "T9",
-   "fecha": "Tema",
-   "titulo": "Derecho Comercial y Societario",
-   "docente": "sociedades, títulos valores y régimen mercantil",
-   "resumen": "Tipos de sociedades y de acciones, responsabilidad de los socios, emisión y derecho de preferencia, y competencia en conflictos societarios. Incluye la sesión de Sociedades del Dr. Omar Cárdenas.",
-   "preguntas": [
-    {
-     "t": 1,
-     "c": "Sociedades",
-     "q": "En la sociedad ANÓNIMA, el legislador estableció taxativamente CUATRO tipos de acciones, sin que los estatutos puedan crear otras. Son:",
-     "o": [
-      "Ordinarias, nominativas, al portador y liberadas",
-      "Ordinarias, de goce, privilegiadas, y con dividendo preferencial y sin derecho a voto",
-      "Comunes, preferentes, redimibles y convertibles",
-      "Fundadoras, de industria, de capital y de trabajo"
-     ],
-     "a": 1,
-     "e": "Regla enfática de clase: en la anónima solo existen 4 tipos de acciones impuestos por la ley — ordinarias (por defecto, un voto y sin preferencias), de goce, privilegiadas, y con dividendo preferencial y sin derecho a voto. Los estatutos no pueden inventar otras clases.",
-     "b": "C. de Co. arts. 379, 380, 381",
-     "d": 1
-    },
-    {
-     "t": 1,
-     "c": "Sociedades",
-     "q": "Las ACCIONES ORDINARIAS se caracterizan porque:",
-     "o": [
-      "Nunca dan derecho a voto",
-      "Confieren un voto por acción, no tienen preferencia en dividendos ni en la liquidación, y son las que se entienden entregadas por defecto si los estatutos no precisan otra clase",
-      "Garantizan un dividendo mínimo fijo",
-      "Solo las poseen los fundadores"
-     ],
-     "a": 1,
-     "e": "La acción ordinaria: un voto por acción, sin preferencias en dividendo ni en cuota de liquidación; es la clase supletiva — si el estatuto no dice qué clase se entrega a cambio del aporte, se entiende ordinaria. Punto expresamente aclarado en clase.",
-     "b": "C. de Co. art. 379",
-     "d": 1
-    },
-    {
-     "t": 2,
-     "c": "Sociedades",
-     "q": "Sobre la competencia para conocer conflictos societarios son ciertas:",
-     "s": [
-      "Los jueces civiles del circuito conocen en primera instancia de ciertos conflictos societarios",
-      "La Superintendencia de Sociedades ejerce funciones jurisdiccionales en materia societaria",
-      "El demandante puede elegir acudir a la Superintendencia de Sociedades en ejercicio de funciones jurisdiccionales",
-      "La justicia arbitral está prohibida para asuntos societarios"
-     ],
-     "a": 0,
-     "e": "Correctas 1, 2 y 3: existe competencia concurrente — jueces civiles del circuito y Supersociedades (con funciones jurisdiccionales), a elección del demandante, como explicó el docente. La 4 es falsa: los conflictos societarios son arbitrables si hay pacto.",
-     "b": "C.G.P. · Ley 1258/2008",
-     "d": 2
-    },
-    {
-     "t": 1,
-     "c": "Sociedades",
-     "q": "La regla general de RESPONSABILIDAD de los socios en las sociedades de capital (anónima y S.A.S.) es que:",
-     "o": [
-      "Responden ilimitada y solidariamente por las obligaciones sociales",
-      "Responden hasta el monto de sus aportes, salvo casos de desestimación de la personalidad jurídica (levantamiento del velo) por fraude o abuso",
-      "Responden con su patrimonio personal siempre",
-      "No tienen responsabilidad alguna"
-     ],
-     "a": 1,
-     "e": "En las sociedades de capital la responsabilidad del socio se limita al aporte; la excepción es la desestimación de la personalidad jurídica (art. 42 Ley 1258/2008 para la S.A.S.) cuando se usa la sociedad en fraude a la ley o en perjuicio de terceros.",
-     "b": "C. de Co. · Ley 1258/2008 art. 42",
-     "d": 1
-    },
-    {
-     "t": 1,
-     "c": "Sociedades",
-     "q": "Las ACCIONES CON DIVIDENDO PREFERENCIAL Y SIN DERECHO A VOTO otorgan a su titular:",
-     "o": [
-      "Doble voto y prelación total",
-      "Un dividendo preferencial y prioritario, a cambio de carecer de derecho a voto en las decisiones generales (salvo excepciones legales)",
-      "Voto múltiple y dividendo variable",
-      "La administración directa de la sociedad"
-     ],
-     "a": 1,
-     "e": "Estas acciones cambian poder político (voto) por ventaja económica (dividendo preferencial y mínimo). Recuperan el voto en supuestos excepcionales (p. ej., cuando no se les paga el dividendo preferencial durante cierto tiempo, o para decisiones que afectan sus derechos).",
-     "b": "C. de Co. arts. 61-63 Ley 222/1995",
-     "d": 1
-    },
-    {
-     "t": 3,
-     "c": "Sociedades",
-     "af": "En la S.A.S. los estatutos gozan de amplia libertad para configurar clases y series de acciones con derechos distintos",
-     "rz": "la Ley 1258 de 2008 privilegia la autonomía de la voluntad, a diferencia del régimen imperativo y taxativo de las cuatro clases de acciones de la sociedad anónima",
-     "a": 0,
-     "e": "Ambas verdaderas y la razón explica la afirmación: contraste central de la clase — la anónima tiene numerus clausus de acciones, mientras la S.A.S. permite crear clases y series con contenido económico y político diverso, expresión de su flexibilidad.",
-     "b": "Ley 1258/2008 art. 10",
-     "d": 2
-    },
-    {
-     "t": 2,
-     "c": "Sociedades",
-     "q": "Respecto de las ACCIONES DE GOCE (o de industria) son ciertas:",
-     "s": [
-      "Se entregan a quienes aportan trabajo o industria y no capital",
-      "No representan capital social ni otorgan, por sí solas, cuota en la liquidación por concepto de aporte",
-      "Confieren a su titular participación en las utilidades en los términos del estatuto",
-      "Son idénticas a las acciones ordinarias en todos sus efectos"
-     ],
-     "a": 0,
-     "e": "Correctas 1, 2 y 3: las acciones de goce retribuyen el aporte de industria/trabajo, participan de utilidades según pacto, pero no representan capital ni dan derecho a cuota de liquidación por aporte de capital. La 4 es falsa: difieren sustancialmente de las ordinarias.",
-     "b": "C. de Co. art. 380",
-     "d": 2
-    },
-    {
-     "t": 1,
-     "c": "Sociedades",
-     "q": "La emisión y colocación de acciones debe respetar, salvo pacto o decisión en contrario, el DERECHO DE PREFERENCIA, que consiste en:",
-     "o": [
-      "La facultad de la sociedad de vender a terceros primero",
-      "El derecho de los accionistas a suscribir las nuevas acciones en proporción a las que ya poseen, antes de ofrecerlas a terceros",
-      "La preferencia de los acreedores sobre las acciones",
-      "La prohibición de emitir nuevas acciones"
-     ],
-     "a": 1,
-     "e": "El derecho de preferencia protege la participación porcentual del accionista: ante una nueva emisión, puede suscribir a prorrata de su tenencia antes de que se ofrezcan a terceros. Es renunciable por la asamblea con las mayorías legales.",
-     "b": "C. de Co. art. 388",
-     "d": 2
-    },
-    {
-     "t": 1,
-     "d": 1,
-     "c": "Derecho Comercial · Títulos Valores",
-     "q": "Son requisitos generales de todo título valor (art. 621 C. de Co.):",
-     "o": [
-      "La firma del acreedor únicamente",
-      "La mención del derecho que en el título se incorpora y la firma de quien lo crea",
-      "El registro ante la cámara de comercio",
-      "La autenticación notarial"
-     ],
-     "a": 1,
-     "e": "El art. 621 C. de Co. exige, como requisitos comunes, la mención del derecho incorporado y la firma del creador (además de los requisitos propios de cada título). No requieren registro ni notaría para existir.",
-     "b": "C. de Co. art. 621"
-    },
-    {
-     "t": 1,
-     "d": 2,
-     "c": "Derecho Comercial · Títulos Valores",
-     "q": "La característica de la AUTONOMÍA en los títulos valores significa que:",
-     "o": [
-      "El título depende siempre del negocio causal",
-      "Cada tenedor adquiere un derecho originario, propio, independiente de las relaciones entre los anteriores tenedores",
-      "El título no puede transferirse",
-      "Solo el primer beneficiario puede cobrarlo"
-     ],
-     "a": 1,
-     "e": "La autonomía implica que el derecho del nuevo tenedor de buena fe es originario y no se ve afectado por vicios o excepciones personales de los tenedores anteriores. Junto con la literalidad y la incorporación, define la naturaleza de los títulos valores.",
-     "b": "C. de Co. arts. 619, 627 · Autonomía"
-    },
-    {
-     "t": 1,
-     "d": 2,
-     "c": "Derecho Comercial · Títulos Valores",
-     "q": "La LITERALIDAD del título valor implica que:",
-     "o": [
-      "El derecho se mide por causas externas al documento",
-      "El derecho incorporado se rige por el tenor escrito en el propio título",
-      "El título vale aunque no diga nada",
-      "El deudor puede modificarlo unilateralmente"
-     ],
-     "a": 1,
-     "e": "Por la literalidad, el alcance y las modalidades del derecho son los que constan por escrito en el título: lo no escrito no vincula, y lo escrito determina el contenido de la obligación cambiaria.",
-     "b": "C. de Co. art. 626 · Literalidad"
-    },
-    {
-     "t": 1,
-     "d": 3,
-     "c": "Derecho Comercial · Títulos Valores",
-     "q": "Un tenedor de buena fe demanda el pago de una letra de cambio. El demandado pretende oponerle que el negocio que originó la letra (una compraventa) fue incumplido por el primer beneficiario. Conforme al régimen cambiario, esa excepción:",
-     "o": [
-      "Prospera siempre, porque el negocio causal prevalece",
-      "No es oponible al tenedor de buena fe exento de culpa, por la autonomía y abstracción del título",
-      "Obliga a anular el título",
-      "Traslada la deuda al beneficiario original"
-     ],
-     "a": 1,
-     "e": "Las excepciones personales derivadas del negocio causal (incumplimiento de la compraventa) no son oponibles al tercero tenedor de buena fe exenta de culpa (art. 784 C. de Co.), precisamente por la autonomía y abstracción del título valor. Sí serían oponibles entre las partes inmediatas.",
-     "b": "C. de Co. arts. 784, 619 · Abstracción"
-    },
-    {
-     "t": 1,
-     "d": 1,
-     "c": "Derecho Comercial · Sociedades",
-     "q": "La sociedad por acciones simplificada (S.A.S.), creada por la Ley 1258 de 2008, puede constituirse:",
-     "o": [
-      "Solo por escritura pública ante notario",
-      "Por documento privado inscrito en el registro mercantil, salvo que aporten inmuebles",
-      "Únicamente con cinco o más accionistas",
-      "Solo por sociedades extranjeras"
-     ],
-     "a": 1,
-     "e": "La S.A.S. se constituye por documento privado inscrito en el registro mercantil (art. 5 Ley 1258/2008); requiere escritura pública solo cuando se aportan bienes cuya transferencia la exija (p. ej., inmuebles). Puede tener uno o más accionistas.",
-     "b": "Ley 1258/2008 arts. 5-7"
-    },
-    {
-     "t": 1,
-     "d": 1,
-     "c": "Derecho Comercial · Sociedades",
-     "q": "El REGISTRO MERCANTIL, que llevan las cámaras de comercio, tiene por función principal:",
-     "o": [
-      "Otorgar personería jurídica a las personas naturales",
-      "Dar publicidad a los actos y documentos del comerciante y de las sociedades, y hacerlos oponibles a terceros",
-      "Recaudar impuestos nacionales",
-      "Sustituir la contabilidad"
-     ],
-     "a": 1,
-     "e": "El registro mercantil da publicidad y oponibilidad a los actos sujetos a registro (matrícula del comerciante, constitución y reformas societarias, nombramientos), protegiendo a los terceros. No confiere personería a las personas naturales ni recauda tributos.",
-     "b": "C. de Co. arts. 26-33 · Registro mercantil"
-    },
-    {
-     "t": 3,
-     "d": 2,
-     "c": "Derecho Comercial · Sociedades",
-     "af": "En la sociedad de responsabilidad limitada los socios responden hasta el monto de sus aportes, por regla general",
-     "rz": "no obstante, en materia laboral y tributaria la ley puede extender la responsabilidad de los socios más allá del aporte",
-     "a": 0,
-     "e": "Ambas verdaderas y la razón explica (matiza) la afirmación: la regla es la responsabilidad limitada al aporte (art. 353 C. de Co.), pero existen excepciones legales —solidaridad por obligaciones laborales y ciertas tributarias— que amplían la responsabilidad. Conocer la regla y sus excepciones es clave.",
-     "b": "C. de Co. art. 353 · Excepciones laborales/tributarias"
-    },
-    {
-     "t": 1,
-     "d": 1,
-     "c": "Derecho Comercial · Insolvencia",
-     "q": "El régimen de insolvencia empresarial (Ley 1116 de 2006) tiene como finalidad primordial:",
-     "o": [
-      "Liquidar de inmediato toda empresa con deudas",
-      "La recuperación y conservación de la empresa viable como unidad de explotación económica y fuente de empleo, mediante la reorganización, y en su defecto la liquidación judicial",
-      "Sancionar penalmente al deudor",
-      "Condonar todas las deudas"
-     ],
-     "a": 1,
-     "e": "La Ley 1116/2006 privilegia la reorganización para salvar la empresa viable (empleo y crédito) y reserva la liquidación judicial para cuando aquélla no es posible. Su eje es la protección del crédito y la conservación de la empresa, no la sanción.",
-     "b": "Ley 1116/2006 art. 1"
-    },
-    {
-     "t": 1,
-     "d": 2,
-     "c": "Derecho Comercial · Actos de comercio",
-     "q": "Conforme al Código de Comercio, para determinar si una persona es comerciante se atiende, principalmente, a:",
-     "o": [
-      "Su nivel de ingresos",
-      "Que ejerza profesionalmente actos que la ley considera mercantiles",
-      "Su inscripción en el RUT",
-      "Su título profesional"
-     ],
-     "a": 1,
-     "e": "Es comerciante quien profesionalmente se ocupa en actividades que la ley califica como mercantiles (arts. 10 y 20 C. de Co.). La calidad se deriva del ejercicio profesional de actos de comercio, no del monto de ingresos ni del título.",
-     "b": "C. de Co. arts. 10, 20-23"
-    },
-    {
-     "t": 1,
-     "d": 3,
-     "c": "Derecho Comercial · Sociedades",
-     "q": "Un acreedor demuestra que los socios usaron la sociedad para defraudarlo, ocultando bienes tras la persona jurídica. La figura que permite hacer responsables a los socios con su patrimonio personal es:",
-     "o": [
-      "La disolución voluntaria",
-      "La desestimación de la personalidad jurídica (levantamiento del velo corporativo) por fraude o abuso",
-      "La fusión",
-      "La cesión de cuotas"
-     ],
-     "a": 1,
-     "e": "El levantamiento del velo corporativo (art. 42 Ley 1258/2008 para la S.A.S., y desarrollos jurisprudenciales) desestima la limitación de responsabilidad cuando la sociedad se usa en fraude a la ley o en perjuicio de terceros, alcanzando el patrimonio de socios y administradores.",
-     "b": "Ley 1258/2008 art. 42 · Levantamiento del velo"
-    },
-    {
-     "t": 1,
-     "d": 2,
-     "c": "Derecho Comercial · Títulos Valores",
-     "q": "El PAGARÉ se distingue de la LETRA DE CAMBIO principalmente en que:",
-     "o": [
-      "El pagaré contiene una orden de pago a un tercero",
-      "El pagaré contiene una promesa incondicional del propio suscriptor de pagar una suma, mientras la letra contiene una orden de pago girada a otro",
-      "La letra no requiere firma",
-      "El pagaré no puede endosarse"
-     ],
-     "a": 1,
-     "e": "En el pagaré el suscriptor promete pagar él mismo (art. 709 C. de Co.); en la letra, el girador ordena a un girado que pague al beneficiario (art. 671). Ambos son títulos de contenido crediticio, endosables y ejecutables.",
-     "b": "C. de Co. arts. 671, 709"
-    },
-    {
-     "t": 1,
-     "d": 3,
-     "c": "Derecho Comercial · Títulos Valores",
-     "q": "Una sociedad libra un pagaré a favor de un proveedor. El proveedor lo endosa en propiedad a un banco, que lo recibe de buena fe y sin conocer que el negocio subyacente (un suministro) fue incumplido. Vencido el título, el banco ejecuta a la sociedad, que propone como excepción el incumplimiento del proveedor. La excepción:",
-     "o": [
-      "Prospera solo si la sociedad denuncia el pleito al proveedor para vincularlo al proceso",
-      "No prospera frente al banco, pues es una excepción personal derivada del negocio causal, inoponible al tercero de buena fe exento de culpa",
-      "No prospera porque los pagarés, a diferencia de la letra, no admiten excepción alguna",
-      "Prospera, porque el negocio causal incumplido priva de eficacia al pagaré frente a cualquier tenedor"
-     ],
-     "a": 1,
-     "e": "El tenedor de buena fe exento de culpa adquiere un derecho autónomo; las excepciones personales del deudor frente a tenedores anteriores (como el incumplimiento del suministro) no le son oponibles (C. de Co. art. 784-12 y 619). · Sostener que el negocio causal priva de eficacia al título frente a cualquiera desconoce la autonomía y abstracción. · Condicionarlo a la denuncia del pleito confunde una figura procesal ajena con la oponibilidad de la excepción. · Afirmar que el pagaré no admite 'excepción alguna' es falso: sí admite las reales y las personales entre partes inmediatas, solo que no esta frente al tercero de buena fe.",
-     "b": "C. de Co. arts. 619, 784 · autonomía y abstracción"
-    },
-    {
-     "t": 1,
-     "d": 3,
-     "c": "Derecho Comercial · Sociedades",
-     "q": "Los acreedores de una S.A.S. demuestran que el único accionista la constituyó y la usó para defraudarlos, confundiendo su patrimonio personal con el social y descapitalizándola. Pretenden perseguir los bienes personales del accionista. La vía jurídicamente correcta es:",
-     "o": [
-      "La desestimación de la personalidad jurídica (art. 42 Ley 1258/2008), que permite declarar responsables a accionistas y administradores por fraude a la ley o perjuicio a terceros",
-      "Imposible: la responsabilidad del accionista de una S.A.S. se limita siempre al monto de sus aportes, sin excepción",
-      "Solicitar la disolución y liquidación de la sociedad, único mecanismo para alcanzar al accionista",
-      "Iniciar proceso ejecutivo directamente contra el accionista, pues en la S.A.S. no hay separación patrimonial"
-     ],
-     "a": 0,
-     "e": "El art. 42 de la Ley 1258/2008 consagra la desestimación de la personalidad jurídica: cuando la S.A.S. se usa en fraude a la ley o en perjuicio de terceros, accionistas y administradores responden con su patrimonio. · Afirmar que la limitación es absoluta ignora esta excepción legal expresa. · La disolución no persigue el patrimonio del accionista, solo termina la sociedad. · Ejecutar directamente al accionista niega que en la S.A.S. sí existe separación patrimonial, salvo el levantamiento del velo.",
-     "b": "Ley 1258 de 2008, art. 42 · desestimación de la personalidad jurídica"
-    },
-    {
-     "t": 1,
-     "d": 2,
-     "c": "Derecho Comercial · Insolvencia",
-     "q": "Una empresa viable pero iliquida solicita admisión a un proceso de insolvencia para reorganizarse y preservar el empleo; un acreedor pide en cambio su liquidación inmediata. Conforme a la Ley 1116 de 2006, el criterio rector que debe orientar la decisión es:",
-     "o": [
-      "La conservación de la empresa viable como unidad de explotación económica y fuente de empleo, privilegiando la reorganización sobre la liquidación",
-      "La liquidación inmediata, porque la iliquidez configura por sí sola la cesación de pagos definitiva",
-      "La decisión discrecional del juez sin sujeción a un criterio legal predeterminado",
-      "La preferencia del acreedor que primero solicite, por prelación temporal"
-     ],
-     "a": 0,
-     "e": "La Ley 1116/2006 (art. 1) privilegia la recuperación y conservación de la empresa viable mediante la reorganización, reservando la liquidación para cuando aquella no es posible. · La prelación temporal del acreedor no es el criterio rector. · Equiparar iliquidez a cesación definitiva confunde un presupuesto con su consecuencia y desconoce la finalidad recuperatoria. · Negar todo criterio legal y hablar de discrecionalidad pura es inexacto: el fin de conservación vincula al juez.",
-     "b": "Ley 1116 de 2006, art. 1 · finalidad del régimen de insolvencia"
-    },
-    {
-     "t": 1,
-     "d": 3,
-     "c": "Derecho Comercial · Sociedades",
-     "q": "En una sociedad de responsabilidad limitada, un trabajador obtiene sentencia laboral contra la sociedad, que resulta insolvente. Pretende cobrar a los socios. Conforme al régimen societario y laboral, es correcto que:",
-     "o": [
-      "Los socios nunca responden más allá de su aporte, ni siquiera por obligaciones laborales",
-      "En la limitada, la regla es la responsabilidad hasta el aporte, pero la ley extiende solidariamente a los socios la responsabilidad por las obligaciones laborales",
-      "Los socios responden por todo el pasivo social sin distinción, como en la sociedad colectiva",
-      "El trabajador debe demandar individualmente a cada socio antes de demandar a la sociedad"
-     ],
-     "a": 1,
-     "e": "La regla en la limitada es la responsabilidad hasta el aporte (C. de Co. art. 353), pero existe una excepción legal: los socios responden solidariamente por las obligaciones laborales de la sociedad. · Afirmar que 'nunca' responden más allá del aporte ignora esa excepción. · Equipararla a la colectiva (responsabilidad ilimitada por todo el pasivo) desborda el régimen de la limitada. · Exigir demandar primero a cada socio invierte el orden y confunde el régimen de responsabilidad con un presupuesto procesal inexistente.",
-     "b": "C. de Co. art. 353 · excepción de responsabilidad laboral solidaria"
-    },
-    {
-     "t": 1,
-     "d": 2,
-     "c": "Derecho Comercial · Registro Mercantil",
-     "q": "Una sociedad reforma sus estatutos y nombra nuevo representante legal, pero no inscribe el acto en el registro mercantil. Antes de la inscripción, el antiguo representante celebra un contrato con un tercero de buena fe. Frente a ese tercero, la reforma no inscrita:",
-     "o": [
-      "Es inoponible: mientras no se inscriba, el nombramiento y la reforma no producen efectos frente a terceros de buena fe",
-      "Es plenamente oponible, pues los actos societarios producen efectos desde su adopción",
-      "Es nula de pleno derecho por falta de registro",
-      "Obliga al tercero a verificar por su cuenta las actas internas de la sociedad"
-     ],
-     "a": 0,
-     "e": "El registro mercantil da publicidad y oponibilidad; los actos sujetos a registro no producen efectos frente a terceros de buena fe mientras no se inscriban (C. de Co. arts. 29 y 901). · Sostener plena oponibilidad desde la adopción desconoce la función del registro. · Hablar de nulidad confunde la falta de oponibilidad (inoponibilidad) con la invalidez del acto. · Cargar al tercero con revisar las actas internas invierte la carga: la publicidad la garantiza el registro, no la diligencia del tercero sobre documentos internos.",
-     "b": "C. de Co. arts. 29, 901 · inoponibilidad vs. nulidad"
-    },
-    {
-     "t": 1,
-     "d": 3,
-     "c": "Derecho Comercial · Títulos Valores",
-     "q": "Un cheque se presenta al banco librado ocho meses después de su fecha de creación; el banco lo rechaza por presentación tardía. El tenedor pretende ejecutar al girador. Conforme al Código de Comercio, la caducidad de la acción cambiaria por no presentación oportuna:",
-     "o": [
-      "Impide toda acción, pues el cheque perdió su naturaleza de título valor",
-      "Se sanea automáticamente por el simple paso del tiempo",
-      "No afecta necesariamente la acción cambiaria contra el girador que, teniendo fondos, dio orden de no pago o cuya conducta causó el impago; sí afecta a endosantes",
-      "Convierte el cheque en un pagaré exigible sin límite temporal"
-     ],
-     "a": 2,
-     "e": "La presentación tardía genera caducidad frente a los obligados de regreso (endosantes), pero la acción contra el girador subsiste cuando, teniendo provisión de fondos, esta no se pagó por causa imputable a él (C. de Co. arts. 721, 729). · Afirmar que impide 'toda' acción generaliza indebidamente la caducidad. · El saneamiento automático por el tiempo es lo contrario de la caducidad. · Convertir el cheque en pagaré confunde dos títulos con regímenes distintos.",
-     "b": "C. de Co. arts. 721, 729 · caducidad de la acción cambiaria en el cheque"
-    },
-    {
-     "t": 1,
-     "d": 2,
-     "c": "Derecho Comercial · Actos de Comercio",
-     "q": "Una persona natural, sin estar matriculada en el registro mercantil, ejerce de forma habitual y profesional la compraventa de mercancías para reventa. En un litigio niega ser comerciante porque no está matriculada. Jurídicamente:",
-     "o": [
-      "No es comerciante, porque la matrícula mercantil es constitutiva de esa calidad",
-      "La falta de matrícula hace nulos todos sus contratos mercantiles",
-      "Solo será comerciante cuando un juez así lo declare mediante sentencia",
-      "Es comerciante, porque la calidad se deriva del ejercicio profesional de actos de comercio, y la matrícula es un deber, no un requisito constitutivo"
-     ],
-     "a": 3,
-     "e": "La calidad de comerciante deriva del ejercicio profesional de actos mercantiles (C. de Co. arts. 10 y 100); la matrícula es un deber cuyo incumplimiento acarrea sanciones, no un requisito constitutivo. · Sostener que la matrícula es constitutiva confunde un deber con un presupuesto de la calidad. · Requerir declaración judicial previa desconoce que la calidad opera por el hecho del ejercicio. · Afirmar la nulidad de los contratos confunde el incumplimiento de un deber registral con la validez de los negocios.",
-     "b": "C. de Co. arts. 10, 100 · calidad de comerciante"
-    },
-    {
-     "t": 1,
-     "d": 3,
-     "c": "Derecho Comercial · Sociedades",
-     "q": "El administrador de una sociedad aprovecha, para un negocio propio, una oportunidad de negocio que correspondía a la compañía, causándole un perjuicio. Los socios pretenden hacerlo responsable. El fundamento correcto es:",
-     "o": [
-      "Ninguno: el administrador solo responde ante la sociedad si actúa con dolo penalmente probado",
-      "La sola infracción del reglamento interno, sin efectos indemnizatorios",
-      "La violación de sus deberes de lealtad y buena fe y del régimen de conflictos de interés (Ley 222/1995), que lo obliga a responder por los perjuicios causados",
-      "La responsabilidad objetiva por el resultado, sin necesidad de valorar su conducta"
-     ],
-     "a": 2,
-     "e": "Los administradores deben obrar con lealtad y buena fe y anteponer el interés social; aprovechar en beneficio propio una oportunidad de la sociedad viola esos deberes y el régimen de conflictos de interés (Ley 222/1995, arts. 23-24), generando responsabilidad por los perjuicios. · Exigir dolo penal probado eleva indebidamente el estándar. · Reducirlo a una falta reglamentaria sin efectos niega la acción indemnizatoria. · Hablar de responsabilidad objetiva desconoce que se valora la infracción de deberes, no el mero resultado.",
-     "b": "Ley 222 de 1995, arts. 23-24 · deberes de los administradores"
-    }
-   ],
-   "rel": "civil",
-   "ambito": "Específico Civil · Derecho Comercial y Societario"
   },
   {
    "id": "constitucional",
@@ -5740,503 +4305,6 @@ const DIPLOMADO = {
    "ambito": "Transversal · Filosofía del derecho, Teoría jurídica, Hermenéutica y Argumentación (conocimientos generales)"
   },
   {
-   "id": "penal",
-   "numero": "T7",
-   "fecha": "Tema",
-   "titulo": "Derecho Penal y Proceso Penal",
-   "docente": "Banco consolidado · módulos EJRLB y metodología PGN",
-   "resumen": "Teoría del delito (conducta, tipicidad, antijuridicidad, culpabilidad), causales de ausencia de responsabilidad, legalidad y estructura del juicio penal. Sesiones de los Dres. José María Peláez (Penal General) y Luisa Caldas (Proceso Penal).",
-   "preguntas": [
-    {
-     "t": 1,
-     "c": "Derecho Penal",
-     "q": "La diferencia entre el dolo eventual y la culpa con representación radica en que en el dolo eventual el sujeto",
-     "o": [
-      "no prevé el resultado en ningún momento",
-      "prevé el resultado como probable y su no producción la deja librada al azar",
-      "confía razonablemente en poder evitar el resultado previsto",
-      "actúa con la intención directa de producir el resultado"
-     ],
-     "a": 1,
-     "e": "El art. 22 del Código Penal recoge la fórmula: hay dolo eventual cuando la realización de la infracción ha sido prevista como probable y su no producción se deja librada al azar; en la culpa con representación el sujeto prevé el resultado pero confía imprudentemente en evitarlo.",
-     "b": "Arts. 22 y 23 Ley 599 de 2000",
-     "d": 1
-    },
-    {
-     "t": 2,
-     "c": "Derecho Penal",
-     "q": "En materia de error como eximente o atenuante de responsabilidad (art. 32 del Código Penal) es cierto que:",
-     "s": [
-      "El error de tipo vencible excluye en todos los casos cualquier forma de responsabilidad penal",
-      "El error de tipo invencible elimina la responsabilidad penal",
-      "El error de prohibición vencible convierte la conducta dolosa en culposa",
-      "El error de prohibición vencible da lugar a una rebaja de la pena en la mitad"
-     ],
-     "a": 2,
-     "e": "Son correctas 2 y 4. El error de tipo vencible deja subsistente la responsabilidad culposa si la ley prevé el tipo imprudente (1 falsa); el error de prohibición no muta el título de imputación a culpa, sino que, si es vencible, rebaja la pena en la mitad (3 falsa).",
-     "b": "Art. 32 nums. 10 y 11 Ley 599 de 2000",
-     "d": 2
-    },
-    {
-     "t": 3,
-     "c": "Derecho Penal",
-     "af": "En los delitos de comisión por omisión, el resultado solo puede imputarse a quien ostente una posición de garante respecto del bien jurídico.",
-     "rz": "La posición de garante surge exclusivamente de la ley y del contrato.",
-     "a": 2,
-     "e": "La afirmación es verdadera (art. 25 C.P.). La razón es falsa: además de las fuentes formales, el Código reconoce la asunción voluntaria de protección, la comunidad de vida, la actividad conjunta riesgosa y la injerencia (creación precedente de un riesgo).",
-     "b": "Art. 25 Ley 599 de 2000",
-     "d": 3
-    },
-    {
-     "t": 1,
-     "c": "Derecho Penal",
-     "q": "En virtud del principio de favorabilidad penal,",
-     "o": [
-      "la ley permisiva o favorable solo se aplica si estaba vigente al momento de la sentencia",
-      "la ley posterior desfavorable puede aplicarse retroactivamente por razones de política criminal",
-      "la ley permisiva o favorable, aun cuando sea posterior, se aplica de preferencia, y la doctrina admite incluso la aplicación de la ley intermedia más benigna",
-      "el principio solo opera a petición expresa del condenado"
-     ],
-     "a": 2,
-     "e": "El art. 29 C.P. y el art. 6º del Código Penal consagran la aplicación preferente de la ley favorable, incluso posterior; jurisprudencia y doctrina extienden el beneficio a la lex intermedia, y su aplicación procede aun de oficio.",
-     "b": "Art. 29 C.P. · Art. 6º Ley 599 de 2000",
-     "d": 1
-    },
-    {
-     "t": 2,
-     "c": "Derecho Penal",
-     "q": "Conforme a la teoría de la imputación objetiva del resultado es cierto que:",
-     "s": [
-      "La imputación exige la creación de un riesgo jurídicamente desaprobado",
-      "La imputación exige que el resultado sea la concreción o realización del riesgo creado",
-      "La actuación dentro del riesgo permitido excluye la imputación, aunque la conducta haya causado naturalísticamente el resultado",
-      "La sola relación de causalidad natural es suficiente para la imputación jurídica del resultado"
-     ],
-     "a": 0,
-     "e": "Son correctas 1, 2 y 3, núcleos de la teoría desarrollada por Roxin y acogida por la jurisprudencia. La opción 4 es justamente lo que la teoría niega: el art. 9º del C.P. advierte que la causalidad por sí sola no basta para la imputación jurídica del resultado.",
-     "b": "Art. 9º Ley 599 de 2000 · Roxin, Derecho Penal PG",
-     "d": 2
-    },
-    {
-     "t": 3,
-     "c": "Derecho Penal",
-     "af": "La antijuridicidad material exige que la conducta típica lesione o ponga efectivamente en peligro, sin justa causa, el bien jurídico tutelado por la ley penal.",
-     "rz": "En el derecho penal colombiano basta la contradicción puramente formal entre la conducta y la norma para afirmar la antijuridicidad.",
-     "a": 2,
-     "e": "La afirmación es verdadera y reproduce el art. 11 del Código Penal (principio de lesividad). La razón es falsa: precisamente ese artículo descarta la concepción puramente formal, exigiendo la afectación real o el peligro efectivo del bien jurídico.",
-     "b": "Art. 11 Ley 599 de 2000",
-     "d": 3
-    },
-    {
-     "t": 1,
-     "c": "Derecho Penal General",
-     "q": "La AUSENCIA DE CONDUCTA (o ausencia de acción) como categoría dogmática significa que no hay delito porque falta el primer elemento del delito. NO hay conducta penalmente relevante en:",
-     "o": [
-      "Los delitos culposos",
-      "Los hechos realizados por animales o fuerzas de la naturaleza sin intervención humana dominable, los hechos sin significado social y los hechos físicamente indominables",
-      "Los delitos de omisión",
-      "Los actos preparatorios punibles"
-     ],
-     "a": 1,
-     "e": "La conducta exige fuente humana, exteriorización con significado social y dominabilidad física. Faltan cuando el hecho proviene de animales o de la naturaleza (sin posición de garante), no trasciende la esfera interna, o es físicamente indominable (p. ej., fuerza mayor del art. 32-1 C. Penal).",
-     "b": "C. Penal art. 32-1",
-     "d": 2
-    },
-    {
-     "t": 3,
-     "c": "Derecho Penal General",
-     "af": "En derecho penal el caso fortuito y la fuerza mayor no se equiparan sin más, a diferencia de lo que ocurre en otros sectores del ordenamiento",
-     "rz": "la dogmática penal distingue sus efectos y su ubicación sistemática, de modo que no basta con asimilarlos como 'eventos de la naturaleza' como suele hacerse en el derecho civil",
-     "a": 0,
-     "e": "Ambas verdaderas y la razón explica la afirmación: advertencia expresa de clase — en penal no se manejan como sinónimos (como a veces en civil). El docente subrayó la distinción, relevante para la teoría del delito y las causales de ausencia de responsabilidad.",
-     "b": "C. Penal art. 32",
-     "d": 3
-    },
-    {
-     "t": 1,
-     "c": "Derecho Penal General",
-     "q": "La estructura tripartita del delito en la dogmática penal contemporánea (acogida por el Código Penal colombiano) exige que la conducta sea:",
-     "o": [
-      "Típica, antijurídica y culpable",
-      "Dolosa, grave y consumada",
-      "Pública, notoria y probada",
-      "Voluntaria, útil y necesaria"
-     ],
-     "a": 0,
-     "e": "El delito es conducta típica, antijurídica y culpable (art. 9 C. Penal). La tipicidad (adecuación al tipo), la antijuridicidad (lesión o puesta en peligro del bien jurídico sin justificación) y la culpabilidad (reproche) son sus categorías. La ausencia de cualquiera excluye el delito.",
-     "b": "C. Penal arts. 9-12",
-     "d": 1
-    },
-    {
-     "t": 2,
-     "c": "Derecho Penal General",
-     "q": "Son causales de ausencia de responsabilidad del art. 32 del Código Penal:",
-     "s": [
-      "La legítima defensa",
-      "El estado de necesidad",
-      "El caso fortuito y la fuerza mayor",
-      "La sola condición de servidor público del autor"
-     ],
-     "a": 0,
-     "e": "Correctas 1, 2 y 3 (art. 32 C. Penal, entre otras: cumplimiento de deber legal, orden legítima, insuperable coacción ajena, error). La 4 es un distractor: la calidad de servidor público no es causal de ausencia de responsabilidad; puede ser incluso agravante o elemento del tipo.",
-     "b": "C. Penal art. 32",
-     "d": 2
-    },
-    {
-     "t": 1,
-     "c": "Derecho Penal General",
-     "q": "El principio de LEGALIDAD en materia penal (nullum crimen, nulla poena sine lege) implica, entre otras garantías, que:",
-     "o": [
-      "El juez puede crear tipos penales por analogía in malam partem",
-      "No hay delito ni pena sin ley previa, escrita, estricta y cierta que los defina; y se prohíbe la analogía en perjuicio del reo",
-      "La costumbre es fuente de delitos",
-      "La retroactividad penal opera siempre"
-     ],
-     "a": 1,
-     "e": "Legalidad estricta (art. 29 C.P.; art. 6 C. Penal): ley previa, escrita, cierta y estricta; prohibición de analogía in malam partem; favorabilidad y retroactividad solo de la ley más benigna. Garantía nuclear del debido proceso penal.",
-     "b": "C.P. art. 29 · C. Penal arts. 6 y 10",
-     "d": 1
-    },
-    {
-     "t": 1,
-     "c": "Proceso Penal",
-     "q": "En la AUDIENCIA PREPARATORIA del proceso penal, el juez, además de resolver competencia, impedimentos, recusaciones y nulidades, tiene una facultad probatoria que la docente subrayó:",
-     "o": [
-      "No puede intervenir en materia probatoria",
-      "Puede decretar pruebas de oficio cuando lo considere necesario para el esclarecimiento de los hechos, aun sin solicitud de parte",
-      "Solo admite las pruebas de la fiscalía",
-      "Debe rechazar toda prueba no pedida por la defensa"
-     ],
-     "a": 1,
-     "e": "En la preparatoria el juez sanea el proceso y decide sobre las pruebas; la docente destacó que conserva facultades probatorias de oficio para ordenar pruebas necesarias, aun sin petición de parte, en procura de la verdad. Las decisiones sobre nulidades y pruebas admiten recursos.",
-     "b": "Régimen procesal penal",
-     "d": 1
-    },
-    {
-     "t": 2,
-     "c": "Proceso Penal",
-     "q": "Sobre la estructura del juicio penal son ciertas:",
-     "s": [
-      "Tras el saneamiento, se fija fecha de inicio del juicio oral",
-      "La práctica probatoria sigue la regla: primero las pruebas de la fiscalía, luego las de la defensa",
-      "El juicio culmina con alegatos de conclusión y sentencia, susceptible de apelación y eventual casación",
-      "El procesado está obligado a declarar en su contra al inicio del juicio"
-     ],
-     "a": 0,
-     "e": "Correctas 1, 2 y 3: fijada la fecha, el juicio oral practica primero la prueba de la fiscalía y luego la de la defensa, y concluye con alegatos, sentencia, apelación y casación. La 4 es falsa: el procesado tiene derecho a guardar silencio y a no autoincriminarse (art. 33 C.P.).",
-     "b": "C.P. art. 33 · Régimen procesal penal",
-     "d": 2
-    },
-    {
-     "t": 3,
-     "c": "Proceso Penal",
-     "af": "Las decisiones que el juez adopta en la audiencia preparatoria sobre nulidades y sobre pruebas son susceptibles de recursos antes de fijarse la fecha del juicio oral",
-     "rz": "garantizar la impugnación de esas decisiones de saneamiento y probatorias asegura el debido proceso y la depuración del trámite antes del juicio",
-     "a": 0,
-     "e": "Ambas verdaderas y la razón explica la afirmación: la docente precisó que tanto la decisión sobre nulidades como la de pruebas admiten recursos; resueltos estos, se fija fecha del juicio oral. La impugnación previa protege el debido proceso.",
-     "b": "Proceso Penal",
-     "d": 3
-    },
-    {
-     "t": 1,
-     "d": 1,
-     "c": "Derecho Penal General",
-     "q": "La ANTIJURIDICIDAD material, en el Código Penal colombiano, exige que la conducta típica:",
-     "o": [
-      "Solo se adecúe formalmente al tipo",
-      "Lesione o ponga efectivamente en peligro, sin justa causa, el bien jurídico tutelado por la ley penal",
-      "Sea cometida por un servidor público",
-      "Cause un daño económico"
-     ],
-     "a": 1,
-     "e": "El art. 11 C. Penal consagra la antijuridicidad material: no basta la adecuación formal al tipo; se requiere lesión o puesta en peligro efectiva del bien jurídico, sin justificación. De ahí el principio de lesividad.",
-     "b": "C. Penal art. 11 · Antijuridicidad material · Lesividad"
-    },
-    {
-     "t": 1,
-     "d": 1,
-     "c": "Derecho Penal General",
-     "q": "La CULPABILIDAD, tercera categoría del delito, se fundamenta en:",
-     "o": [
-      "La sola causación del resultado",
-      "El juicio de reproche por haber actuado de determinada manera pudiendo actuar conforme a derecho, que exige imputabilidad, conocimiento de la ilicitud y exigibilidad de otra conducta",
-      "La peligrosidad del autor",
-      "La gravedad del daño"
-     ],
-     "a": 1,
-     "e": "La culpabilidad es reproche personal: presupone imputabilidad, posibilidad de conocer la ilicitud y exigibilidad de una conducta distinta. El Código proscribe la responsabilidad objetiva (art. 12): no hay pena sin culpabilidad.",
-     "b": "C. Penal art. 12 · Culpabilidad"
-    },
-    {
-     "t": 1,
-     "d": 2,
-     "c": "Derecho Penal General",
-     "q": "El principio de FAVORABILIDAD en materia penal implica que:",
-     "o": [
-      "Siempre se aplica la ley vigente al momento del fallo",
-      "La ley permisiva o favorable, aun siendo posterior, se aplica de preferencia a la restrictiva o desfavorable, incluso con efecto retroactivo",
-      "La ley más severa se aplica retroactivamente",
-      "No hay excepciones a la irretroactividad"
-     ],
-     "a": 1,
-     "e": "La favorabilidad (art. 29 C.P.; art. 6 C. Penal) es excepción a la irretroactividad: la norma más benigna se aplica aun a hechos anteriores y a procesos en curso. Es garantía fundamental del debido proceso penal.",
-     "b": "C.P. art. 29 · C. Penal art. 6"
-    },
-    {
-     "t": 3,
-     "d": 2,
-     "c": "Derecho Penal General",
-     "af": "Quien obra en legítima defensa realiza una conducta típica pero no antijurídica",
-     "rz": "la legítima defensa es una causal de justificación que excluye la antijuridicidad de la conducta, pues el ordenamiento autoriza la reacción proporcionada frente a una agresión injusta, actual o inminente",
-     "a": 0,
-     "e": "Ambas verdaderas y la razón explica la afirmación: la legítima defensa (art. 32-6 C. Penal) es causal de justificación: la conducta sigue siendo típica (mata, lesiona), pero no antijurídica, porque el derecho la autoriza si es proporcionada frente a agresión injusta, actual o inminente. Distinta de las causales de inculpabilidad.",
-     "b": "C. Penal art. 32-6 · Causales de justificación"
-    },
-    {
-     "t": 1,
-     "d": 3,
-     "c": "Derecho Penal General",
-     "q": "Una persona, coaccionada mediante amenaza grave e inminente contra su vida, comete un delito. Esta situación corresponde a:",
-     "o": [
-      "Una causal de atipicidad",
-      "La insuperable coacción ajena, causal que excluye la responsabilidad por inexigibilidad de otra conducta",
-      "Legítima defensa",
-      "Estado de necesidad justificante"
-     ],
-     "a": 1,
-     "e": "La insuperable coacción ajena (art. 32-8 C. Penal) excluye la responsabilidad por inculpabilidad: no era exigible otra conducta ante la amenaza grave e inminente. Se distingue de la justificación (donde la conducta es autorizada) y de la atipicidad (donde falta un elemento del tipo).",
-     "b": "C. Penal art. 32-8 · Inexigibilidad"
-    },
-    {
-     "t": 1,
-     "d": 2,
-     "c": "Proceso Penal",
-     "q": "En el sistema penal acusatorio (Ley 906 de 2004), la carga de la prueba para desvirtuar la presunción de inocencia corresponde a:",
-     "o": [
-      "La defensa",
-      "El juez",
-      "La Fiscalía General de la Nación",
-      "El Ministerio Público"
-     ],
-     "a": 2,
-     "e": "En el sistema acusatorio la Fiscalía tiene la carga de probar, más allá de toda duda razonable, la responsabilidad penal (art. 7 y 381 Ley 906/2004). La presunción de inocencia (art. 29 C.P.) exime al procesado de probar su inocencia.",
-     "b": "C.P. art. 29 · Ley 906/2004 arts. 7, 381"
-    },
-    {
-     "t": 1,
-     "d": 3,
-     "c": "Derecho Penal · Tipicidad",
-     "q": "Una persona dispara para matar a otra, pero el arma se encasquilla y el disparo nunca sale; la víctima resulta ilesa. El sujeto había hecho todo lo necesario para consumar el homicidio. Conforme a la teoría del delito, responde por:",
-     "o": [
-      "Tentativa de homicidio, porque dio principio a la ejecución mediante actos idóneos e inequívocamente dirigidos a consumarlo, que no se produjo por circunstancias ajenas a su voluntad",
-      "Lesiones personales, por el peligro creado",
-      "Ningún delito, porque no se produjo resultado alguno",
-      "Homicidio consumado, pues su intención era matar"
-     ],
-     "a": 0,
-     "e": "La tentativa (art. 27 C. Penal) se configura cuando el sujeto da principio a la ejecución del delito mediante actos idóneos e inequívocamente dirigidos a su consumación, que no se produce por circunstancias ajenas a su voluntad. · El homicidio consumado exige la muerte, que no ocurrió. · Afirmar que no hay delito ignora que la tentativa es punible. · Las lesiones personales requieren un daño a la integridad que aquí no se produjo; el desvalor recae en la tentativa de homicidio.",
-     "b": "C. Penal (Ley 599/2000) art. 27 · dispositivo amplificador: tentativa"
-    },
-    {
-     "t": 1,
-     "d": 3,
-     "c": "Derecho Penal · Antijuridicidad",
-     "q": "Una persona, agredida injustamente con un arma por otra, repele el ataque causándole lesiones proporcionales para defenderse. Es procesada por lesiones. Conforme a la teoría del delito, su conducta:",
-     "o": [
-      "Es típica pero no antijurídica, por estar amparada en la legítima defensa como causal de justificación, siempre que la reacción sea proporcional a la agresión injusta, actual o inminente",
-      "Es culpable pero se atenúa la pena por la provocación",
-      "Es atípica, porque no se adecúa a ningún tipo penal",
-      "Configura un estado de necesidad exculpante"
-     ],
-     "a": 0,
-     "e": "La legítima defensa (art. 32-6 C. Penal) es causal de justificación: la conducta sigue siendo típica (lesionar), pero no antijurídica, porque el derecho autoriza la reacción proporcional ante una agresión injusta, actual o inminente. · Calificarla de atípica confunde la ausencia de tipo con la justificación (el hecho sí encaja en el tipo de lesiones). · Hablar de atenuación por provocación presupone culpabilidad, cuando la conducta está justificada. · El estado de necesidad exculpante es una figura distinta, que no describe la defensa frente a una agresión injusta.",
-     "b": "C. Penal art. 32-6 · legítima defensa · causales de justificación"
-    },
-    {
-     "t": 1,
-     "d": 3,
-     "c": "Derecho Penal · Culpabilidad",
-     "q": "Una persona con un trastorno mental grave, que al momento del hecho no podía comprender la ilicitud de su conducta ni determinarse de acuerdo con esa comprensión, causa un daño. Conforme a la teoría del delito, su situación se resuelve en el ámbito de:",
-     "o": [
-      "La culpabilidad: es inimputable, lo que excluye el juicio de reproche y da lugar a medidas de seguridad, no a pena",
-      "La punibilidad: se le impone la pena pero se reduce a la mitad",
-      "La tipicidad: la conducta es atípica por falta de dolo",
-      "La antijuridicidad: la conducta está justificada"
-     ],
-     "a": 0,
-     "e": "La inimputabilidad por trastorno mental (art. 33 C. Penal) se ubica en la culpabilidad: quien no puede comprender la ilicitud ni determinarse conforme a ella no es reprochable, por lo que se le aplican medidas de seguridad y no pena. · Ubicarla en la tipicidad confunde la imputabilidad con el dolo (la conducta puede ser típica). · Situarla en la antijuridicidad la asimila erróneamente a una justificación. · Tratarla como una simple rebaja de pena en la punibilidad desconoce que la consecuencia es una medida de seguridad, no una pena atenuada.",
-     "b": "C. Penal arts. 33 y 9 · inimputabilidad · medidas de seguridad"
-    },
-    {
-     "t": 1,
-     "d": 3,
-     "c": "Derecho Penal · Concurso de conductas",
-     "q": "Con una sola acción —colocar y detonar un explosivo— una persona mata a tres individuos que estaban juntos. Se discute cómo imputar los tres homicidios. Conforme al Código Penal, hay:",
-     "o": [
-      "Delito continuado, porque los hechos se dieron en un mismo contexto",
-      "Un solo delito de homicidio, porque hubo una sola acción",
-      "Un concurso ideal (o formal): una sola conducta que infringe varias veces la misma disposición, imputándose los varios resultados con la regla concursal",
-      "Un concurso aparente de tipos que se resuelve por especialidad"
-     ],
-     "a": 2,
-     "e": "Cuando una sola conducta produce varios resultados típicos, hay concurso ideal o formal (art. 31 C. Penal), y los varios homicidios se imputan aplicando la regla concursal. · Sostener 'un solo homicidio' ignora la pluralidad de bienes jurídicos lesionados (tres vidas). · El concurso aparente supone que un solo tipo desplaza a otros para un mismo hecho, no varios resultados. · El delito continuado exige pluralidad de acciones con unidad de designio, no una sola acción con varios resultados.",
-     "b": "C. Penal art. 31 · concurso de conductas punibles"
-    },
-    {
-     "t": 1,
-     "d": 2,
-     "c": "Derecho Penal · Principio de legalidad",
-     "q": "Un juez pretende sancionar una conducta socialmente reprochable que, sin embargo, no está descrita como delito en ninguna ley, aplicando por analogía un tipo penal parecido. Conforme al principio de legalidad:",
-     "o": [
-      "Puede crear el tipo penal mediante la jurisprudencia",
-      "Puede aplicar analogía siempre que favorezca el orden público",
-      "Puede hacerlo si la conducta es gravemente lesiva, aunque no esté tipificada",
-      "No puede: rige la legalidad estricta (nullum crimen sine lege) y la prohibición de analogía in malam partem; sin ley previa que describa la conducta no hay delito"
-     ],
-     "a": 3,
-     "e": "El principio de legalidad (art. 29 C.P.; art. 6 C. Penal) exige ley previa, escrita, cierta y estricta, y prohíbe la analogía en perjuicio del reo: sin tipo previo no hay delito ni pena. · Sancionar por la sola lesividad sin tipo desconoce la legalidad. · La analogía 'a favor del orden público' es analogía in malam partem, prohibida. · El juez no crea tipos penales por jurisprudencia: eso corresponde al legislador (reserva de ley).",
-     "b": "C.P. art. 29 · C. Penal arts. 6 y 10 · legalidad y prohibición de analogía"
-    },
-    {
-     "t": 1,
-     "d": 3,
-     "c": "Proceso Penal · Presunción de inocencia",
-     "q": "En un juicio oral, la Fiscalía presenta indicios pero no logra desvirtuar plenamente la duda sobre la responsabilidad del acusado. El juez debe:",
-     "o": [
-      "Ordenar la práctica de nuevas pruebas de oficio para condenar",
-      "Trasladar al acusado la carga de probar su inocencia",
-      "Absolver, pues la carga de la prueba es de la Fiscalía y, subsistiendo duda razonable, opera el in dubio pro reo",
-      "Condenar, porque existen indicios que apuntan al acusado"
-     ],
-     "a": 2,
-     "e": "En el sistema acusatorio la Fiscalía tiene la carga de probar la responsabilidad más allá de toda duda razonable; subsistiendo la duda, opera el in dubio pro reo y procede la absolución (arts. 7 y 381 Ley 906/2004; art. 29 C.P.). · Condenar con indicios que no superan la duda vulnera la presunción de inocencia. · Ordenar pruebas de oficio 'para condenar' compromete la imparcialidad y no corresponde al rol del juez de conocimiento. · Trasladar al acusado la carga de probar su inocencia invierte la presunción de inocencia.",
-     "b": "C.P. art. 29 · Ley 906/2004 arts. 7, 381 · in dubio pro reo"
-    },
-    {
-     "t": 1,
-     "d": 3,
-     "c": "Proceso Penal · Cláusula de exclusión",
-     "q": "En un allanamiento realizado sin orden judicial y sin que concurriera ninguna excepción legal, se halla evidencia incriminatoria. La Fiscalía pretende usarla en el juicio. Conforme al sistema acusatorio:",
-     "o": [
-      "La evidencia es válida si demuestra la culpabilidad, pues el fin justifica el medio",
-      "La evidencia se admite y el vicio solo genera sanción disciplinaria al agente",
-      "La ilegalidad se sanea si la defensa no la objeta de inmediato",
-      "La prueba obtenida con violación de garantías fundamentales debe excluirse (cláusula de exclusión), y por regla también la que derive de ella (fruto del árbol envenenado)"
-     ],
-     "a": 3,
-     "e": "La prueba obtenida con violación de derechos fundamentales es nula de pleno derecho y debe excluirse (art. 29 C.P.; art. 23 Ley 906/2004), regla que por lo general se extiende a la evidencia derivada. · Admitirla porque 'demuestra la culpabilidad' consagra el 'fin justifica el medio', proscrito. · Reducir el vicio a sanción disciplinaria del agente mantiene indebidamente la prueba ilícita. · Sostener que se sanea por falta de objeción inmediata desconoce que la exclusión protege garantías indisponibles.",
-     "b": "C.P. art. 29 · Ley 906/2004 art. 23 · cláusula de exclusión"
-    },
-    {
-     "t": 1,
-     "d": 2,
-     "c": "Proceso Penal · Principio de oportunidad",
-     "q": "La Fiscalía, cumpliendo los requisitos legales y bajo control del juez de garantías, decide suspender o renunciar a la persecución penal en un caso concreto. Esta facultad corresponde al:",
-     "o": [
-      "Principio de inmediación, propio de la práctica probatoria",
-      "Principio de oportunidad, excepción reglada a la obligatoriedad de la acción penal, sujeto a causales legales y a control del juez de garantías",
-      "Principio de legalidad procesal, que obliga a perseguir todo delito sin excepción",
-      "Principio acusatorio, que impide a la Fiscalía archivar casos"
-     ],
-     "a": 1,
-     "e": "El principio de oportunidad (art. 250 C.P.; Ley 906/2004) es la facultad reglada de la Fiscalía de suspender, interrumpir o renunciar a la persecución en casos y bajo condiciones legales, con control del juez de garantías. · El principio de legalidad procesal es precisamente la regla que la oportunidad exceptúa. · El principio acusatorio no impide archivar o aplicar oportunidad. · La inmediación atañe a la práctica probatoria en juicio, no a la disponibilidad de la acción.",
-     "b": "C.P. art. 250 · Ley 906/2004 · principio de oportunidad"
-    },
-    {
-     "t": 1,
-     "d": 3,
-     "c": "Derecho Penal · Dolo y culpa",
-     "q": "Un conductor, sin intención de causar daño pero infringiendo groseramente las normas de tránsito y confiando imprudentemente en poder evitar el resultado, atropella y mata a un peatón. Conforme al Código Penal, la modalidad de la conducta es:",
-     "o": [
-      "Preterintencional, porque quiso lesionar y causó la muerte",
-      "Culposa, pues obró con infracción del deber objetivo de cuidado y sin voluntad de realizar el tipo, siéndole previsible el resultado",
-      "Fortuita, sin responsabilidad penal alguna",
-      "Dolosa, porque conducía voluntariamente"
-     ],
-     "a": 1,
-     "e": "La culpa (art. 23 C. Penal) supone la infracción del deber objetivo de cuidado con un resultado previsible no querido; el conductor imprudente que confía en evitar el resultado obra con culpa (con representación). · La conducta dolosa exige voluntad de realizar el tipo, ausente aquí. · La preterintención supone querer un resultado menor (lesionar) y causar uno mayor, lo que no describe el caso. · Calificarla de fortuita niega la infracción del deber de cuidado, que sí existió.",
-     "b": "C. Penal arts. 21-23 · modalidades de la conducta punible: dolo y culpa"
-    },
-    {
-     "t": 1,
-     "d": 3,
-     "c": "Derecho Penal · Causales de ausencia de responsabilidad",
-     "q": "Una persona, coaccionada por otra que amenaza de forma grave e inminente con matar a su hijo, comete un delito para evitarlo. Conforme al Código Penal, su situación corresponde a:",
-     "o": [
-      "Insuperable coacción ajena, causal que excluye la responsabilidad por inexigibilidad de otra conducta ante la amenaza grave e inminente",
-      "Error de tipo que excluye el dolo",
-      "Estado de necesidad justificante que vuelve lícita la conducta",
-      "Legítima defensa, por proteger a un tercero"
-     ],
-     "a": 0,
-     "e": "La insuperable coacción ajena (art. 32-8 C. Penal) excluye la responsabilidad por inculpabilidad: ante la amenaza grave e inminente no era exigible otra conducta. · La legítima defensa exige repeler una agresión injusta contra un bien, no ejecutar un delito bajo coacción. · El estado de necesidad justificante 'volvería lícita' la conducta, lo que no corresponde a esta hipótesis de inexigibilidad. · El error de tipo recae sobre un elemento del tipo, no sobre la libertad de determinación, que es lo afectado por la coacción.",
-     "b": "C. Penal art. 32 (num. 8) · insuperable coacción ajena · inexigibilidad"
-    },
-    {
-     "t": 1,
-     "d": 2,
-     "c": "Proceso Penal · Estructura del proceso",
-     "q": "En el sistema penal acusatorio, la audiencia en la que el juez de conocimiento practica las pruebas, escucha los alegatos y anuncia el sentido del fallo es:",
-     "o": [
-      "La audiencia de control de garantías",
-      "El juicio oral, público, concentrado y con inmediación, ante el juez de conocimiento",
-      "La audiencia de formulación de imputación",
-      "La audiencia de formulación de acusación"
-     ],
-     "a": 1,
-     "e": "El juicio oral (Ley 906/2004) es la etapa en que, ante el juez de conocimiento, se practican las pruebas con inmediación, publicidad y concentración, se alega y se anuncia el sentido del fallo. · La formulación de imputación es un acto de comunicación previo, ante el juez de garantías. · El control de garantías vela por los derechos en la investigación, no practica el juicio. · La formulación de acusación delimita el objeto del juicio, pero no es la etapa de práctica probatoria.",
-     "b": "Ley 906/2004 · etapas del proceso penal acusatorio"
-    },
-    {
-     "t": 1,
-     "d": 3,
-     "c": "Derecho Penal · Error",
-     "q": "Una persona se lleva un paraguas ajeno creyendo honestamente y con fundamento que es el suyo, por ser idéntico. Es acusada de hurto. Conforme a la teoría del delito, opera:",
-     "o": [
-      "Un error de prohibición que atenúa la pena",
-      "Hurto consumado, porque se apropió de un bien ajeno",
-      "Tentativa de hurto, por el peligro para el patrimonio",
-      "Un error de tipo que, al recaer sobre un elemento del tipo (la ajenidad de la cosa), excluye el dolo; si es invencible, excluye la responsabilidad"
-     ],
-     "a": 3,
-     "e": "El error de tipo recae sobre un elemento del tipo (aquí, la ajenidad de la cosa) y excluye el dolo; si es invencible, excluye la responsabilidad (art. 32-10 C. Penal). · El hurto exige dolo de apropiarse de cosa mueble ajena, ausente por el error. · El error de prohibición recae sobre la ilicitud de la conducta, no sobre un elemento del tipo, y su régimen es distinto. · No hay tentativa: falta el dolo de hurtar, pues creía tomar lo propio.",
-     "b": "C. Penal art. 32 (num. 10) · error de tipo y error de prohibición"
-    },
-    {
-     "t": 1,
-     "d": 2,
-     "c": "Derecho Penal · Antijuridicidad material",
-     "q": "Una persona realiza una conducta que encaja formalmente en un tipo penal, pero que no lesiona ni pone en peligro efectivamente el bien jurídico protegido (una lesión insignificante e inidónea). Conforme al principio de lesividad:",
-     "o": [
-      "La lesividad solo se aplica en el derecho administrativo sancionador",
-      "Debe sancionarse igual, pues la sola adecuación formal al tipo basta",
-      "La conducta es siempre atípica por definición",
-      "Puede faltar la antijuridicidad material: sin lesión o puesta en peligro efectiva del bien jurídico, no hay delito, aunque haya tipicidad formal"
-     ],
-     "a": 3,
-     "e": "La antijuridicidad material (art. 11 C. Penal) exige lesión o puesta en peligro efectiva del bien jurídico; la sola adecuación formal no basta (principio de lesividad). · Sancionar por la mera tipicidad formal desconoce el art. 11. · Afirmar que la conducta es 'siempre atípica' confunde la falta de antijuridicidad material con la atipicidad (el hecho sí encaja en el tipo). · Restringir la lesividad al derecho administrativo desconoce que es principio nuclear del derecho penal.",
-     "b": "C. Penal art. 11 · antijuridicidad material · lesividad"
-    },
-    {
-     "t": 1,
-     "d": 3,
-     "c": "Derecho Penal · Favorabilidad",
-     "q": "Después de cometido un delito y durante el proceso, entra a regir una ley que rebaja la pena para esa conducta. El procesado pide que se le aplique. Conforme al régimen penal:",
-     "o": [
-      "La favorabilidad solo opera si el procesado renuncia a otros beneficios",
-      "Se aplica la ley posterior más favorable, incluso con efecto retroactivo, por el principio de favorabilidad, garantía del debido proceso penal",
-      "Se aplica la ley vigente al momento del fallo aunque sea más gravosa",
-      "Se aplica la ley vigente al momento del hecho, por irretroactividad absoluta"
-     ],
-     "a": 1,
-     "e": "El principio de favorabilidad (art. 29 C.P.; art. 6 C. Penal) impone aplicar la ley permisiva o favorable, aun posterior y con efecto retroactivo, a hechos anteriores y procesos en curso. · La irretroactividad no es absoluta: cede ante la favorabilidad. · Aplicar la ley del fallo cuando es más gravosa contradice la favorabilidad. · Condicionar la favorabilidad a la renuncia de otros beneficios carece de sustento: es una garantía que opera de pleno derecho.",
-     "b": "C.P. art. 29 · C. Penal art. 6 · favorabilidad y retroactividad de la ley benigna"
-    }
-   ],
-   "rel": "penal",
-   "ambito": "Específico Penal · Derecho Penal y Proceso Penal"
-  },
-  {
    "id": "transversales",
    "numero": "T8",
    "fecha": "Tema",
@@ -8433,224 +6501,557 @@ const DIPLOMADO = {
    "ambito": "Transversal · Aptitudes: Habilidades digitales y ofimáticas (todos los cargos)"
   },
   {
-   "id": "agrario",
-   "numero": "T15",
-   "fecha": "Específico",
-   "titulo": "Derecho Agrario y Jurisdicción Rural",
-   "docente": "Marco de la Jurisdicción Agraria y Rural · alta exigencia",
-   "rel": "civil",
-   "ambito": "Específico Civil · Derecho Agrario y Jurisdicción Rural",
-   "resumen": "Jurisdicción Agraria y Rural (Acto Legislativo 03 de 2023), campesinado como sujeto de especial protección (Acto Legislativo 01 de 2023, art. 64 C.P.), régimen de baldíos y UAF (Ley 160 de 1994), extinción de dominio agrario por función social, y jurisprudencia sobre baldíos (T-488/2014, SU-235/2016). Preguntas de análisis y juicio jurídico con distractores plausibles.",
+   "id": "renta-juridicas",
+   "numero": "T13",
+   "fecha": "Tema",
+   "titulo": "Renta — Personas Jurídicas",
+   "docente": "Material propio",
+   "resumen": "Elementos del impuesto de renta de personas jurídicas: tarifa, patrimonio, activos, deducciones y compensaciones.",
    "preguntas": [
     {
      "t": 1,
+     "c": "Tarifa general de renta",
      "d": 2,
-     "c": "Derecho Agrario · Jurisdicción Agraria y Rural",
-     "q": "El Acto Legislativo 03 de 2023 incorporó la Jurisdicción Agraria y Rural a la estructura de la Rama Judicial. Su órgano de cierre es:",
+     "q": "Una sociedad nacional está calculando el impuesto de renta a cargo por el año gravable 2023. El contador propone aplicar la tarifa transitoria del 34% prevista para el año 2017, argumentando que es la tarifa más alta y por tanto la más segura frente a una fiscalización. ¿Es correcta esa decisión?",
      "o": [
-      "La Corte Constitucional, por versar sobre derechos del campesinado como sujeto de especial protección",
-      "El Consejo de Estado, por tratarse de conflictos sobre tierras en los que interviene el Estado",
-      "El Consejo Superior de la Judicatura, encargado de crear los juzgados y tribunales agrarios",
-      "La Sala de Casación Civil, Agraria y Rural de la Corte Suprema de Justicia, sin perjuicio de las competencias del Consejo de Estado"
-     ],
-     "a": 3,
-     "e": "El Acto Legislativo 03 de 2023 (art. 116 C.P. reformado) fijó como órgano de cierre la Sala de Casación Civil, Agraria y Rural de la CSJ, sin perjuicio de las competencias del Consejo de Estado. · Atribuirlo al Consejo de Estado confunde la jurisdicción: no todo conflicto sobre tierras es contencioso-administrativo. · Atribuirlo a la Corte Constitucional mezcla el cierre con la protección sustancial del campesino. · Atribuirlo al Consejo Superior de la Judicatura confunde el gobierno judicial (que crea despachos) con la función jurisdiccional de cierre.",
-     "b": "Acto Legislativo 03 de 2023 · C.P. art. 116 (reformado) · art. 238A"
-    },
-    {
-     "t": 1,
-     "d": 3,
-     "c": "Derecho Agrario · Baldíos",
-     "q": "Un campesino posee de forma pública, pacífica e ininterrumpida durante 22 años un predio rural que, al pedir la declaración de pertenencia, resulta ser un BALDÍO de la Nación. Conforme a la Ley 160 de 1994 y la jurisprudencia, lo procedente es:",
-     "o": [
-      "Remitir el asunto al juez civil del circuito para que decrete la prescripción adquisitiva de dominio agrario",
-      "Declarar la pertenencia, pues superó con creces el término de posesión extraordinaria de 10 años",
-      "Negar la pertenencia: los baldíos son imprescriptibles y no se adquieren por posesión; su acceso es por adjudicación administrativa de la autoridad de tierras",
-      "Declarar la pertenencia solo si acredita explotación económica y buena fe exenta de culpa sobre el predio"
-     ],
-     "a": 2,
-     "e": "Los baldíos son imprescriptibles e inadjudicables por vía judicial de pertenencia (Ley 160/1994 art. 65; T-488/2014, SU-235/2016); el acceso es por adjudicación administrativa de la autoridad de tierras (ANT). · Declarar la pertenencia por superar 10 años aplica la usucapión a un supuesto exceptuado (regla general/excepción). · Exigir explotación y buena fe toma requisitos de la adjudicación como si habilitaran la prescripción. · Remitir al juez civil para que decrete prescripción atribuye competencia a una autoridad que no la tiene.",
-     "b": "Ley 160 de 1994, art. 65 · C. Const. T-488/2014 y SU-235/2016"
-    },
-    {
-     "t": 1,
-     "d": 3,
-     "c": "Derecho Agrario · Baldíos",
-     "q": "En un proceso de pertenencia el juez advierte que el demandante no aportó título originario del Estado ni prueba de que el predio salió del patrimonio estatal, y la zona es rural sin registro de propiedad privada previa. Según la regla jurisprudencial (T-488/2014), el juez debe:",
-     "o": [
-      "Decretar de oficio inspección judicial y, si hay explotación, declarar la pertenencia por función social",
-      "Presumir la propiedad privada y continuar el proceso, pues quien posee se reputa dueño mientras no se pruebe lo contrario",
-      "Presumir que el bien es baldío y, por tanto, abstenerse de declarar la pertenencia, informando a la autoridad de tierras",
-      "Suspender el proceso hasta que el demandante formalice el título ante notario"
-     ],
-     "a": 2,
-     "e": "La T-488/2014 estableció que, a falta de prueba de que el bien salió del patrimonio del Estado, opera la presunción de que el predio rural es baldío, lo que impide declarar la pertenencia y obliga a informar a la autoridad de tierras. · Presumir propiedad privada invoca el art. 762 C.C. ignorando su excepción para baldíos. · Declarar por 'función social' confunde lo sustancial con lo procesal. · Exigir formalización notarial confunde el título notarial con la adjudicación estatal, único válido.",
-     "b": "C. Const. T-488/2014 (M.P. Manuel J. Cepeda) · Ley 160 de 1994"
-    },
-    {
-     "t": 1,
-     "d": 2,
-     "c": "Derecho Agrario · Función Social y Ecológica",
-     "q": "La extinción del derecho de dominio agrario por incumplimiento de la función social de la propiedad (Ley 160 de 1994) se distingue de la extinción de dominio penal (Ley 1708 de 2014) en que:",
-     "o": [
-      "Ambas persiguen bienes de origen ilícito y solo cambia la autoridad que las decreta",
-      "La agraria solo procede sobre baldíos, y la penal sobre propiedad privada",
-      "La agraria se funda en la no explotación económica del predio conforme a su función social y ecológica, no en el origen ilícito de los bienes",
-      "La agraria requiere condena penal previa del propietario, mientras la penal no"
-     ],
-     "a": 2,
-     "e": "La extinción agraria (Ley 160/1994, arts. 52 y ss.) se funda en el incumplimiento de la función social y ecológica —típicamente la no explotación—, no en el origen ilícito. · Asimilar ambas por el origen ilícito confunde las instituciones. · Exigir condena penal previa traslada a la agraria un presupuesto que ni la penal exige (es autónoma). · Limitarla a baldíos restringe mal el objeto: recae sobre propiedad privada que incumple su función.",
-     "b": "Ley 160 de 1994, arts. 52 y ss. · C.P. art. 58 · cf. Ley 1708 de 2014"
-    },
-    {
-     "t": 1,
-     "d": 3,
-     "c": "Derecho Agrario · Unidad Agrícola Familiar",
-     "q": "Una sociedad adquiere, mediante varias compraventas sucesivas, predios que originalmente fueron adjudicados como baldíos a campesinos, acumulando un área que supera ampliamente la Unidad Agrícola Familiar (UAF). Conforme a la Ley 160 de 1994 y la jurisprudencia (C-644/2012, SU-235/2016), la operación:",
-     "o": [
-      "Es válida, pues rige la autonomía de la voluntad y la libre circulación de la propiedad privada",
-      "Solo puede ser cuestionada por la Superintendencia de Sociedades, no por la jurisdicción agraria",
-      "Está viciada, porque la ley prohíbe acumular UAF provenientes de baldíos por encima del límite legal, en protección del acceso progresivo a la tierra del campesinado",
-      "Es válida si cada compraventa individual respetó la UAF, aunque la suma la exceda"
-     ],
-     "a": 2,
-     "e": "La Ley 160/1994 prohíbe acumular predios originalmente baldíos por encima de la UAF, regla protectora del acceso progresivo a la tierra (art. 64 C.P.; C-644/2012; SU-235/2016). · Invocar la autonomía de la voluntad ignora el límite legal imperativo. · Sostener que basta respetar la UAF en cada compraventa es el distractor más fino: la prohibición mira la acumulación final, no cada acto aislado. · Radicar el control en la Superintendencia de Sociedades atribuye la competencia a una autoridad ajena al conflicto agrario.",
-     "b": "Ley 160 de 1994 (UAF) · C. Const. C-644/2012 y SU-235/2016 · C.P. art. 64"
-    },
-    {
-     "t": 1,
-     "d": 2,
-     "c": "Derecho Agrario · Campesinado sujeto de especial protección",
-     "q": "El Acto Legislativo 01 de 2023 reformó el artículo 64 de la Constitución para:",
-     "o": [
-      "Trasladar la propiedad de los baldíos a las comunidades campesinas de forma automática",
-      "Otorgar al campesinado el estatus de grupo étnico con jurisdicción especial propia",
-      "Reconocer al campesinado como sujeto de derechos y de especial protección, y ordenar al Estado garantizar el acceso a la tierra",
-      "Prohibir toda enajenación de predios rurales sin autorización judicial"
-     ],
-     "a": 2,
-     "e": "El Acto Legislativo 01 de 2023 modificó el art. 64 C.P. para declarar al campesinado sujeto de derechos y de especial protección, con deber estatal de garantizar el acceso a la tierra. · Asimilarlo a grupo étnico con jurisdicción propia confunde categorías (el campesino no es categoría étnica, art. 246 C.P.). · La prohibición general de enajenar sin autorización judicial no existe en la reforma. · La transferencia automática de baldíos a comunidades tampoco: el mandato es de acceso progresivo.",
-     "b": "Acto Legislativo 01 de 2023 · C.P. art. 64 (reformado) · cf. SU-288/2022"
-    },
-    {
-     "t": 1,
-     "d": 3,
-     "c": "Derecho Agrario · Procedimiento especial agrario",
-     "q": "Ante un vacío en la regulación del procedimiento especial agrario y rural sobre un aspecto no previsto, el juez agrario debe integrar la laguna acudiendo, en principio, a:",
-     "o": [
-      "Las normas del Código General del Proceso en lo compatible, como estatuto procesal general supletorio",
-      "La costumbre rural del lugar, por su valor normativo en asuntos de tierras",
-      "El Código de Procedimiento Administrativo, por intervenir intereses públicos sobre la tierra",
-      "La analogía con el proceso penal, por la existencia de la extinción de dominio"
+      "No, porque el artículo 240 del ET fijó la tarifa general en 30% a partir del año gravable 2022 en adelante, y la tarifa del 34% solo rigió como régimen transitorio para el año 2017",
+      "Sí, porque ante cualquier duda sobre la tarifa aplicable, la norma tributaria exige aplicar la tarifa más alta históricamente vigente para evitar sanciones por inexactitud",
+      "No, porque desde el año 2022 la tarifa general se calcula multiplicando el patrimonio líquido por el porcentaje de renta presuntiva, sin relación con el 30% ni el 34%",
+      "Sí, porque la tarifa transitoria del 34% continúa vigente indefinidamente para las sociedades que no acrediten haber optado por el régimen simple"
      ],
      "a": 0,
-     "e": "El CGP es el estatuto procesal general y se aplica supletoriamente en lo no regulado y compatible (art. 1 CGP), incluido el trámite agrario. · Elevar la costumbre rural a fuente supletoria principal no corresponde. · Acudir al CPACA aplica un código de otra jurisdicción a un proceso que no lo es. · La analogía con lo penal es impropia: parte de un contacto accesorio (extinción de dominio) e ignora la naturaleza civil-agraria.",
-     "b": "CGP (Ley 1564 de 2012) art. 1 · Acto Legislativo 03 de 2023 · Decreto 2303 de 1989"
+     "e": "El artículo 240 del ET, modificado por la Ley 2010 de 2019, estableció una reducción gradual de la tarifa general (32% en 2020, 31% en 2021 y 30% a partir de 2022 en adelante). La tarifa del 34% fue un parágrafo transitorio aplicable únicamente al año gravable 2017 y no revive para periodos posteriores.",
+     "b": "Art. 240 del ET, parágrafo transitorio 1 y Ley 2010 de 2019."
     },
     {
      "t": 1,
-     "d": 2,
-     "c": "Derecho Agrario · Competencia territorial",
-     "q": "Para conocer de un proceso de deslinde y amojonamiento de un predio rural, la competencia territorial se fija, por regla general, en el juez del lugar donde:",
-     "o": [
-      "Tiene su sede la autoridad nacional de tierras",
-      "Se otorgó la escritura pública de adquisición del predio",
-      "Tiene su domicilio el demandante que promueve el deslinde",
-      "Está ubicado el inmueble rural objeto del proceso (forum rei sitae)"
-     ],
-     "a": 3,
-     "e": "En acciones reales sobre inmuebles rige el fuero real (forum rei sitae): es competente el juez del lugar del bien (CGP art. 28-7; Decreto 2303/1989). · El domicilio del demandante es fuero personal, impropio aquí. · El lugar de la escritura confunde el otorgamiento del título con la ubicación del predio. · La sede de la autoridad de tierras no fija fuero judicial.",
-     "b": "CGP art. 28 (num. 7) · Decreto 2303 de 1989"
-    },
-    {
-     "t": 1,
+     "c": "Renta presuntiva",
      "d": 3,
-     "c": "Derecho Agrario · Conflicto de principios",
-     "q": "Un juez agrario tramita la formalización de la tenencia de un campesino sobre un predio que explota hace años; un tercero alega ser propietario inscrito, pero no ha ejercido ni explotado el predio. El material normativo prioriza el acceso a la tierra y la función social, pero también protege la seguridad jurídica del registro. La decisión que mejor concilia el marco aplicable es:",
+     "q": "Una sociedad, al preparar su declaración de renta del año gravable 2022, compara su renta líquida ordinaria con la renta presuntiva calculada aplicando el 1,5% al patrimonio líquido del año anterior, siguiendo el procedimiento que usaba antes de la reforma de 2019. ¿Es correcto ese proceder?",
      "o": [
-      "Analizar la función social: valorar la explotación efectiva del campesino frente a la mera titularidad inerte del tercero, resolviendo conforme a los fines del derecho agrario y el debido proceso de ambos",
-      "Negar toda protección al campesino, pues el registro otorga oponibilidad y presunción de propiedad al tercero",
-      "Adjudicar de inmediato el predio al campesino por su condición de sujeto de especial protección, sin más trámite",
-      "Abstenerse de decidir y remitir el conflicto a conciliación obligatoria ante la autoridad de tierras"
+      "No, porque la Ley 2010 de 2019 redujo gradualmente la tarifa de renta presuntiva hasta llegar a 0% a partir del año gravable 2021, por lo que para 2022 no debe calcularse ni compararse renta presuntiva alguna",
+      "Sí, porque el 1,5% corresponde a la tarifa vigente para el sistema de renta presuntiva desde el año 2020 y continúa aplicándose en los años siguientes sin variación",
+      "No, porque desde 2019 el sistema de renta presuntiva fue derogado en su totalidad y sustituido íntegramente por el régimen simple de tributación para todas las sociedades",
+      "Sí, porque aunque la tarifa se haya reducido, la comparación entre renta líquida ordinaria y renta presuntiva sigue siendo obligatoria para efectos de determinar la renta exenta"
      ],
      "a": 0,
-     "e": "El derecho agrario pondera la función social y la explotación efectiva frente a la titularidad meramente formal, sin desconocer el debido proceso del tercero: esa ponderación es la solución. · Negar toda protección absolutiza el registro e ignora la función social (art. 58 C.P.). · Adjudicar de inmediato por la especial protección convierte un principio en atajo sin debido proceso. · Abstenerse y remitir a conciliación elude el deber de decidir (non liquet).",
-     "b": "C.P. arts. 58 y 64 · Ley 160 de 1994 · principios del derecho agrario"
+     "e": "La Ley 2010 de 2019 dispuso una disminución gradual de la tarifa de renta presuntiva hasta llegar a 0% para el año gravable 2021 y los siguientes. Esto significa que, aunque el sistema de renta presuntiva formalmente subsiste en el Estatuto Tributario, para 2021 en adelante su efecto es nulo, por lo que no tiene sentido práctico calcularlo ni compararlo con la renta líquida ordinaria bajo la tarifa histórica del 1,5%.",
+     "b": "Ley 2010 de 2019; art. 188 del ET."
     },
     {
      "t": 1,
-     "d": 2,
-     "c": "Derecho Agrario · Naturaleza de la jurisdicción",
-     "q": "Respecto de la Jurisdicción Agraria y Rural creada por el Acto Legislativo 03 de 2023, es correcto afirmar que:",
+     "c": "Provisión de cartera",
+     "d": 3,
+     "q": "Una empresa tiene una cuenta por cobrar con 14 meses de vencida. Bajo el método individual de provisión para deudas de dudoso o difícil cobro, el contador provisiona el 15% del valor nominal, aplicando por error la tabla del método general (que asigna 15% a mora superior a 12 meses). ¿Cuál es el error y qué porcentaje debió aplicarse?",
      "o": [
-      "No creó una nueva corte, sino que se integró a la Rama Judicial con juzgados y tribunales agrarios y rurales, y cierre en la Sala Civil, Agraria y Rural de la CSJ",
-      "Creó una nueva alta corte, independiente de la Corte Suprema de Justicia",
-      "Depende orgánicamente del Ministerio de Agricultura",
-      "Reemplazó a la jurisdicción ordinaria en todos los asuntos civiles"
+      "Aplicó la tabla del método general en lugar del método individual; bajo este último, la cuota razonable puede llegar hasta el 33% anual del valor nominal de cada deuda con más de un año de vencida",
+      "No hay error: los métodos individual y general son equivalentes y ambos permiten provisionar como máximo el 15% para deudas con más de 12 meses de mora",
+      "El error está en el porcentaje, pero el método sí era el correcto; bajo el método individual la provisión máxima para más de un año de vencida es del 10%, no del 15%",
+      "El error es que ninguno de los dos métodos aplica a cuentas con más de 12 meses de vencidas, pues a partir de ese plazo la deuda debe darse de baja directamente como pérdida"
      ],
      "a": 0,
-     "e": "La reforma no creó una alta corte nueva; integró la jurisdicción a la Rama con juzgados y tribunales agrarios y cierre en la Sala Civil, Agraria y Rural de la CSJ. · Afirmar una corte autónoma es lo que la reforma evitó. · Decir que reemplaza toda la jurisdicción ordinaria civil exagera su alcance (es especializada). · Hacerla depender del Ministerio de Agricultura confunde Rama Judicial con Ejecutiva.",
-     "b": "Acto Legislativo 03 de 2023 · Ley 270 de 1996 (integración)"
+     "e": "El Decreto 1625 de 2016 contempla dos métodos distintos: el individual, que permite provisionar hasta el 33% anual del valor nominal de cada deuda con más de un año de vencida, y el general, con una tabla escalonada según meses de mora (5% de 3 a 6 meses, 10% de 6 a 12 meses, 15% más de 12 meses). Son métodos alternativos y no deben mezclarse; si la empresa eligió el método individual, la cuota aplicable para esa deuda es hasta el 33%, no el 15% de la tabla general.",
+     "b": "Num. 1.2.1.18.20 del Decreto 1625 de 2016."
     },
     {
      "t": 1,
-     "d": 3,
-     "c": "Derecho Agrario · Recuperación de baldíos",
-     "q": "La autoridad de tierras detecta que un particular ocupa indebidamente un baldío reservado. El particular alega haber construido mejoras y llevar más de una década en el predio. Conforme al régimen de la Ley 160 de 1994, procede:",
+     "c": "Baja de inventarios",
+     "d": 2,
+     "q": "Una empresa reporta un faltante de inventario del 4% de la suma del inventario inicial más las compras del periodo, atribuido a mermas propias de mercancía de fácil destrucción, sin acreditar fuerza mayor ni caso fortuito. ¿Puede deducir la totalidad de ese faltante conforme al artículo 64 del ET?",
      "o": [
-      "Adelantar el procedimiento administrativo de recuperación del baldío indebidamente ocupado, sin que la ocupación prolongada genere derecho de dominio",
-      "Declarar la pertenencia a favor del ocupante por posesión superior a diez años",
-      "Reconocer la propiedad del ocupante por accesión, dado el valor de las mejoras incorporadas",
-      "Ordenar la venta del baldío al ocupante al precio de las mejoras"
+      "No, porque sin acreditar fuerza mayor o caso fortuito el límite deducible por faltantes de fácil destrucción o pérdida es del 3% de la suma del inventario inicial más las compras; el excedente no es deducible",
+      "Sí, porque el artículo 64 no establece ningún límite porcentual para faltantes de mercancía de fácil destrucción, siempre que se trate de bienes perecederos",
+      "No, porque los faltantes de inventario nunca son deducibles bajo ninguna circunstancia, independientemente de su origen o de si se acredita fuerza mayor",
+      "Sí, porque el límite del 3% solo aplica a empresas del sector agropecuario y esta regla no se extiende a los demás sectores económicos"
      ],
      "a": 0,
-     "e": "Sobre baldíos indebidamente ocupados procede la recuperación por la autoridad de tierras; la ocupación, por prolongada que sea, no genera dominio. · Reconocer propiedad por accesión aplica una regla civil de mejoras a un bien exceptuado. · Declarar pertenencia por más de diez años repite el error de creer prescriptible el baldío. · 'Vender' el baldío al ocupante confunde la eventual compensación de mejoras con un mecanismo de enajenación inexistente.",
-     "b": "Ley 160 de 1994 (recuperación de baldíos) · imprescriptibilidad"
+     "e": "El artículo 64 del ET permite disminuir el inventario final hasta en un 3% de la suma del inventario inicial más las compras, por faltantes de fácil destrucción o pérdida. Solo si se demuestra fuerza mayor o caso fortuito pueden aceptarse disminuciones mayores a ese 3%. Al no acreditarse esas causales, el excedente sobre el 3% no es deducible.",
+     "b": "Art. 64 del ET."
     },
     {
      "t": 1,
+     "c": "Arrendamiento financiero",
+     "d": 3,
+     "q": "Una empresa suscribe un contrato de arrendamiento sobre maquinaria. Al final del contrato NO se transfiere la propiedad, NO existe opción de compra ventajosa, pero el plazo pactado cubre la mayor parte de la vida económica del activo. La empresa lo clasifica como arrendamiento operativo, argumentando que basta con que no se cumplan los dos primeros criterios para descartar la naturaleza financiera. ¿Es correcta esa clasificación?",
+     "o": [
+      "No, porque basta con que se cumpla al menos uno de los criterios del test (en este caso, que el plazo cubra la mayor parte de la vida económica del activo) para que el contrato se clasifique como arrendamiento financiero",
+      "Sí, porque la transferencia de propiedad y la opción de compra ventajosa son los únicos criterios determinantes; sin ellos, el contrato es necesariamente operativo",
+      "No, porque todo arrendamiento de maquinaria se presume financiero por la naturaleza del activo, independientemente de las condiciones pactadas en el contrato",
+      "Sí, porque el criterio del plazo frente a la vida económica del activo solo es relevante en arrendamientos de bienes inmuebles, no de maquinaria"
+     ],
+     "a": 0,
+     "e": "El test tributario de arrendamiento financiero contempla cinco criterios independientes, y basta con que se cumpla uno solo (respuesta 'SÍ' a cualquiera de ellos) para que el contrato se clasifique como financiero. En este caso, aunque no se cumplan los dos primeros criterios, el tercero (que el plazo cubra la mayor parte de la vida económica del activo) sí se cumple, lo que obliga a clasificarlo como financiero y no operativo.",
+     "b": "Test de características de arrendamiento financiero, régimen tributario vigente desde enero de 2017."
+    },
+    {
+     "t": 1,
+     "c": "Leaseback / retroarriendo",
+     "d": 3,
+     "q": "La sociedad A vende una maquinaria que tenía registrada como inventario (no como activo fijo) a la sociedad B, quien se la arrienda nuevamente a A bajo la modalidad de leasing. A sostiene que este es un contrato de retroarriendo o leaseback conforme al artículo 127-1 del ET, con el tratamiento tributario especial que allí se prevé. ¿Es correcto ese tratamiento?",
+     "o": [
+      "No, porque el artículo 127-1 exige que el activo objeto del arrendamiento tenga la naturaleza de activo fijo para el proveedor, condición que no se cumple al tratarse de un inventario",
+      "Sí, porque el leaseback solo exige que el proveedor y el arrendatario posterior sean la misma persona, condición que en este caso sí se cumple plenamente",
+      "No, porque el leaseback exige que intervengan al menos tres partes distintas en la operación, y en este caso solo participan la sociedad A y la sociedad B",
+      "Sí, porque cualquier operación de venta seguida de arrendamiento del mismo bien se considera automáticamente leaseback, sin importar la naturaleza contable del activo vendido"
+     ],
+     "a": 0,
+     "e": "El artículo 127-1 del ET exige dos condiciones concurrentes para el tratamiento especial de retroarriendo: que el proveedor del bien y el arrendatario posterior sean la misma persona, y que el activo tenga la naturaleza de activo fijo para el proveedor. Al tratarse de un inventario (no un activo fijo) para la sociedad A, no se cumple la segunda condición, por lo que la operación no puede tratarse bajo el régimen especial de leaseback del artículo 127-1.",
+     "b": "Art. 127-1 del ET."
+    },
+    {
+     "t": 1,
+     "c": "Activos biológicos",
      "d": 2,
-     "c": "Derecho Agrario · Oralidad e inmediación",
-     "q": "El procedimiento especial agrario y rural, en línea con el sistema por audiencias, privilegia:",
+     "q": "Una empresa agroindustrial posee, de un lado, una plantación de café que produce fruto en el periodo actual y seguirá produciendo en periodos posteriores, y de otro lado, ganado de engorde destinado a ser vendido dentro del ciclo ordinario del negocio en el año en curso. El contador aplica depreciación fiscal a ambos activos por igual. ¿Es correcto ese tratamiento?",
      "o": [
-      "La reserva total del expediente, por la sensibilidad de los conflictos de tierras",
-      "El trámite estrictamente escrito, para dejar constancia documental de cada actuación",
-      "La delegación de la práctica de pruebas en comisionados, para agilizar el trámite",
-      "La oralidad, la inmediación y la concentración, con enfoque diferencial y prevalencia del derecho sustancial en favor del acceso a la justicia rural"
+      "No, porque solo la plantación de café es un activo biológico productor (tratado como propiedad, planta y equipo y sujeto a depreciación); el ganado de engorde es un activo biológico consumible, tratado como inventario y no sujeto a depreciación",
+      "Sí, porque todos los activos biológicos, sin distinción entre productores y consumibles, están sujetos a depreciación fiscal por línea recta según el artículo 92 del ET",
+      "No, porque ni la plantación de café ni el ganado de engorde son depreciables fiscalmente, ya que los activos biológicos están excluidos de depreciación en cualquier caso",
+      "Sí, porque la depreciación fiscal de activos biológicos depende del sector económico del contribuyente y no de la clasificación entre productores y consumibles"
      ],
-     "a": 3,
-     "e": "El diseño de la jurisdicción agraria retoma oralidad, inmediación y concentración, con enfoque diferencial y prevalencia del derecho sustancial para el acceso a la justicia rural. · El trámite escrito contradice el paradigma por audiencias. · La comisión probatoria vulnera la inmediación (percepción directa del juez). · La reserva total generaliza lo que es excepcional: rige la publicidad.",
-     "b": "Acto Legislativo 03 de 2023 · principios del derecho procesal agrario · CGP arts. 3-6"
+     "a": 0,
+     "e": "El artículo 92 del ET distingue entre activos biológicos productores (como las plantas de café, que producen fruto en varios periodos), que reciben el tratamiento tributario de propiedad, planta y equipo y sí están sujetos a depreciación por línea recta; y activos biológicos consumibles (como el ganado de engorde destinado a la venta en el ciclo ordinario), que reciben el tratamiento de inventarios y no son sujetos de depreciación.",
+     "b": "Art. 92 del ET."
     },
     {
      "t": 1,
+     "c": "Compensación de pérdidas y renta presuntiva",
      "d": 3,
-     "c": "Derecho Agrario · Distinción de instituciones",
-     "q": "En materia de tierras, distinga correctamente: un predio que nunca ha salido del patrimonio del Estado y es susceptible de adjudicación a quien reúna las condiciones legales es:",
+     "q": "Una sociedad generó pérdidas fiscales en el año gravable 2015 y, en ese mismo año, un exceso de renta presuntiva sobre la renta líquida ordinaria. En el año gravable 2028 pretende compensar ambos conceptos contra la renta líquida ordinaria de ese periodo. ¿Es procedente esa compensación?",
      "o": [
-      "Un bien fiscal adjudicable que se transfiere por venta en subasta pública",
-      "Un bien baldío, que se adjudica administrativamente a quien cumpla los requisitos y no se adquiere por prescripción",
-      "Un bien vacante, que corresponde al primer ocupante que lo explote",
-      "Un bien de uso público, inalienable, imprescriptible e inembargable, no adjudicable a particulares"
+      "No es procedente ninguna de las dos: las pérdidas fiscales solo son compensables dentro de los doce periodos gravables siguientes (hasta 2027) y el exceso de renta presuntiva dentro de los cinco años siguientes (hasta 2020), plazos ya vencidos para el año 2028",
+      "Sí es procedente compensar ambas, porque tanto las pérdidas fiscales como el exceso de renta presuntiva pueden arrastrarse indefinidamente mientras la sociedad continúe en operación",
+      "Es procedente compensar las pérdidas fiscales (que no tienen límite temporal), pero no el exceso de renta presuntiva, que solo puede compensarse en el año inmediatamente siguiente a su generación",
+      "No es procedente compensar las pérdidas fiscales por haber transcurrido el plazo, pero sí el exceso de renta presuntiva, que puede compensarse hasta diez años después de generado"
      ],
-     "a": 1,
-     "e": "El baldío es un bien de la Nación que no ha salido de su patrimonio; se adjudica por vía administrativa a quien cumpla requisitos y no se adquiere por prescripción. · Confundirlo con bien fiscal adjudicable altera su régimen de enajenación. · Confundirlo con bien de uso público lo haría no adjudicable en absoluto. · Confundirlo con bien vacante y con la ocupación como fuente de dominio es improcedente para baldíos.",
-     "b": "Ley 160 de 1994 · C.C. arts. 674-675 · distinción baldío/fiscal/uso público/vacante"
+     "a": 0,
+     "e": "El régimen de compensaciones distingue dos plazos distintos: las pérdidas fiscales se pueden compensar con las rentas líquidas ordinarias obtenidas dentro de los doce periodos gravables siguientes a su generación, mientras que el exceso de renta presuntiva sobre la renta ordinaria se compensa dentro de los cinco años siguientes. Para pérdidas y excesos generados en 2015, ambos plazos ya se vencieron antes del año gravable 2028 (2027 y 2020, respectivamente).",
+     "b": "Compensación de pérdidas fiscales y excesos de renta presuntiva, régimen del ET."
+    }
+   ]
+  },
+  {
+   "id": "esal-rte",
+   "numero": "T14",
+   "fecha": "Tema",
+   "titulo": "Renta — ESAL y Régimen Tributario Especial",
+   "docente": "Material propio",
+   "resumen": "Requisitos de calificación y permanencia en el Régimen Tributario Especial, distribución indirecta de excedentes y determinación del beneficio neto.",
+   "preguntas": [
+    {
+     "t": 1,
+     "c": "Calificación en el RTE",
+     "d": 2,
+     "q": "Una corporación sin ánimo de lucro, legalmente constituida, argumenta ante la DIAN que por su sola condición de entidad no lucrativa debe ser automáticamente clasificada como contribuyente del Régimen Tributario Especial, sin necesidad de ningún trámite adicional. ¿Es correcta esa posición conforme al artículo 19 del ET vigente?",
+     "o": [
+      "No, porque desde la Ley 1819 de 2016 las ESAL son, por regla general, contribuyentes del régimen ordinario, y solo excepcionalmente pueden solicitar ante la DIAN su calificación como contribuyentes del Régimen Tributario Especial cumpliendo requisitos específicos",
+      "Sí, porque la condición de entidad sin ánimo de lucro constituida legalmente es, por sí sola, suficiente para el ingreso automático al Régimen Tributario Especial, tal como ocurría antes de 2016 y continúa vigente hoy",
+      "No, porque desde 2016 las ESAL quedaron excluidas por completo de cualquier posibilidad de acceder al Régimen Tributario Especial, sin importar su objeto social",
+      "Sí, pero únicamente si la entidad tiene más de diez años de constituida, requisito adicional que sustituyó a la calificación previa exigida antes de la reforma de 2016"
+     ],
+     "a": 0,
+     "e": "Antes de la Ley 1819 de 2016, la sola condición de ESAL con objeto social de interés general daba acceso al régimen especial. Desde la reforma, el artículo 19 del ET invirtió la regla: las ESAL son en principio contribuyentes del régimen ordinario, y solo de manera excepcional y previa solicitud pueden calificar al Régimen Tributario Especial, cumpliendo los requisitos de estar legalmente constituidas, desarrollar una actividad meritoria del artículo 359 y no distribuir ni reembolsar excedentes ni aportes.",
+     "b": "Art. 19 del ET, modificado por la Ley 1819 de 2016."
     },
     {
      "t": 1,
+     "c": "Distribución indirecta de excedentes",
      "d": 3,
-     "c": "Derecho Agrario · Aplicación de precedente",
-     "q": "Un juez enfrenta un caso de pertenencia sobre un predio rural cuyos hechos son similares, pero no idénticos, a los de la sentencia T-488/2014: aquí sí existe un antecedente registral de propiedad privada anterior debidamente probado. Aplicando correctamente la regla jurisprudencial, el juez debe:",
+     "q": "Una fundación calificada en el Régimen Tributario Especial paga honorarios de asesoría legal al cónyuge del representante legal. La fundación demuestra que el pago corresponde a precios comerciales promedio del mercado para ese tipo de servicios y que la transacción fue debidamente registrada ante la DIAN. ¿Constituye esto una distribución indirecta de excedentes conforme al artículo 356-1 del ET?",
      "o": [
-      "Aplicar mecánicamente la T-488/2014 y remitir a la autoridad de tierras, sin valorar el registro",
-      "Admitir que la presunción de baldío se desvirtúa con la prueba del antecedente de propiedad privada y, cumplidos los requisitos, puede declarar la pertenencia",
-      "Inaplicar el precedente por tratarse de un caso de tutela sin efectos para procesos ordinarios",
-      "Negar la pertenencia de plano, pues la T-488/2014 prohíbe declararla sobre cualquier predio rural"
+      "No, porque el artículo 356-1 exige precisamente que ese tipo de pagos a parientes hasta cuarto grado se realicen a precios comerciales para no configurar una distribución indirecta; al cumplirse esa condición y registrarse la transacción, no hay distribución indirecta",
+      "Sí, porque cualquier pago a un pariente hasta cuarto grado de un representante legal se considera, sin excepción alguna, una distribución indirecta de excedentes que activa el procedimiento de exclusión del artículo 364-3",
+      "No, porque el artículo 356-1 solo regula pagos a los propios fundadores y representantes legales, y no cobija a sus cónyuges ni parientes bajo ninguna circunstancia",
+      "Sí, porque el registro ante la DIAN de este tipo de contratos únicamente sirve para efectos informativos y no tiene ninguna incidencia sobre la calificación jurídica del pago como distribución indirecta"
      ],
-     "a": 1,
-     "e": "La ratio de la T-488/2014 opera cuando NO se prueba que el bien salió del patrimonio estatal; si hay antecedente registral de propiedad privada, la presunción de baldío se desvirtúa y, cumplidos los requisitos, cabe la pertenencia. Aplicar el precedente exige verificar su supuesto fáctico. · Negar de plano convierte una regla condicionada en prohibición absoluta (aplicación parcial del precedente). · Aplicarlo mecánicamente ignora los hechos relevantes que distinguen el caso. · Inaplicarlo por ser tutela desconoce la fuerza vinculante del precedente constitucional.",
-     "b": "C. Const. T-488/2014 · ratio decidendi vs. supuesto fáctico · precedente"
+     "a": 0,
+     "e": "El artículo 356-1 del ET somete a un régimen de control los pagos a fundadores, aportantes, representantes legales, administradores y sus parientes hasta cuarto grado (entre otros supuestos), pero permite que dichos pagos no se consideren distribución indirecta de excedentes cuando se realicen a precios comerciales promedio y se registren ante la DIAN. Al cumplirse ambas condiciones, la operación descrita no configura la conducta prohibida.",
+     "b": "Art. 356-1 del ET."
+    },
+    {
+     "t": 1,
+     "c": "Remuneración de cargos directivos",
+     "d": 3,
+     "q": "Una entidad del Régimen Tributario Especial con ingresos brutos anuales de 5.000 UVT destina el 35% de su gasto total anual al pago de remuneraciones (nómina, contratación y comisiones) de las personas que ejercen cargos directivos y gerenciales. ¿Cumple esta entidad el límite legal previsto en el artículo 356-1 del ET?",
+     "o": [
+      "No, porque al tener ingresos brutos anuales superiores a 3.500 UVT, la remuneración a cargos directivos y gerenciales no puede exceder el 30% del gasto total anual de la entidad, límite que en este caso se supera",
+      "Sí, porque el límite del 30% solo aplica a entidades con ingresos brutos inferiores a 3.500 UVT; al superar ese umbral, la entidad queda exenta de cualquier límite porcentual",
+      "No, porque el límite aplicable en este caso es del 20%, no del 30%, dado que la entidad supera ampliamente el umbral de 3.500 UVT en ingresos brutos anuales",
+      "Sí, porque el límite del 30% se calcula sobre los ingresos brutos anuales y no sobre el gasto total, por lo que el 35% del gasto total no resulta relevante para esta evaluación"
+     ],
+     "a": 0,
+     "e": "El artículo 356-1 del ET establece que, para entidades del Régimen Tributario Especial con ingresos brutos anuales superiores a 3.500 UVT, la remuneración total (dinero o especie, por nómina, contratación o comisión) a las personas que ejercen cargos directivos y gerenciales no podrá exceder el 30% del gasto total anual de la entidad. Al destinar el 35%, la entidad excede ese límite legal.",
+     "b": "Art. 356-1 del ET."
+    },
+    {
+     "t": 1,
+     "c": "Reinversión del beneficio neto",
+     "d": 3,
+     "q": "Una ESAL calificada en el Régimen Tributario Especial obtuvo un beneficio neto o excedente en el año gravable 2023. Su máximo órgano de dirección aprueba un plazo de reinversión de tres años, en lugar de reinvertirlo dentro del año siguiente a su obtención. ¿Es válida esa decisión sin necesidad de autorización adicional de la DIAN?",
+     "o": [
+      "Sí, porque el artículo 360 del ET permite extender el plazo de reinversión hasta cinco años, siempre que esté debidamente aprobado por el máximo órgano de dirección de la entidad, sin requerir autorización previa de la DIAN para plazos dentro de ese límite",
+      "No, porque el plazo de reinversión del beneficio neto es siempre de un año improrrogable, y cualquier extensión, sin importar su duración, requiere autorización previa de la DIAN mediante resolución",
+      "Sí, pero solo si el plazo no excede de dos años, ya que el artículo 360 fija ese límite máximo para extensiones aprobadas exclusivamente por el órgano de dirección de la entidad",
+      "No, porque la extensión del plazo de reinversión solo puede aprobarla la Asamblea General y nunca otro órgano de dirección, así sea el máximo órgano estatutario de la entidad"
+     ],
+     "a": 0,
+     "e": "El artículo 358 del ET fija como regla general la reinversión del beneficio neto dentro del año siguiente a su obtención, pero el artículo 360 permite extender ese plazo hasta un máximo de cinco años, siempre que esté aprobado por el máximo órgano de dirección de la entidad. Solo si el plazo requerido supera los cinco años se necesita autorización expresa de la DIAN mediante resolución. Como en el caso el plazo aprobado es de tres años (dentro del límite de cinco), no se requiere esa autorización adicional.",
+     "b": "Art. 358 y 360 del ET."
+    },
+    {
+     "t": 1,
+     "c": "Egresos improcedentes",
+     "d": 2,
+     "q": "Al determinar el beneficio neto o excedente de una entidad del Régimen Tributario Especial, la DIAN identifica egresos improcedentes que fueron incluidos en la depuración. ¿Cuál es el tratamiento tributario aplicable a esos egresos improcedentes?",
+     "o": [
+      "Se detraen del beneficio neto o excedente determinado y quedan sometidos a una tarifa del veinte por ciento (20%)",
+      "Se detraen del beneficio neto, pero no generan ningún impuesto adicional, limitándose su efecto a la simple depuración contable de la declaración",
+      "Determinan automáticamente la exclusión inmediata del Régimen Tributario Especial, sin posibilidad de que la entidad continúe calificada en el régimen",
+      "Se gravan a la tarifa general del régimen ordinario de renta (30% a partir de 2022), en lugar de la tarifa especial del 20% aplicable a este régimen"
+     ],
+     "a": 0,
+     "e": "Conforme al Decreto 1625 de 2016, cuando existan egresos improcedentes en la determinación del beneficio neto o excedente, estos se detraen del cálculo y quedan sometidos a una tarifa especial del 20%, distinta del tratamiento general del beneficio neto exento cuando se reinvierte correctamente.",
+     "b": "Art. 1.2.1.5.1.24, parágrafo 4, del Decreto 1625 de 2016."
+    }
+   ]
+  },
+  {
+   "id": "renta-naturales",
+   "numero": "T15",
+   "fecha": "Tema",
+   "titulo": "Renta — Personas Naturales",
+   "docente": "Material propio",
+   "resumen": "Residencia fiscal, sistema cedular, rentas exentas y renta por comparación patrimonial de personas naturales.",
+   "preguntas": [
+    {
+     "t": 1,
+     "c": "Residencia fiscal",
+     "d": 3,
+     "q": "Un ciudadano extranjero ingresó a Colombia el 15 de enero de 2020 y salió definitivamente el 10 de septiembre del mismo año, permaneciendo de forma continua 232 días dentro del país durante ese periodo de 365 días. La empresa que lo contrató sostiene que no es residente fiscal en Colombia porque no completó un año calendario completo en el país. ¿Es correcta esa posición?",
+     "o": [
+      "No, porque basta con permanecer, continua o discontinuamente, más de 183 días calendario dentro de un periodo cualquiera de 365 días calendario para adquirir la calidad de residente fiscal, sin que se exija completar un año calendario",
+      "Sí, porque la residencia fiscal en Colombia solo se adquiere cuando la permanencia cubre un año calendario completo, del 1 de enero al 31 de diciembre, sin excepciones",
+      "No, porque la residencia fiscal para extranjeros se adquiere con la sola inscripción en el RUT, independientemente del número de días de permanencia efectiva en el país",
+      "Sí, porque el conteo de 183 días solo aplica a nacionales colombianos; los extranjeros requieren un mínimo de 365 días continuos de permanencia para ser considerados residentes"
+     ],
+     "a": 0,
+     "e": "El artículo 10 del ET establece que una persona natural, sin importar su nacionalidad, es residente fiscal en Colombia cuando permanece, de forma continua o discontinua, más de 183 días calendario dentro de un periodo cualquiera de 365 días calendario consecutivos. En el ejemplo, los 232 días de permanencia continua superan ese umbral, por lo que la persona sí adquiere la condición de residente fiscal para el año gravable 2020, sin que se requiera completar un año calendario completo.",
+     "b": "Art. 10 del ET."
+    },
+    {
+     "t": 1,
+     "c": "Residencia fiscal de nacionales",
+     "d": 3,
+     "q": "Un ciudadano colombiano cumple con uno de los criterios adicionales de residencia fiscal para nacionales previstos en el artículo 10 del ET (distintos al conteo de 183 días), pero acredita que más del 50% de sus ingresos anuales tienen su fuente en el país donde reside habitualmente en el exterior. ¿Se le considera residente fiscal colombiano?",
+     "o": [
+      "No, porque el parágrafo 2 del artículo 10 del ET excluye de la calidad de residente fiscal a los nacionales que, aunque cumplan alguno de esos criterios adicionales, acrediten que más del 50% de sus ingresos o activos tienen origen en el país donde residen",
+      "Sí, siempre, porque el cumplimiento de cualquiera de los criterios adicionales del numeral 3 del artículo 10 genera residencia fiscal de forma automática e irrestricta, sin excepciones posibles",
+      "No, porque los criterios adicionales del numeral 3 del artículo 10 solo aplican a extranjeros, nunca a nacionales colombianos, quienes se rigen exclusivamente por el conteo de 183 días",
+      "Sí, porque la excepción del 50% de ingresos o activos solo opera cuando el nacional además demuestra residencia fiscal formal en un país con convenio de doble tributación vigente con Colombia"
+     ],
+     "a": 0,
+     "e": "El numeral 3 del artículo 10 del ET establece criterios adicionales de residencia fiscal aplicables a nacionales colombianos (como tener cónyuge o hijos residentes en el país, o que la mayoría de sus bienes estén administrados en Colombia). Sin embargo, el parágrafo 2 de ese mismo artículo excluye de esa condición a quienes acrediten que más del 50% de sus ingresos anuales o de sus activos tienen origen en el país donde residen habitualmente, precisamente el supuesto descrito en el caso.",
+     "b": "Art. 10, numeral 3 y parágrafo 2, del ET."
+    },
+    {
+     "t": 1,
+     "c": "Sistema cedular",
+     "d": 2,
+     "q": "Un profesional independiente que presta servicios de consultoría jurídica, sin vinculación laboral, factura honorarios y pretende deducir de su cédula general los gastos de arriendo de su oficina y los materiales de trabajo, además de aplicar la renta exenta del 25% prevista para rentas de trabajo. ¿Es correcto ese tratamiento?",
+     "o": [
+      "No es correcto en su totalidad: los ingresos por honorarios y servicios personales dentro de las rentas de trabajo no admiten la imputación de costos y gastos, aunque sí tienen derecho a la renta exenta del 25%",
+      "Sí es correcto en su totalidad: los honorarios permiten tanto la deducción plena de costos y gastos asociados como la renta exenta del 25%, sin ninguna restricción adicional",
+      "No es correcto en ningún aspecto: los honorarios no dan derecho ni a deducir costos y gastos ni a aplicar la renta exenta del 25%, beneficio reservado exclusivamente a los salarios",
+      "Sí es correcto, pero solo respecto de los costos y gastos; la renta exenta del 25% no aplica a quienes perciben ingresos por honorarios sino únicamente a quienes tienen relación laboral"
+     ],
+     "a": 0,
+     "e": "Dentro de la cédula general, las rentas de trabajo (que incluyen honorarios y servicios personales) no permiten imputar costos y gastos asociados a su generación, pero sí conservan el derecho a la renta exenta del 25% prevista para esta categoría de ingresos. El profesional puede aplicar la exención del 25%, pero no puede deducir el arriendo de oficina ni los materiales como costos o gastos dentro de esta cédula.",
+     "b": "Régimen de la cédula general — rentas de trabajo, ET."
+    },
+    {
+     "t": 1,
+     "c": "Rentas exentas — pensiones",
+     "d": 2,
+     "q": "Un pensionado colombiano, beneficiario de una pensión de jubilación de fuente nacional reconocida bajo la Ley 100 de 1993, recibe en un año gravable el equivalente a 14.000 UVT por este concepto y pretende declarar la totalidad como renta exenta en la cédula de pensiones. ¿Es procedente ese tratamiento?",
+     "o": [
+      "No, porque el numeral 5 del artículo 206 del ET limita la renta exenta de pensiones de fuente nacional bajo la Ley 100 de 1993 a un máximo de 12.000 UVT anuales; el exceso sobre ese monto sí forma parte de la base gravable",
+      "Sí, porque las pensiones de jubilación de fuente nacional reconocidas bajo la Ley 100 de 1993 están exentas en su totalidad, sin límite alguno en UVT, a diferencia de las pensiones de fuente extranjera",
+      "No, porque las pensiones de jubilación nunca son objeto de renta exenta bajo ningún límite; deben declararse en su totalidad como ingreso gravado en la cédula de pensiones",
+      "Sí, porque el límite de 12.000 UVT solo aplica a pensiones de invalidez o de sobrevivientes, mientras que las pensiones de jubilación no tienen ningún tope para la exención"
+     ],
+     "a": 0,
+     "e": "El numeral 5 del artículo 206 del ET establece que las rentas exentas por pensiones de jubilación, invalidez, vejez, sobrevivientes y riesgos laborales, de fuente nacional y reconocidas conforme a la Ley 100 de 1993, no pueden superar 12.000 UVT anuales. El monto que exceda ese límite pierde el carácter de exento y debe incluirse en la base gravable de la cédula de pensiones.",
+     "b": "Art. 206, numeral 5 y parágrafo 3, del ET."
+    },
+    {
+     "t": 1,
+     "c": "Renta por comparación patrimonial",
+     "d": 3,
+     "q": "Un contribuyente declara para el año gravable 2023 una renta gravable, rentas exentas y ganancia ocasional neta cuya suma es sensiblemente inferior al incremento real que tuvo su patrimonio líquido frente al año 2022, sin que logre justificar el origen de esa diferencia (por ejemplo, mediante herencias, donaciones o rentas ya declaradas en años anteriores). ¿Qué figura tributaria resulta aplicable a este caso?",
+     "o": [
+      "La renta por comparación patrimonial del artículo 236 del ET, que grava el crecimiento patrimonial no justificado cuando la renta gravable, las exentas y la ganancia ocasional neta declaradas resultan inferiores al incremento real del patrimonio líquido",
+      "La sanción por inexactitud del artículo 647 del ET, que se aplicaría automáticamente sin necesidad de que la DIAN adelante un proceso de determinación previo sobre el origen del incremento patrimonial",
+      "El impuesto al patrimonio, que grava directamente cualquier incremento patrimonial de un año a otro, sin relación con la renta gravable ni con las rentas exentas declaradas por el contribuyente",
+      "La sanción por no declarar del artículo 643 del ET, aplicable a quien no incluya la totalidad de los activos poseídos al cierre del periodo gravable en su declaración de renta"
+     ],
+     "a": 0,
+     "e": "El artículo 236 del ET regula la renta por comparación patrimonial: cuando la suma de la renta gravable, las rentas exentas y la ganancia ocasional neta declaradas resulta inferior a la diferencia entre el patrimonio líquido del año gravable y el del año inmediatamente anterior, y el contribuyente no logra justificar esa diferencia, se configura esta renta especial, que busca gravar el incremento patrimonial no justificado (posible indicio de ingresos no declarados).",
+     "b": "Art. 236 y 237 del ET."
+    }
+   ]
+  },
+  {
+   "id": "ganancia-ocasional",
+   "numero": "T16",
+   "fecha": "Tema",
+   "titulo": "Impuesto de Ganancia Ocasional",
+   "docente": "Material propio",
+   "resumen": "Hechos generadores, tarifas y exenciones del impuesto complementario de ganancia ocasional.",
+   "preguntas": [
+    {
+     "t": 1,
+     "c": "Hecho generador — venta de activos",
+     "d": 2,
+     "q": "Una sociedad vende un lote de terreno que hacía parte de su activo fijo y que había sido adquirido 18 meses antes de la venta. El contador declara la utilidad obtenida como ganancia ocasional, aplicando la tarifa del 10%. ¿Es correcto ese tratamiento?",
+     "o": [
+      "No, porque el artículo 300 del ET exige que el activo fijo haya hecho parte del patrimonio del contribuyente por un término de dos años o más para que su enajenación genere ganancia ocasional; al tratarse de 18 meses, la utilidad debe tributar como renta ordinaria",
+      "Sí, porque cualquier venta de un activo fijo, sin importar el tiempo de posesión, siempre genera ganancia ocasional gravada a la tarifa del 10% para personas jurídicas",
+      "No, porque los activos fijos de las sociedades nunca generan ganancia ocasional en su enajenación, tratamiento reservado exclusivamente a las personas naturales",
+      "Sí, porque el término de dos años del artículo 300 del ET solo aplica a inmuebles rurales, y en el caso de un lote urbano no se exige ningún término mínimo de posesión"
+     ],
+     "a": 0,
+     "e": "El artículo 300 del ET considera ganancia ocasional la utilidad en la enajenación de activos fijos poseídos por el contribuyente durante dos años o más. Si el bien se poseyó por un tiempo inferior (en este caso 18 meses), la utilidad obtenida en su venta debe tratarse como renta líquida ordinaria y no como ganancia ocasional, con las implicaciones tarifarias correspondientes.",
+     "b": "Art. 300 del ET."
+    },
+    {
+     "t": 1,
+     "c": "Tarifas de ganancia ocasional",
+     "d": 2,
+     "q": "Una persona natural residente recibió en el mismo año gravable una herencia y, por separado, un premio de lotería. Al preparar la declaración, el contador aplica la tarifa del 10% a ambos ingresos por tratarse, en su criterio, de la misma categoría de ganancia ocasional. ¿Es correcto ese tratamiento?",
+     "o": [
+      "No, porque aunque ambos son ganancias ocasionales, las provenientes de loterías, rifas, apuestas y similares están gravadas a la tarifa del 20%, mientras que las herencias tributan a la tarifa general del 10%",
+      "Sí, porque el Estatuto Tributario unificó en el 10% la tarifa de toda ganancia ocasional a partir de la Ley 2010 de 2019, sin distinción según su origen",
+      "No, porque ambos ingresos deben gravarse a la tarifa del 20%, reservándose el 10% únicamente para la enajenación de activos fijos poseídos por dos años o más",
+      "Sí, pero solo si la persona es residente fiscal; de no serlo, ambos ingresos estarían gravados a una tarifa del 33% como renta ordinaria y no como ganancia ocasional"
+     ],
+     "a": 0,
+     "e": "El Estatuto Tributario fija dos tarifas distintas para el impuesto de ganancia ocasional: 10% como tarifa general (aplicable, entre otros, a herencias, legados, donaciones y a la venta de activos fijos poseídos por dos años o más), y 20% específicamente para las ganancias ocasionales provenientes de loterías, rifas, apuestas y similares (art. 317 del ET). Aplicar el 10% al premio de lotería es incorrecto.",
+     "b": "Art. 314 y 317 del ET."
+    },
+    {
+     "t": 1,
+     "c": "Exención por herencia — legitimarios vs. terceros",
+     "d": 3,
+     "q": "Dos personas reciben bienes por causa de muerte de un mismo causante: su hija (legitimaria) recibe una asignación por herencia, y un amigo cercano del causante (sin ningún vínculo de parentesco) recibe un legado. Ambos pretenden aplicar la exención del 20% del valor recibido, sin límite de UVT, por tratarse de bienes recibidos por causa de muerte. ¿Es correcto ese planteamiento para ambos?",
+     "o": [
+      "No es correcto para ninguno en esos términos: la hija, como legitimaria, no accede a la exención del 20% (reservada a personas diferentes de los legitimarios y el cónyuge supérstite), y el amigo sí puede aplicarla, pero únicamente hasta el tope de 2.290 UVT, no de forma ilimitada",
+      "Sí es correcto para ambos: la exención del 20% aplica por igual a legitimarios y a terceros no legitimarios, y en ambos casos sin ningún límite máximo en UVT",
+      "No es correcto para ninguno: la exención del 20% del artículo 307 del ET fue derogada y sustituida por la exención fija de 7.700 UVT, aplicable únicamente a inmuebles de vivienda urbana",
+      "Sí es correcto solo para la hija, en su calidad de legitimaria, mientras que el amigo, al no tener parentesco con el causante, no tiene derecho a ninguna exención sobre el legado recibido"
+     ],
+     "a": 0,
+     "e": "El numeral 4 del artículo 307 del ET reserva la exención del 20% de los bienes y derechos recibidos por concepto de herencias, legados o donaciones para personas diferentes de los legitimarios y del cónyuge supérstite, y la sujeta a un tope máximo de 2.290 UVT. Los legitimarios (como los hijos) y el cónyuge supérstite no acceden a esta exención específica del 20%, aunque sí pueden beneficiarse de otras exenciones del mismo artículo, como las 3.490 UVT por concepto de porción conyugal, herencia o legado.",
+     "b": "Art. 307, numerales 3 y 4, del ET."
+    },
+    {
+     "t": 1,
+     "c": "Utilidad en venta de vivienda",
+     "d": 3,
+     "q": "Una persona natural vende su apartamento de habitación, que poseía desde hacía más de cinco años, con una utilidad de $600.000.000 sobre el costo fiscal. Del total recibido por la venta, deposita únicamente el 60% en una cuenta de ahorro para el fomento de la construcción (AFC) o similar, destinando el resto a otros fines. ¿Puede aplicar sin restricciones la exención de las primeras 7.500 UVT prevista en el artículo 311-1 del ET?",
+     "o": [
+      "No sin restricciones: el artículo 311-1 condiciona la exención a que la totalidad de los dineros recibidos por la venta sean depositados en las cuentas destinadas para tal fin; al depositar solo el 60%, la exención no opera en los términos plenos previstos en la norma",
+      "Sí, porque la exención de 7.500 UVT opera de manera automática por el solo hecho de tratarse de la vivienda de habitación del contribuyente, sin condicionarse al destino que se dé a los recursos recibidos por la venta",
+      "No, porque la exención del artículo 311-1 fue derogada y sustituida integralmente por la exención general de 7.700 UVT aplicable a cualquier inmueble, sin relación con su destinación como vivienda de habitación",
+      "Sí, porque el requisito de depósito de los dineros en cuentas AFC solo aplica cuando el vendedor no es residente fiscal en Colombia, situación distinta a la planteada en el caso"
+     ],
+     "a": 0,
+     "e": "El artículo 311-1 del ET exime las primeras 7.500 UVT de la utilidad en la venta de la casa o apartamento de habitación, pero condiciona expresamente ese beneficio a que la totalidad de los dineros recibidos por la venta sean depositados en las cuentas de ahorro destinadas para el fomento de la construcción o similares. Si solo se deposita una parte de los recursos, no se cumple la condición legal para acceder a la exención en los términos plenos previstos en la norma.",
+     "b": "Art. 311-1 del ET."
+    },
+    {
+     "t": 1,
+     "c": "Premios en competencias",
+     "d": 3,
+     "q": "Un deportista profesional recibe un premio en dinero como recompensa por su clasificación en una competencia atlética. La entidad pagadora, asumiendo que se trata de un premio similar a los de lotería o rifa, le practica retención en la fuente a título de ganancia ocasional con la tarifa del 20%. ¿Es correcto ese tratamiento?",
+     "o": [
+      "No, porque los premios recibidos como recompensa por la clasificación en una competencia se gravan como renta ordinaria a la tarifa del contribuyente que lo percibe, con posibilidad de afectarlo con costos y deducciones, y no como ganancia ocasional del 20%",
+      "Sí, porque cualquier premio en dinero, sin importar su origen (competencias deportivas, loterías, rifas o similares), se grava uniformemente como ganancia ocasional a la tarifa del 20%",
+      "No, porque este tipo de premios está completamente exento del impuesto sobre la renta y del impuesto de ganancia ocasional, al tratarse de un reconocimiento al mérito deportivo",
+      "Sí, pero la tarifa correcta sería del 10% y no del 20%, por tratarse de una ganancia ocasional distinta a las provenientes específicamente de loterías, rifas y apuestas"
+     ],
+     "a": 0,
+     "e": "El régimen de ganancias ocasionales excluye expresamente de esa categoría a los premios recibidos como recompensa por la clasificación en competencias (deportivas, científicas o similares): estos se gravan como renta ordinaria, a la tarifa del contribuyente que los percibe, y permiten la afectación con costos y deducciones, a diferencia de los premios de loterías, rifas y apuestas, que sí constituyen ganancia ocasional gravada al 20%.",
+     "b": "Régimen de premios y recompensas por competencias, ET."
+    }
+   ]
+  },
+  {
+   "id": "iva",
+   "numero": "T17",
+   "fecha": "Tema",
+   "titulo": "Impuesto sobre las Ventas (IVA)",
+   "docente": "Material propio",
+   "resumen": "Elementos del IVA: sujetos, base gravable, bienes gravados, exentos y excluidos, e impuestos descontables.",
+   "preguntas": [
+    {
+     "t": 1,
+     "c": "Excluidos vs. exentos",
+     "d": 3,
+     "q": "Dos comerciantes distribuyen el mismo tipo de bienes de consumo humano y vestuario: uno los introduce y comercializa en el departamento de Guainía, y el otro en el departamento de Amazonas, cumpliendo este último con el requisito adicional de ser una sociedad domiciliada allí con actividad económica exclusiva en ese departamento. Un asesor les indica que, al tratarse de bienes de la misma naturaleza, ambos reciben idéntico tratamiento en IVA y ninguno puede solicitar impuestos descontables. ¿Es correcta esa afirmación?",
+     "o": [
+      "No, porque el tratamiento es distinto: los bienes en Guainía están excluidos del IVA (art. 424, numeral 13, del ET) y no generan derecho a descontables, mientras que los mismos bienes en Amazonas están exentos (art. 477 del ET), lo que sí permite tomar los impuestos descontables asociados",
+      "Sí, porque tanto la exclusión como la exención producen exactamente los mismos efectos jurídicos y económicos: en ambos casos no se genera IVA y tampoco se pueden tomar impuestos descontables asociados a esas operaciones",
+      "No, porque en realidad es al contrario: los bienes en Amazonas están excluidos sin derecho a descontables, mientras que los de Guainía están exentos y sí otorgan derecho a solicitar los impuestos descontables asociados",
+      "Sí, porque el Estatuto Tributario unificó el tratamiento de bienes de consumo humano y vestuario en todos los departamentos fronterizos a partir de la Ley 1819 de 2016, sin distinción alguna entre ellos"
+     ],
+     "a": 0,
+     "e": "El artículo 424, numeral 13, del ET excluye del IVA ciertos bienes (consumo humano y animal, vestuario, aseo, medicamentos, materiales de construcción) cuando se introducen y comercializan en Guainía, Guaviare, Vaupés y Vichada. Los bienes excluidos no causan IVA y no generan derecho a impuestos descontables. En cambio, el artículo 477 del ET declara exentos esos mismos bienes cuando se comercializan en el departamento de Amazonas, cumpliendo requisitos adicionales; los bienes exentos sí causan IVA (a tarifa 0%) y sí otorgan derecho a los impuestos descontables asociados. Ambos regímenes, aunque parecidos en apariencia, tienen efectos jurídicos distintos.",
+     "b": "Art. 424, numeral 13, y art. 477 del ET."
+    },
+    {
+     "t": 1,
+     "c": "Base gravable — operaciones accesorias",
+     "d": 3,
+     "q": "Una tienda vende un electrodoméstico gravado con IVA y, en la misma factura, cobra el servicio de transporte del bien hasta el domicilio del comprador, prestado por ella misma como parte integral de la operación. Un asesor sostiene que, como el transporte de por sí está excluido del IVA, debe facturarse por separado sin generar el impuesto. ¿Es correcto ese criterio?",
+     "o": [
+      "No, porque cuando el servicio accesorio (como el transporte) es prestado por el mismo responsable que vende el bien principal y hace parte integral de la operación, el IVA se calcula sobre el valor total de la operación, incluyendo el transporte, así este último sea excluido cuando se presta de forma independiente",
+      "Sí, porque cualquier servicio excluido del IVA conserva esa condición sin importar quién lo preste o si hace parte integral de una operación gravada, de modo que siempre debe facturarse por separado y sin el impuesto",
+      "No, porque el transporte de mercancías nunca está excluido del IVA, independientemente de quién lo preste, por lo que en cualquier caso debe facturarse con el impuesto de forma separada del bien principal",
+      "Sí, porque el artículo 447 del ET exige expresamente separar en la factura el valor del bien principal del valor de cualquier servicio accesorio, así sea prestado por el mismo vendedor, para efectos de la base gravable del IVA"
+     ],
+     "a": 0,
+     "e": "El artículo 447 del ET establece que la base gravable incluye los gastos de financiación, accesorios, y demás erogaciones complementarias a la operación principal, aun cuando esos elementos, considerados de forma independiente, no se encuentren sometidos a imposición o se hallen excluidos o exentos. Cuando el servicio de transporte lo presta el mismo vendedor como parte integral de la venta, el IVA se calcula sobre el valor total (bien más transporte). La exclusión del transporte solo opera cuando este es prestado de forma independiente por un tercero distinto al vendedor del bien.",
+     "b": "Art. 447 del ET."
+    },
+    {
+     "t": 1,
+     "c": "Impuestos descontables — requisitos",
+     "d": 3,
+     "q": "Un responsable de IVA pretende tomar como descontable el impuesto pagado en la compra de insumos, soportado únicamente en un tiquete generado por una máquina registradora con sistema POS, sin contar con factura electrónica. Adicionalmente, esos insumos se destinaron exclusivamente a una actividad excluida del IVA que desarrolla la empresa. ¿Puede tomar el descontable en este caso?",
+     "o": [
+      "No, por dos razones concurrentes: los documentos equivalentes POS no otorgan derecho a impuestos descontables conforme al artículo 616-1 del ET, y adicionalmente el artículo 488 exige que el costo o gasto esté asociado a operaciones gravadas con IVA, condición que tampoco se cumple al destinarse a una actividad excluida",
+      "Sí, porque cualquier documento que acredite el pago del IVA, incluidos los tiquetes POS, es suficiente soporte para tomar el impuesto como descontable, sin importar la actividad a la que se destinen los insumos adquiridos",
+      "No, únicamente por la falta de factura electrónica; si el mismo insumo se hubiera destinado a una actividad gravada, el tiquete POS habría sido soporte suficiente para tomar el descontable",
+      "Sí, porque el artículo 488 del ET no exige ninguna relación entre el costo o gasto y el tipo de actividad (gravada, exenta o excluida) del responsable, bastando con que el gasto sea deducible en el impuesto de renta"
+     ],
+     "a": 0,
+     "e": "Existen dos limitaciones independientes que impiden el descontable en este caso: primero, el parágrafo 4 del artículo 616-1 del ET establece que los documentos equivalentes generados por máquinas POS no otorgan derecho a impuestos descontables (se requiere factura electrónica); segundo, el artículo 488 del ET exige que el IVA descontable corresponda a costos o gastos computables en renta y, además, que estén destinados a operaciones gravadas con IVA — requisito que tampoco se cumple al destinarse los insumos a una actividad excluida.",
+     "b": "Art. 616-1, parágrafo 4, y art. 488 del ET."
+    },
+    {
+     "t": 1,
+     "c": "Régimen simple y periodicidad del IVA",
+     "d": 2,
+     "q": "Una empresa inscrita en el régimen simple de tributación, responsable del IVA, considera que por pertenecer a ese régimen queda exonerada de realizar cualquier pago de IVA hasta el momento de presentar su declaración anual consolidada. ¿Es correcto ese entendimiento?",
+     "o": [
+      "No, porque aunque el régimen simple presenta una declaración anual consolidada del IVA, la norma exige transferir de forma anticipada el impuesto (IVA generado menos IVA descontable) de manera bimestral durante el año",
+      "Sí, porque el régimen simple de tributación exime completamente del pago anticipado del IVA, difiriendo la totalidad del pago hasta la presentación de la declaración anual consolidada",
+      "No, porque los responsables del régimen simple deben presentar y pagar el IVA de forma bimestral igual que cualquier otro responsable, sin que exista una declaración anual consolidada para este régimen",
+      "Sí, pero únicamente durante el primer año de inscripción en el régimen simple; a partir del segundo año, el pago pasa a ser trimestral en lugar de bimestral"
+     ],
+     "a": 0,
+     "e": "El artículo 915 del ET dispone que los responsables del régimen simple de tributación que también sean responsables de IVA deben presentar una declaración anual consolidada del impuesto, pero eso no los exime de transferir de forma anticipada, de manera bimestral, el valor del IVA generado menos el IVA descontable durante el año.",
+     "b": "Art. 915 del ET."
+    },
+    {
+     "t": 1,
+     "c": "Sujeto jurídico vs. sujeto económico",
+     "d": 2,
+     "q": "En una cadena de comercialización de un bien gravado con IVA, el consumidor final paga el impuesto incluido en el precio, pero es el comerciante minorista quien debe facturarlo, recaudarlo, declararlo y pagarlo a la DIAN. Un estudiante afirma que el comerciante minorista es el 'responsable económico' del impuesto, mientras que el consumidor final sería el 'responsable jurídico'. ¿Es correcta esa clasificación?",
+     "o": [
+      "No, es al contrario: el comerciante minorista es el responsable jurídico (obligado a facturar, recaudar, declarar y pagar el impuesto ante la DIAN), mientras que el consumidor final es el responsable económico, quien soporta la carga real del tributo",
+      "Sí, la clasificación es correcta tal como se plantea: quien recibe el dinero del impuesto (el comerciante) es el responsable económico, y quien finalmente lo asume en su patrimonio es el responsable jurídico",
+      "No, porque en materia de IVA no existe esa distinción entre responsable jurídico y económico; solo existe la figura única del 'sujeto pasivo', que reúne ambas calidades en una sola persona",
+      "Sí, aunque parcialmente: el comerciante minorista sería responsable económico solo en la etapa final de la cadena, mientras que en las etapas anteriores (productor, distribuidor) sería responsable jurídico"
+     ],
+     "a": 0,
+     "e": "En el IVA se distinguen dos calidades distintas: el responsable jurídico, que es quien tiene la obligación formal y sustancial de facturar, recaudar, declarar y pagar el impuesto ante la DIAN (en este caso, el comerciante minorista), y el responsable económico (o sujeto pasivo económico), que es quien realmente soporta la carga del impuesto al pagarlo dentro del precio del bien o servicio (el consumidor final). La afirmación del estudiante invierte ambos conceptos.",
+     "b": "Elementos del sujeto pasivo del IVA, régimen del ET."
+    }
+   ]
+  },
+  {
+   "id": "impuesto-consumo",
+   "numero": "T18",
+   "fecha": "Tema",
+   "titulo": "Impuesto Nacional al Consumo",
+   "docente": "Material propio",
+   "resumen": "Impuesto nacional al consumo, bolsas plásticas y cannabis: causación, responsables y régimen simplificado.",
+   "preguntas": [
+    {
+     "t": 1,
+     "c": "Régimen simplificado — restaurantes y bares",
+     "d": 3,
+     "q": "Una persona natural que opera un restaurante obtuvo en el año anterior ingresos brutos de 3.200 UVT provenientes de esa actividad, y solo tiene un establecimiento de comercio. Durante el año en curso, celebra una única operación gravada por cuantía individual de 3.600 UVT. ¿Debe inscribirse previamente como responsable del impuesto nacional al consumo de restaurantes y bares por esa operación?",
+     "o": [
+      "Sí, porque aunque cumple los requisitos generales para no ser responsable (ingresos del año anterior inferiores a 3.500 UVT y un solo establecimiento), la norma exige inscripción previa cuando se celebra una operación individual igual o superior a 3.500 UVT",
+      "No, porque el cumplimiento de los dos requisitos generales (ingresos inferiores a 3.500 UVT y un solo establecimiento) exonera de cualquier obligación de inscripción, sin importar la cuantía de operaciones individuales que se celebren durante el año",
+      "Sí, porque al operar un restaurante, la persona siempre es responsable del impuesto nacional al consumo, independientemente del monto de sus ingresos o del número de establecimientos que posea",
+      "No, porque el umbral de 3.500 UVT solo aplica a los ingresos brutos anuales totales y no a operaciones individuales, las cuales nunca generan la obligación de inscripción, sin importar su cuantía"
+     ],
+     "a": 0,
+     "e": "El artículo 512-13 del ET exonera de la calidad de responsables del impuesto al consumo de restaurantes y bares a quienes, cumpliendo los dos requisitos generales (ingresos brutos del año anterior inferiores a 3.500 UVT y máximo un establecimiento), no obstante deben inscribirse previamente como responsables cuando celebren una operación gravada por cuantía individual igual o superior a 3.500 UVT. En el caso planteado, la operación de 3.600 UVT supera ese umbral, activando la obligación de inscripción previa.",
+     "b": "Art. 512-13 del ET."
+    },
+    {
+     "t": 1,
+     "c": "Retiro del régimen de no responsables",
+     "d": 2,
+     "q": "Un comerciante de restaurante y bar, ya inscrito como responsable del impuesto nacional al consumo, solicita su retiro del régimen alegando que en el último año fiscal cumplió las condiciones para ser no responsable (ingresos bajo el umbral y un solo establecimiento). ¿Es suficiente ese único año para autorizar el retiro?",
+     "o": [
+      "No, porque la norma exige que el responsable demuestre el cumplimiento de las condiciones de no responsable durante los tres años fiscales anteriores a la solicitud de retiro, no solo el último año",
+      "Sí, porque basta con acreditar el cumplimiento de las condiciones durante el año fiscal inmediatamente anterior a la solicitud para que proceda automáticamente el retiro del régimen",
+      "No, porque una vez inscrito como responsable del impuesto al consumo, la ley no contempla ninguna posibilidad de retiro posterior del régimen, sin importar las condiciones que se acrediten",
+      "Sí, siempre que además presente una certificación de un contador público que avale el cumplimiento de las condiciones durante ese único año fiscal"
+     ],
+     "a": 0,
+     "e": "La normativa dispone que los responsables del impuesto al consumo de restaurantes y bares que ya se registraron solo pueden solicitar su retiro del régimen cuando demuestren que, durante los tres años fiscales anteriores a la solicitud, cumplieron por cada año las condiciones señaladas para tener la calidad de no responsables. Un solo año de cumplimiento no es suficiente para acceder al retiro.",
+     "b": "Régimen del impuesto nacional al consumo de restaurantes y bares, art. 512-13 del ET."
+    },
+    {
+     "t": 1,
+     "c": "Impuesto a las bolsas plásticas",
+     "d": 2,
+     "q": "Un supermercado entrega, sin cobro adicional, bolsas plásticas biodegradables certificadas por el Ministerio de Ambiente y Desarrollo Sostenible para que los clientes carguen sus productos. El administrador considera que de todas formas debe liquidar el impuesto a las bolsas plásticas y discriminarlo en la factura, por tratarse de bolsas plásticas entregadas para cargar productos adquiridos. ¿Es correcto ese criterio?",
+     "o": [
+      "No, porque las bolsas plásticas biodegradables certificadas como tales por el Ministerio de Ambiente y Desarrollo Sostenible están expresamente excluidas de la causación del impuesto a las bolsas plásticas",
+      "Sí, porque el impuesto a las bolsas plásticas grava toda bolsa entregada con la finalidad de cargar productos adquiridos, sin ninguna excepción relacionada con su composición o certificación ambiental",
+      "No, porque ninguna bolsa plástica entregada por un supermercado causa este impuesto; solo lo causan las bolsas entregadas por establecimientos de comida rápida y restaurantes",
+      "Sí, pero solo debe liquidarse a la tarifa reducida del 0%, ya que las bolsas biodegradables siempre tributan a esa tarifa mínima en lugar de estar completamente excluidas"
+     ],
+     "a": 0,
+     "e": "La normativa del impuesto nacional al consumo de bolsas plásticas excluye expresamente de su causación a las bolsas biodegradables certificadas como tales por el Ministerio de Ambiente y Desarrollo Sostenible, junto con otros supuestos como las bolsas reutilizables con características técnicas para múltiples usos y las utilizadas como material de empaque de productos preempacados. No corresponde liquidar el impuesto ni discriminarlo en la factura para este tipo de bolsas.",
+     "b": "Bolsas plásticas que no causan el impuesto, régimen del impuesto nacional al consumo."
+    },
+    {
+     "t": 1,
+     "c": "Impuesto al consumo de cannabis medicinal",
+     "d": 3,
+     "q": "Un transformador de cannabis retira, de su propio inventario de productos transformados, una cantidad para formar parte de los activos fijos de su empresa (no para la venta a un tercero). El contador sostiene que, al no existir una venta a un tercero, no se causa el impuesto nacional al consumo de cannabis. ¿Es correcto ese criterio?",
+     "o": [
+      "No, porque la normativa asimila a 'ventas' —para efectos de este impuesto— los retiros o disminuciones de inventarios de productos transformados a partir de cannabis realizados por el propio responsable para su uso o para formar parte de sus activos fijos, generando la causación del impuesto",
+      "Sí, porque el impuesto al consumo de cannabis solo se causa cuando existe una transferencia a título oneroso o gratuito a un tercero distinto del transformador, nunca en los retiros internos de inventario",
+      "No, porque los retiros de inventario para activos fijos están expresamente exentos del impuesto al consumo de cannabis, a diferencia de los retiros para consumo propio del transformador, que sí lo causan",
+      "Sí, porque el hecho generador de este impuesto exige, sin excepción, la emisión de una factura de venta a un adquirente identificado, documento que no existe en un retiro interno de inventario"
+     ],
+     "a": 0,
+     "e": "La normativa del impuesto nacional al consumo de cannabis considera 'ventas' —hecho generador del impuesto— no solo las transferencias a título oneroso o gratuito a terceros, sino también los retiros o disminuciones de inventarios de productos transformados a partir de cannabis que haga el propio responsable para su uso personal o para formar parte de sus activos fijos. Por tanto, el retiro descrito sí causa el impuesto, contrario a lo sostenido por el contador.",
+     "b": "Hecho generador del impuesto nacional al consumo de cannabis, régimen del ET."
+    },
+    {
+     "t": 1,
+     "c": "Obligaciones de responsables del INC",
+     "d": 2,
+     "q": "Un prestador del servicio de telefonía móvil, responsable del régimen común del impuesto nacional al consumo, sostiene que sus obligaciones formales (inscripción en el RUT, facturación, recaudo, declaración y pago) son distintas y más simples que las de un responsable del impuesto sobre las ventas (IVA). ¿Es correcta esa afirmación?",
+     "o": [
+      "No, porque los responsables del régimen común del impuesto nacional al consumo deben cumplir las mismas obligaciones formales señaladas para los responsables del IVA: inscribirse en el RUT, facturar el impuesto, recaudarlo, presentar la declaración bimestral correspondiente y pagar el impuesto recaudado",
+      "Sí, porque los responsables del impuesto al consumo están exonerados de presentar cualquier tipo de declaración periódica, a diferencia de los responsables del IVA, que sí deben hacerlo",
+      "No, porque en realidad las obligaciones de los responsables del impuesto al consumo son más exigentes: además de las obligaciones del IVA, deben llevar una contabilidad separada exclusiva para este tributo",
+      "Sí, porque los responsables del impuesto al consumo solo deben inscribirse en el RUT, sin obligación de facturar ni de presentar declaraciones periódicas del tributo"
+     ],
+     "a": 0,
+     "e": "La normativa establece que los responsables del régimen común del impuesto nacional al consumo deben cumplir las mismas obligaciones formales previstas para los responsables del impuesto sobre las ventas: inscribirse en el RUT, facturar el impuesto, recaudarlo, presentar la declaración bimestral correspondiente y pagar el impuesto recaudado. No existe, por tanto, un régimen formal más simple ni más complejo entre ambos tributos en este aspecto.",
+     "b": "Obligaciones de los responsables del impuesto nacional al consumo, régimen del ET."
     }
    ]
   }
